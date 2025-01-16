@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500px;
+            height: 300px;
+            background-size: 500px 300px;
+            animation: slider 6s ease-in-out  infinite;
+        }
+        @keyframes slider {
+            0% {
+                background-image: url("./1.jpg");
+
+            }
+            50% {
+                background-image: url("./2.jpg");
+            }
+            100% {
+                background-image: url("./3.jpg");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+</body>
+
+</html>

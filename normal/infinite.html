@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Horizontal Brand Carousel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 800px;
+            padding: 10px;
+        }
+
+        .carousel {
+            display: inline-flex;
+            animation: scroll 150s linear infinite;
+        }
+
+        .brand {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .brand img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .carousel:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel" id="carousel"></div>
+    </div>
+    <script>
+        const brands = [
+            { image: "./brand/brand (1).png" },
+            { image: "./brand/brand (2).png" },
+            { image: "./brand/brand (3).png" },
+            { image: "./brand/brand (4).png" },
+            { image: "./brand/brand (5).png" },
+            { image: "./brand/brand (6).png" },
+            { image: "./brand/brand (6).png" },
+            { image: "./brand/brand (7).png" },
+            { image: "./brand/brand (8).png" },
+            { image: "./brand/brand (9).png" },
+            { image: "./brand/brand (10).png" },
+            { image: "./brand/brand (11).png" },
+            { image: "./brand/brand (12).png" },
+            { image: "./brand/brand (13).png" },
+            { image: "./brand/brand (14).png" },
+            { image: "./brand/brand (15).png" },
+            { image: "./brand/brand (16).png" },
+            { image: "./brand/brand (17).png" },
+            { image: "./brand/brand (18).png" },
+            { image: "./brand/brand (19).png" },
+            { image: "./brand/brand (20).png" },
+            { image: "./brand/brand (21).png" },
+            { image: "./brand/brand (22).png" },
+            { image: "./brand/brand (23).png" },
+            { image: "./brand/brand (24).png" },
+            { image: "./brand/brand (25).png" },
+            { image: "./brand/brand (26).png" },
+            { image: "./brand/brand (27).png" },
+            { image: "./brand/brand (28).png" },
+            { image: "./brand/brand (29).png" },
+            { image: "./brand/brand (30).png" },
+            { image: "./brand/brand (31).png" },
+            { image: "./brand/brand (32).png" },
+            { image: "./brand/brand (33).png" },
+            { image: "./brand/brand (34).png" },
+            { image: "./brand/brand (35).png" },
+            { image: "./brand/brand (36).png" },
+            { image: "./brand/brand (37).png" },
+        
+        ];
+
+        const carouselElement = document.getElementById('carousel');
+
+        function createBrandElements(brands) {
+            brands.map(brand => {
+                const brandDiv = document.createElement('div');
+                brandDiv.className = 'brand';
+                const brandImg = document.createElement('img');
+                brandImg.src = brand.image;
+                brandImg.alt = 'Brand Image';
+                brandDiv.appendChild(brandImg);
+                carouselElement.appendChild(brandDiv);
+            });
+        }
+
+        // Populate the carousel twice for seamless scrolling
+        createBrandElements(brands);
+        // createBrandElements(brands);
+    </script>
+</body>
+</html>
