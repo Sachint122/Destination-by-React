@@ -1,0 +1,152 @@
+.address-top {
+    /* background-color: red; */
+    /* background: linear-gradient(135deg, #e63946 50%, #f1faee 50%); */
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+    /* background: url('../images/home-bg.jpg') repeat-x bottom; */
+    /* clip-path: path('M0,100 C150,200 350,0 500,100 T1000,100 L1000,0 L0,0 Z'); */
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    /* border-bottom: 2px solid #ddd; */
+}
+
+.wave-svg {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.address-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: red; */
+    /* width: 55%; */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUpFadeIn 1.5s ease-in-out forwards;
+}
+
+.address-content h6 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d4ff;
+    animation: slideInFromLeft 2s ease-in forwards;
+}
+
+.address-content p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInText 2.5s ease-in-out forwards;
+}
+
+.address-content ul li {
+    opacity: 0;
+    margin-top: 10px;
+    transform: translateX(-20px);
+    animation: fadeInLeftListItem 1.2s ease-in-out forwards;
+}
+
+.address-content li {
+    font-size: 1.2rem;
+    list-style-type: none;
+    /* padding: 5px 0; */
+    position: relative;
+    padding-left: 25px;
+}
+
+
+
+.address img {
+    max-width: 100%;
+    transform: scale(0.8);
+    animation: zoomInImage 2s ease-in-out forwards;
+}
+
+/* Button Hover Animation */
+.address-content button {
+    width: 150px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    background: #1f6feb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px #1f6feb;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.address-content button:hover {
+    background: #0d95f2;
+    box-shadow: 0 0 20px #0d95f2;
+}
+
+/* Animations */
+
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeftListItem {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomInImage {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

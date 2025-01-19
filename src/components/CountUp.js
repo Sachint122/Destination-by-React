@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import "./CountUpCircle.css";
 
 export default function CountUp({
   to,
   from = 0,
   startWhen = true,
+  text=""
 }) {
   const ref = useRef(null);
   const motionValue = useMotionValue(from);
@@ -21,7 +21,7 @@ export default function CountUp({
   useEffect(() => {
     const unsubscribe = springValue.on("change", (latest) => {
       if (ref.current) {
-        ref.current.textContent = `${latest.toFixed(0)}+`;
+        ref.current.textContent = `${latest.toFixed(0)}+ ${text}`;
       }
     });
 
@@ -30,7 +30,7 @@ export default function CountUp({
 
   return (
 
-    <span className={`countup-text`} ref={ref} >+</span>
+    <span  ref={ref} >+</span>
 
   );
 }
