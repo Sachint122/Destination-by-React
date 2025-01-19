@@ -2,6 +2,7 @@ import React from 'react'
 import '../style/nav.css'
 import { useEffect } from 'react';
 import destinationLogo from '../images/logo/destination-log.png';
+import Button from './ModernButton';
 export default function NavBar() {
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -47,7 +48,7 @@ export default function NavBar() {
                 <li className="nav-item"><a href="/">Placement</a></li>
                 <li className="nav-item"><a href="/">Contact Us</a></li>
             </ul>
-            <button className="loginLms" type="submit">Login LMS</button>
+            <Button/>
         </nav>
     )
 }
