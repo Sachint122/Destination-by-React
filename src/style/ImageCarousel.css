@@ -1,0 +1,111 @@
+#ImageCarousel {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 30px; */
+    width: 100%;
+    height: 720px;
+    background: linear-gradient(to top, #7df9ff, #001f3f, #000000);
+}
+
+#ImageCarousel hr {
+    width: 70%;
+}
+
+#ImageCarousel h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #00d4ff;
+    margin-top: 20px;
+}
+
+.banner {
+    width: 720px;
+    height: 455px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(600px);
+    animation: autoRun 30s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-14deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(-14deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(320px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner .slider .item img {
+    width: 80%;
+    height: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.full-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInOut 0.6s ease-in-out;
+}
+
+/* Define keyframes for the animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.full-view img {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    transform: scale(0.8);
+    animation: fadeInOut 0.8s ease-in-out;
+}
+
+.full-view.active {
+    display: flex;
+    opacity: 1;
+}
+
+.full-view img.active {
+    transform: scale(1);
+}
