@@ -1,20 +1,22 @@
-import React from 'react'
-import '../style/home.css';
-// import '../style/CountUpSection.css';
-import Brand from './Brand';
-import CountUpSection from './CountUpSection';
-import address from '../images/DESTINATION-1024x1001.png';
-import '../style/address.css';
-import { FaArrowRightLong } from "react-icons/fa6";
-import Card from './Card';
-import ImageCarousel from './ImageCarousel';
 import { LiaIndustrySolid } from "react-icons/lia";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { FaFreeCodeCamp } from "react-icons/fa";
 import { GiLifeSupport } from "react-icons/gi";
-import '../style/why.css';
+import { FaArrowRightLong } from "react-icons/fa6";
+import address from '../images/DESTINATION-1024x1001.png';
+import { useModal } from './hooks/FormOpenClose';
+import { useScrollAnimation } from './hooks/Animation';
+import Card from './Card';
+import ImageCarousel from './ImageCarousel';
+import CountUpSection from './CountUpSection';
+import Brand from './Brand';
+import Form from './Form';
+import EButton from './ExploreButton';
+import Button from './ModernButton';
 
 export default function Home() {
+    const { isModalOpen, openModal } = useModal();
+    useScrollAnimation();
     return (
         <>
             <section>
@@ -25,7 +27,12 @@ export default function Home() {
                         <p style={{ fontSize: '1rem' }}>
                             With Destination Technologies as your trusted partner, you can unlock endless possibilities in your professional journey. Our aim is to empower individuals and organizations alike by bridging the gap between talent and opportunity. Experience our unparalleled services and witness the transformation firsthand.
                         </p>
-                        <button onClick={() => alert('Explore Now!')}>Explore Now</button>
+                        <div style={{display:'flex'}}>
+                        <Button text="Our Courses"/>
+                        {/* shift to course */}
+                        <Button text="Know More"/>
+                        {/* shift ton about us */}
+                        </div>
                     </div>
 
                     <div className="hero-image">
@@ -40,24 +47,25 @@ export default function Home() {
             {/* address */}
             <section
                 className="address-top" >
-                <div className="address-content">
+                <div className="address-content" data-animate="address-animation">
                     <i> Our Localfoot prints------</i>
-                    <h6>
+                    <h6 data-animate="address-heading">
                         Local Footprints that Transcend Boundaries: Nationwide Training & Recruiting Solutions</h6>
-                    <p>At Destination Technologies, we believe in delivering exceptional services that transcend geographical boundaries. With our PAN India service delivery infrastructure, we have the capability to implement customized solutions across the length and breadth of the nation
+                    <p data-animate="address-p">At Destination Technologies, we believe in delivering exceptional services that transcend geographical boundaries. With our PAN India service delivery infrastructure, we have the capability to implement customized solutions across the length and breadth of the nation
                     </p>
                     <ul className='address-point'>
-                        <li> <FaArrowRightLong />   Our local footprints extend to over 50+ locations through our extensive network of partners.</li>
-                        <li> <FaArrowRightLong />   3 Physical Offices: Building Connections, Creating Impact</li>
-                        <li> <FaArrowRightLong />   500+ Company-Owned Manpower: A Strong Team, A Solid Foundation</li>
+                        <li data-animate="address-li"> <FaArrowRightLong />   Our local footprints extend to over 50+ locations through our extensive network of partners.</li>
+                        <li data-animate="address-li"> <FaArrowRightLong />   3 Physical Offices: Building Connections, Creating Impact</li>
+                        <li data-animate="address-li"> <FaArrowRightLong />   500+ Company-Owned Manpower: A Strong Team, A Solid Foundation</li>
                     </ul>
-                    <button onClick={() => alert('Explore Now!')}>Learn more</button>
+                    {/* <button onClick={() => alert('Explore Now!')}>Learn more</button> */}
+                    <EButton text="Explore Now" />
                 </div>
                 <div className="address">
-                    <img src={address} />
+                    <img  data-animate="address-zoomin"src={address} alt=''/>
                 </div>
             </section>
-            {/* Cards */}
+            {/* Services */}
             <section id='card'>
                 <hr />
                 <h2>Our Services</h2>
@@ -65,6 +73,7 @@ export default function Home() {
                 <h1>Comprehensive Services to Fuel Your Success</h1>
                 <Card />
             </section>
+            {/* placement */}
             <section id="ImageCarousel">
                 <hr />
                 <h2>Destination Techs: Empowering Success through Upskilling</h2>
@@ -73,48 +82,50 @@ export default function Home() {
                 <ImageCarousel />
             </section >
             {/* why chooses us */}
-            <section id='why-chooses-us'>
+            <section id='why-chooses-us' data-animate="a-m">
                 <div className='upper-why'>
                     <hr />
-                    <h2>Destination Techs: Empowering Success through Upskilling</h2>
+                    <h2>Why Chooses Us</h2>
                     <hr />
                 </div>
-                <h1 className='why-content-head'>Student Placements</h1>
-                <div className="main-why">
+                <h1 className='why-content-head' data-animate="ani-head">Empowering Your Success in the Digital World</h1>
+                <div className="main-why" data-animate="a-main">
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><LiaIndustrySolid /></span>
                         <h1> Industry Expertise </h1>
-                        <p>Benefit from our deep industry knowledge and expertise, ensuring you receive the most relevant and up-to-date training</p>
+                        <p data-animate="ani-p">Benefit from our deep industry knowledge and expertise, ensuring you receive the most relevant and up-to-date training</p>
                     </div>
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><LiaLaptopCodeSolid /></span>
                         <h1> Diverse Training </h1>
-                        <p>Gain comprehensive training through our carefully designed programs, covering a wide range of in-demand technologies</p>
+                        <p  data-animate="ani-p">Gain comprehensive training through our carefully designed programs, covering a wide range of in-demand technologies</p>
                     </div>
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><FaFreeCodeCamp /></span>
                         <h1> Practical Approach </h1>
-                        <p>Experience a hands-on, practical learning environment that focuses on real-world applications</p>
+                        <p  data-animate="ani-p">Experience a hands-on, practical learning environment that focuses on real-world applications</p>
                     </div>
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><GiLifeSupport /></span>
                         <h1> Career Support </h1>
-                        <p>Receive dedicated career support, including job placement assistance and guidance, helping you maximize your potential</p>
+                        <p  data-animate="ani-p">Receive dedicated career support, including job placement assistance and guidance, helping you maximize your potential</p>
                     </div>
                 </div>
             </section>
             {/* querry */}
             <section id="querry" className="querry-section">
-                <div className="left-content">
+                <div className="left-content" data-animate="ani-left">
                     <h2>Explore Our Services</h2>
                     <p>We provide top-notch services tailored to your needs. Explore the benefits and features we offer to make your experience extraordinary.</p>
                 </div>
-                <div className="right-content">
+                <div className="right-content" data-animate="ani-right">
                     <h2>Join Us Today</h2>
                     <p>Ready to get started? Reach out and be a part of our growing community. We’re here to support you every step of the way.</p>
-                    <a href="#contact" className="right-anchor">Contact Us</a>
+                    {/* <button id="openFormButton" onClick={openModal} > Open from <FaAngleDoubleRight/></button> */}
+                    <EButton openModel={openModal}>Open from</EButton>
                 </div>
             </section>
+            <Form open={isModalOpen} />
         </>
     )
 }

@@ -1,28 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = () => {
-    return (
-        <StyledWrapper>
-            <button className="animated-button">
-                <svg viewBox="0 0 24 24" className="arr-2" style={{ color: '#00d4ff' }} xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
-                </svg>
-                <span className="text">Login LMS</span>
-                <span className="circle" />
-                <svg viewBox="0 0 24 24" className="arr-1" style={{ color: '#00d4ff' }} xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
-                </svg>
-            </button>
-        </StyledWrapper>
+const Button = ({ text }, { name }) => {
+  return (
+    <StyledWrapper>
+      <button className="animated-button cardb" >
+      <svg viewBox="0 0 24 24" className="arr-2" style={{ color: '#00d4ff' }} xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+      </svg>
+      <span className="text">{text}</span>
+      <span className="circle" />
+      <svg viewBox="0 0 24 24" className="arr-1" style={{ color: '#00d4ff' }} xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+      </svg>
+    </button>
+        </StyledWrapper >
     );
 }
 
 const StyledWrapper = styled.div`
+  .cardb{
+   margin: 15px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  }
   .animated-button {
   margin-right: 30px;
     height: 40px;
-    width: 150px;
     position: relative;
     display: flex;
     align-items: center;
@@ -50,7 +60,7 @@ const StyledWrapper = styled.div`
   }
 
   .animated-button .arr-1 {
-    right: 16px;
+    right: 0px;
   }
 
   .animated-button .arr-2 {

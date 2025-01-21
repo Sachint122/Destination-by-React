@@ -6,13 +6,12 @@
   align-items: center;
   background: linear-gradient(to top, #7df9ff, #001f3f, #000000);
 }
-
-#card h1 {
+ #card h1 {
   font-size: 2.4rem;
   margin-bottom: 10px;
   color: #00d4ff;
   margin-top: 20px;
-}
+} 
 
 hr {
   margin-top: 8px;
@@ -21,6 +20,7 @@ hr {
   height: 4px;
   background: linear-gradient(to right, #7df9ff, #001f3f 30%, #7df9ff);
 }
+
 #card hr{
   width: 20%;
 }
@@ -62,22 +62,21 @@ hr {
   padding: 0 15px;
 }
 
-.card button {
-  margin: 15px 0;
+ .cardb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  margin:10px auto auto auto ;
   padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
-
+/*
 .card button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
-}
+} */
 
 .card:hover {
   /* transform: translateY(-10px) scale(1.03) rotate(1deg); */
