@@ -40,10 +40,12 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <hr />
             <div className='brand2'>
                 <Brand />
                 <CountUpSection />
             </div>
+            <hr />
             {/* address */}
             <section
                 className="address-top" >
@@ -65,6 +67,7 @@ export default function Home() {
                     <img  data-animate="address-zoomin"src={address} alt=''/>
                 </div>
             </section>
+            <hr />
             {/* Services */}
             <section id='card'>
                 <hr />
@@ -73,6 +76,7 @@ export default function Home() {
                 <h1>Comprehensive Services to Fuel Your Success</h1>
                 <Card />
             </section>
+            <hr />
             {/* placement */}
             <section id="ImageCarousel">
                 <hr />
@@ -81,6 +85,7 @@ export default function Home() {
                 <h1>Student Placements</h1>
                 <ImageCarousel />
             </section >
+            <hr />
             {/* why chooses us */}
             <section id='why-chooses-us' data-animate="a-m">
                 <div className='upper-why'>
@@ -112,6 +117,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <hr />
             {/* querry */}
             <section id="querry" className="querry-section">
                 <div className="left-content" data-animate="ani-left">
@@ -121,10 +127,11 @@ export default function Home() {
                 <div className="right-content" data-animate="ani-right">
                     <h2>Join Us Today</h2>
                     <p>Ready to get started? Reach out and be a part of our growing community. We’re here to support you every step of the way.</p>
-                    {/* <button id="openFormButton" onClick={openModal} > Open from <FaAngleDoubleRight/></button> */}
+                    {/* <button id="openFormButton" onClick={openModal} > Open from </button> */}
                     <EButton openModel={openModal}>Open from</EButton>
                 </div>
             </section>
+            <hr />
             <Form open={isModalOpen} />
         </>
     )

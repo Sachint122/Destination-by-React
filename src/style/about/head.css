@@ -1,0 +1,278 @@
+.head-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    height: 45vh;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.head-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 31, 63, 0.8));
+    z-index: -1;
+}
+
+
+.head-main h1 {
+    color: rgb(0, 166, 255);
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.head-main p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    animation: fadeInUp 2s ease-in;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 50px;
+    height: 80vh;
+    column-gap: 50px;
+    background: linear-gradient(to bottom, #000000, #001f3f);
+    overflow: hidden;
+}
+
+.content-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomIn 4s infinite alternate;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.content-section h2 {
+    color: #00d4ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.content-section p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.content-section p.ani-p{
+    animation: fadeInRight 1.5s;
+
+}
+@keyframes fadeInRight {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.content-section li {
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content-section li.ani-li{
+    animation: slideInLeft 1s ease-in;
+
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* card section 1 */
+#card1 {
+    padding-top: 10px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #001f3f, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 0px;
+}
+
+#card1-us.a-m {
+    animation: fadeIn 2s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card1-main {
+    margin-top: -70px;
+    padding: 100px;
+    width: 95vw;
+    padding-left: 5px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card1-main.a-main {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card1-sub {
+    padding: 20px;
+    width: 85vmin;
+    padding: 1em 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 1em;
+    background: linear-gradient(135deg, #627175, #192b41);
+    border-bottom: 10px solid #188cf9;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1-sub:hover {
+    transform: scale(1);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card1-sub h1 {
+    font-size: 2.2rem;
+    color: #00d4ff;
+    margin-bottom: 10px;
+    animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0px 0px 10px #00d4ff, 0px 0px 20px #00d4ff;
+    }
+
+    to {
+        text-shadow: 0px 0px 20px #00d4ff, 0px 0px 30px #00d4ff;
+    }
+}
+
+.upper-why {
+    margin-top: -10px;
+}
+
+.upper-why hr {
+    margin-left: -40px;
+    width: 140%;
+}
+
+#card1 p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #d1d1d1;
+}
+
+#card1 p.ani-p {
+    animation: fadeInUp 1.5s ease-in-out;
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

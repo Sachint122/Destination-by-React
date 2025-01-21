@@ -14,8 +14,6 @@
 } 
 
 hr {
-  margin-top: 8px;
-  margin-bottom: 8px;
   border: none;
   height: 4px;
   background: linear-gradient(to right, #7df9ff, #001f3f 30%, #7df9ff);
