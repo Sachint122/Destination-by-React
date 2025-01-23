@@ -4,18 +4,15 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 import { GiLifeSupport } from "react-icons/gi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import address from '../images/DESTINATION-1024x1001.png';
-import { useModal } from './hooks/FormOpenClose';
 import { useScrollAnimation } from './hooks/Animation';
 import Card from './Card';
 import ImageCarousel from './ImageCarousel';
 import CountUpSection from './CountUpSection';
 import Brand from './Brand';
-import Form from './Form';
 import EButton from './ExploreButton';
 import Button from './ModernButton';
-
+import Footer from './Footer';
 export default function Home() {
-    const { isModalOpen, openModal } = useModal();
     useScrollAnimation();
     return (
         <>
@@ -27,11 +24,11 @@ export default function Home() {
                         <p style={{ fontSize: '1rem' }}>
                             With Destination Technologies as your trusted partner, you can unlock endless possibilities in your professional journey. Our aim is to empower individuals and organizations alike by bridging the gap between talent and opportunity. Experience our unparalleled services and witness the transformation firsthand.
                         </p>
-                        <div style={{display:'flex'}}>
-                        <Button text="Our Courses"/>
-                        {/* shift to course */}
-                        <Button text="Know More"/>
-                        {/* shift ton about us */}
+                        <div style={{ display: 'flex' }}>
+                            <Button text="Our Courses" />
+                            {/* shift to course */}
+                            <Button text="Know More" />
+                            {/* shift ton about us */}
                         </div>
                     </div>
 
@@ -64,7 +61,7 @@ export default function Home() {
                     <EButton text="Explore Now" />
                 </div>
                 <div className="address">
-                    <img  data-animate="address-zoomin"src={address} alt=''/>
+                    <img data-animate="address-zoomin" src={address} alt='' />
                 </div>
             </section>
             <hr />
@@ -103,36 +100,21 @@ export default function Home() {
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><LiaLaptopCodeSolid /></span>
                         <h1> Diverse Training </h1>
-                        <p  data-animate="ani-p">Gain comprehensive training through our carefully designed programs, covering a wide range of in-demand technologies</p>
+                        <p data-animate="ani-p">Gain comprehensive training through our carefully designed programs, covering a wide range of in-demand technologies</p>
                     </div>
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><FaFreeCodeCamp /></span>
                         <h1> Practical Approach </h1>
-                        <p  data-animate="ani-p">Experience a hands-on, practical learning environment that focuses on real-world applications</p>
+                        <p data-animate="ani-p">Experience a hands-on, practical learning environment that focuses on real-world applications</p>
                     </div>
                     <div className="sub-why">
                         <span style={{ fontSize: '4.5em' }}><GiLifeSupport /></span>
                         <h1> Career Support </h1>
-                        <p  data-animate="ani-p">Receive dedicated career support, including job placement assistance and guidance, helping you maximize your potential</p>
+                        <p data-animate="ani-p">Receive dedicated career support, including job placement assistance and guidance, helping you maximize your potential</p>
                     </div>
                 </div>
             </section>
-            <hr />
-            {/* querry */}
-            <section id="querry" className="querry-section">
-                <div className="left-content" data-animate="ani-left">
-                    <h2>Explore Our Services</h2>
-                    <p>We provide top-notch services tailored to your needs. Explore the benefits and features we offer to make your experience extraordinary.</p>
-                </div>
-                <div className="right-content" data-animate="ani-right">
-                    <h2>Join Us Today</h2>
-                    <p>Ready to get started? Reach out and be a part of our growing community. We’re here to support you every step of the way.</p>
-                    {/* <button id="openFormButton" onClick={openModal} > Open from </button> */}
-                    <EButton openModel={openModal}>Open from</EButton>
-                </div>
-            </section>
-            <hr />
-            <Form open={isModalOpen} />
+            <Footer />
         </>
     )
 }

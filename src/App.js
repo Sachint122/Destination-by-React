@@ -10,8 +10,8 @@ export default function App() {
   return (
    <>
     <NavBar />
-    <About/>
-    {/* <Home/> */}
+    {/* <About/> */}
+    <Home/>
    </>
   );
 }

@@ -188,7 +188,11 @@
     justify-content: space-between;
     gap: 10px;
 }
-
+.card1-main img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
 .card1-main.a-main {
     animation: slideIn 1.5s ease-in-out;
 }
@@ -275,4 +279,252 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/* mission */
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    height: 65vh;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    animation: fadeInSlide 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.mission::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 31, 63, 0.8));
+    z-index: -1;
+    animation: glowBackground 5s ease-in-out forwards;
+}
+
+@keyframes glowBackground {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.4); }
+}
+
+.vission {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 20px;
+}
+
+.vission-content {
+    width: 48%;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #001f3f, #000000);
+    background-size: 200% 200%;
+    animation: gradientMove 6s infinite forwards, pulse 3s infinite;
+    box-shadow: 0 4px 15px rgba(0, 223, 255, 0.3);
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 4px 20px rgba(0, 223, 255, 0.4); }
+    50% { transform: scale(1); box-shadow: 0 8px 30px rgba(0, 223, 255, 0.6); }
+    100% { transform: scale(1); box-shadow: 0 4px 20px rgba(0, 223, 255, 0.4); }
+}
+
+.vission img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.vission img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
+
+.vission-heading {
+    color: #00d4ff;
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 212, 255, 0.4);
+    animation: textGlow 2s ease-in-out  forwards;
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 2px 2px 4px rgba(0, 212, 255, 0.4); }
+    100% { text-shadow: 4px 4px 8px rgba(0, 212, 255, 0.8); }
+}
+
+.vission-p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* teeam */
+.team{
+    padding-top: 10px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 16vh;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    animation: fadeInSlide 1.5s ease-in-out forwards;
+}
+.team h4{
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: #188cf9;
+}
+.team h2{
+    margin-top: 2px;
+    font-size: 2rem;
+    text-align: center;   
+}
+.unique-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px;
+    margin: 20px 50px 50px 50px ;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 223, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0, 31, 63, 0.9), rgba(0, 0, 0, 0.8));
+    gap: 20px;
+    animation: containerPop 1.5s ease-in-out;
+}
+
+@keyframes containerPop {
+    0% { transform: scale(0.95); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Left Side Content */
+.left-content {
+    width: 48%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(0, 31, 63, 0.9), rgba(0, 0, 0, 0.7));
+    color: #00d4ff;
+    box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.5);
+    animation: fadeInLeft 2s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    0% { transform: translateX(-40px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.left-content h2 {
+    text-align: center;
+    font-size: 2.8rem !important;
+    text-shadow: 2px 2px 5px rgba(0, 212, 255, 0.7);
+    animation: glowText 1.5s infinite alternate;
+}
+
+@keyframes glowText {
+    0% { text-shadow: 2px 2px 5px rgba(0, 212, 255, 0.5); }
+    100% { text-shadow: 3px 3px 8px rgba(0, 212, 255, 0.9); }
+}
+
+.left-content p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.left-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
+    transition: transform 0.4s ease, filter 0.3s ease;
+    animation: imageFloat 4s infinite alternate;
+}
+
+@keyframes imageFloat {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.left-content img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Right Side Content */
+.right-content {
+    width: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    grid:20px;
+    background: linear-gradient(to left, rgba(0, 31, 63, 0.9), rgba(0, 0, 0, 0.8));
+    color: #ffffff;
+    animation: fadeInRight 2s ease-in-out forwards;
+}
+
+@keyframes fadeInRight {
+    0% { transform: translateX(40px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.right-content h2 {
+    text-decoration: underline;
+    font-size: 1.5rem !important; /* Use rem for better scalability */
+    color: #7df9ff;
+}
+
+
+.right-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
 }
