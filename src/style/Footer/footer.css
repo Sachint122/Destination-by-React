@@ -1,8 +1,116 @@
+/* query section */
+/* Overall section styling */
+.querry-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 20px;
+  /* background: linear-gradient(to bottom, #001f3f, #000000); */
+  background: linear-gradient(90deg, #001f3f, #000000, #001f3f);
+  background-size: 300% 300%;
+  animation: waveFlow 10s infinite;
+}
+
+/* Left content styling */
+.left-content {
+  width: 45%;
+  padding: 20px;
+  background: linear-gradient(135deg, #627175, #192b41);
+  border-radius: 1em;
+  color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+#querry .left-content.ani-left {
+  animation: fadeInLeft 2s ease-in-out forwards;
+
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-content h2 {
+  font-size: 3rem;
+  color: #00d4ff;
+}
+
+.left-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Right content styling */
+.right-content {
+  width: 45%;
+  padding: 20px;
+  background: linear-gradient(135deg, #192b41, #627175);
+  border-radius: 1em;
+  color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+#querry .right-content.ani-right {
+  animation: fadeInRight 2s ease-in-out forwards;
+  
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.right-content h2 {
+  font-size: 3rem;
+  color: #00d4ff;
+}
+
+.right-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Right anchor button styling */
+.right-anchor {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #188cf9;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.right-anchor:hover {
+  background-color: #00d4ff;
+}
+
 footer {
   width: 100%;
-  height:  45vh;
+  height: 45vh;
   position: absolute;
-  /* bottom: 0; */
   color: #fff;
   padding: 16px 0 30px;
   font-size: 20px;
@@ -10,11 +118,21 @@ footer {
   background: linear-gradient(90deg, #001f3f, #000000, #001f3f);
   background-size: 300% 300%;
   animation: waveFlow 10s infinite;
+
 }
+
 @keyframes waveFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .row {
@@ -58,10 +176,12 @@ footer {
   position: relative;
 
 }
-.col h4{
+
+.col h4 {
   padding: 5px;
   color: #00d4ff;
 }
+
 .email-id {
   width: fit-content;
   border-bottom: 1px solid#ccc;
@@ -75,9 +195,11 @@ footer {
   list-style: none;
   margin-bottom: 12px;
 }
-.col ul li a{
+
+.col ul li a {
   color: whitesmoke
 }
+
 .s-link {
   text-decoration: none;
   color: #ff0707;
@@ -109,21 +231,25 @@ footer {
   outline: none;
   cursor: pointer;
 }
-.footer-form button:hover{
+
+.footer-form button:hover {
   filter: invert(1);
   transition: 0.4s ease-in-out;
 }
+
 .footer-form .fa-solid {
   color: rgb(255, 140, 0);
   font-size: 16px;
 }
-.socail{
+
+.socail {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .socail a {
   width: 60px;
   padding: 0px;
@@ -133,10 +259,12 @@ footer {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .socail a:hover {
   filter: invert(1);
   transition: 0.4s ease-in-out;
 }
+
 .copyright {
   padding-top: 10px;
   font-size: 0.8em;
@@ -169,28 +297,29 @@ footer {
 
 @keyframes moving {
   0% {
-      left: 0;
+    left: 0;
   }
 
   100% {
-      left: 100%;
+    left: 100%;
   }
 }
 
 @media (max-width:700px) {
   footer {
-      bottom: unset;
+    bottom: unset;
   }
 
   .col {
-      flex-basis: 100%;
+    flex-basis: 100%;
 
   }
 
   .col:nth-child(3) {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
+
   .col:nth-child(4) {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
 }

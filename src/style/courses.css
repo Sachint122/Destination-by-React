@@ -1,0 +1,424 @@
+#course {
+  height: 80vh;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #07374d, #001f3f);
+  background-size: 300% 300%;
+  animation: rippleWave 8s infinite;
+}
+
+@keyframes rippleWave {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+#course hr {
+  width: 140%;
+}
+
+#course h2 {
+  color: #00d4ff;
+  padding: 8px;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.course-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 100px;
+  /* Space between columns */
+}
+
+.course-text {
+  height: 100%;
+  padding: 20px;
+  animation: slideInLeft 1s ease-in-out;
+  /* Slide-in animation for text */
+}
+
+.couses-a {
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.course-text h6 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.course-text p {
+  font-size: 1.5em;
+  color: #fdfdfd;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* .course-text .couses-a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  } */
+
+.course-image {
+  height: 360px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  animation: slideInRight 1s ease-in-out;
+  /* Slide-in animation for image */
+}
+
+.course-image img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px rgb(0, 186, 253);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* offers */
+
+/* #offers {
+  height: 180vh;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000428, #023969);
+  background-size: 300% 300%;
+  animation: rippleWave 5s infinite;
+}
+.offers-text{
+  color: #00d4ff;
+  padding: 20px;
+  margin-left: 80px;
+  text-align: center;
+}
+.offers-text h2{
+  font-size: 1.9rem;
+  padding: 8px;
+}
+.offers-text h3{
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.course-offerings{
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+}
+.offering{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap:20px;
+  overflow: hidden;
+  animation: slideInRight 1s ease-in-out;
+}
+.offering h4{
+
+  color: #00d4ff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.offering p{
+  font-size: 1.4rem;
+  color: #fdfdfd;
+}
+.offering img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+} */
+
+#offers {
+  height: 180vh;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000428, #023969);
+  background-size: 300% 300%;
+  animation: rippleWave 5s infinite;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  /* Adding a shadow to the container */
+}
+
+.offers-text {
+  color: #00d4ff;
+  padding: 20px;
+  margin-left: 80px;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.offers-text h2 {
+  font-size: 1.9rem;
+  padding: 8px;
+}
+
+.offers-text h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.course-offerings {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+  padding: 20px;
+  animation: fadeInUp 2s ease-out;
+}
+
+.offering {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  overflow: hidden;
+  animation: slideInRight 1s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* Shadow for offering card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering:hover {
+  transform: translateY(-10px);
+  /* Hover effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  /* Darker shadow on hover */
+}
+
+.offering h4 {
+  color: #00d4ff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.offering p {
+  font-size: 1.4rem;
+  color: #fdfdfd;
+}
+
+.offering img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.offering img:hover {
+  transform: scale(1.05);
+  /* Image zoom effect */
+}
+
+/* Animations */
+@keyframes rippleWave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* growth */
+
+#growth {
+  /* height: 180vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+.growth-text{
+  width: 40%;
+}
+.growth-text h2{
+  font-size: 2rem;
+  color: #00d4ff;
+  padding: 8px;
+  text-align: center;
+}
+/* Container for the career growth section */
+.career-growth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #1a2a3a;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background: linear-gradient(135deg, #000428, #023969);
+  background-size: 300% 300%;
+  animation: rippleWave 5s infinite;
+}
+
+/* Left side (two images) */
+.career-growth-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.career-growth-left img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right side (heading, paragraph, list, button) */
+.career-growth-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.career-growth-right h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+}
+
+.career-growth-right p {
+  font-size: 1.5rem;
+  /* line-height: 1; */
+}
+
+.career-growth-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.career-growth-right ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.list span{
+  color: #00d4ff;
+  font-weight: bold;
+}

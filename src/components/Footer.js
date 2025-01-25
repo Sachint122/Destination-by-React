@@ -2,13 +2,14 @@ import React from 'react'
 import { useModal } from './hooks/FormOpenClose';
 import Form from './Form';
 import EButton from './ExploreButton';
-import '../style/Footer/footer.css'
 import destinationLogo from '../images/logo/destination-log.png';
 import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { FaFacebook ,FaCircleArrowRight } from "react-icons/fa6";
 import { TiSocialYoutubeCircular, TiSocialLinkedinCircular, TiSocialInstagramCircular } from "react-icons/ti";
 import { ImMail4 } from "react-icons/im";
+import { useScrollAnimation } from './hooks/Animation';
 export default function Footer() {
+    useScrollAnimation();
     const { isModalOpen, openModal } = useModal();
     return (
         <>

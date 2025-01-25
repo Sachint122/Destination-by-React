@@ -4,16 +4,14 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 import { GiLifeSupport } from "react-icons/gi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import address from '../images/DESTINATION-1024x1001.png';
-import { useScrollAnimation } from './hooks/Animation';
 import Card from './Card';
 import ImageCarousel from './ImageCarousel';
 import CountUpSection from './CountUpSection';
 import Brand from './Brand';
 import EButton from './ExploreButton';
 import Button from './ModernButton';
-import Footer from './Footer';
+
 export default function Home() {
-    useScrollAnimation();
     return (
         <>
             <section>
@@ -40,7 +38,7 @@ export default function Home() {
             <hr />
             <div className='brand2'>
                 <Brand />
-                <CountUpSection />
+                <CountUpSection text1={500} text2={27}  text3={1200} text4={4}/>
             </div>
             <hr />
             {/* address */}
@@ -58,7 +56,7 @@ export default function Home() {
                         <li data-animate="address-li"> <FaArrowRightLong />   500+ Company-Owned Manpower: A Strong Team, A Solid Foundation</li>
                     </ul>
                     {/* <button onClick={() => alert('Explore Now!')}>Learn more</button> */}
-                    <EButton text="Explore Now" />
+                    <EButton />
                 </div>
                 <div className="address">
                     <img data-animate="address-zoomin" src={address} alt='' />
@@ -114,7 +112,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

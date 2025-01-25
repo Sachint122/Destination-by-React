@@ -3,7 +3,6 @@ import Head from './Head.js'
 import imagehead from '../images/Destination-Technology-Group.png'
 import image from '../images/WhatsApp-Image-2023-07-10-at-8.54.00-PM-4-1024x768.jpeg'
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import { useScrollAnimation } from './hooks/Animation';
 import icon1 from '../images/icon/online-learning-2.png'
 import icon2 from '../images/icon/recruitment.png'
 import icon3 from '../images/icon/training-1.png'
@@ -11,7 +10,6 @@ import icon5 from '../images/icon/target-4.png'
 import icon4 from '../images/icon/opportunity.png'
 import image2 from '../images/Destination-Technologies-Staff.png'
 export default function About() {
-    useScrollAnimation();
     return (
         <>
             <Head
