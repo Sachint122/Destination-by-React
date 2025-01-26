@@ -10,6 +10,7 @@ import './style/Form.css';
 import './style/why.css';
 import './style/Footer/footer.css'
 import { useScrollAnimation } from './components/hooks/Animation';
+import Full_stack from "./components/Full_stack";
 export default function App() {
   useScrollAnimation();
   return (
@@ -17,7 +18,8 @@ export default function App() {
       <NavBar />
       {/* <Home/> */}
       {/* <About/> */}
-      <Courses />
+      {/* <Courses /> */}
+      <Full_stack/>
       <Footer />
     </>
   );

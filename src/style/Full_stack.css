@@ -1,0 +1,92 @@
+#Full-head{
+    height: 75vh;
+    
+}
+.Full-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+.Full-content h1{
+    font-size: 2rem;
+    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00aaff;
+}
+.Full-content p{
+    margin-bottom: 0px;
+}
+.Full-content h6{
+    font-size: 1.8rem;
+}
+.Full-content a{
+  margin-bottom: 80px;
+}
+/* course details */
+#Course-details {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #001f3f, #007BFF); /* Add gradient background */
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for container */
+    border-radius: 10px; /* Smooth corners */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.course-main {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-sub {
+    padding: 10px;
+    height: 90%;
+    width: 30%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Add shadow to the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation effects */
+}
+
+.course-sub:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.course-sub img {
+    width: 90%;
+    border-radius: 5px; /* Smooth corners for images */
+}
+
+.course-sub h2, h4 {
+    text-align: left;
+    color: #001f3f; /* Navy blue for text */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

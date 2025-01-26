@@ -20,7 +20,7 @@ export default function Head({ image, headers, text1 = "", text2 = "", text3 = "
                         zIndex: -1
                     }}
                 ></div>
-                <h1>{headers}</h1>
+                <h1 className="head-main-h">{headers}</h1>
                 <p>
                     {text3
                         ? <>{text1} <IoIosArrowRoundForward /> {text2} <IoIosArrowRoundForward /> {text3}</>
