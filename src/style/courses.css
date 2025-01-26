@@ -343,15 +343,18 @@
   gap: 20px;
   padding: 40px;
 }
-.growth-text{
+
+.growth-text {
   width: 40%;
 }
-.growth-text h2{
+
+.growth-text h2 {
   font-size: 2rem;
   color: #00d4ff;
   padding: 8px;
   text-align: center;
 }
+
 /* Container for the career growth section */
 .career-growth {
   display: flex;
@@ -412,13 +415,135 @@
   align-items: center;
   gap: 10px;
 }
-.list{
+
+.list {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
-.list span{
+
+.list span {
   color: #00d4ff;
   font-weight: bold;
+}
+
+/* learning */
+
+/* #learning {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #001f3f, #007BFF);
+  color: #ffffff;
+  overflow: hidden;
+} */
+.learning-container {
+  width: 100%;
+  height: 110vh;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  background: linear-gradient(45deg, rgb(11, 11, 47), rgb(26, 51, 126));
+  background-size: 300% 300%;
+  animation: rippleWave 5s infinite;
+  text-align: center;
+}
+
+.learning-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 20px;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.learning-text h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.learning-card-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:40px;
+  padding: 0;
+}
+
+/* Card Styling */
+.learning-card {
+  width: 30%;
+  height: 110%;
+  border: 2px solid black;
+  background: linear-gradient(135deg, #001f3f, #040b13);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(50px);
+  /* opacity: 0;  */
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+/* Delay Animation for Each Card */
+.learning-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.learning-card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.learning-card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.learning-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: invert(1);
+}
+
+.learning-card h2 {
+  margin: 10px 0;
+  color: #00d5ff;
+}
+
+.learning-card p {
+  font-size: 1.2em;
+  color: #dfe6f7;
+  line-height: 1.5;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

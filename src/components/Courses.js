@@ -4,6 +4,9 @@ import image1 from '../images/Courses.png';
 import image2 from '../images/other/Career.png'
 import full_Stack from '../images/other/Full-stack-course.png'
 import digital from '../images/other/Digital-Marketing-Course.png'
+import logo1 from '../images/logo/01_Home_01-1.png'
+import logo2 from '../images/logo/01_Home_01-2.png'
+import logo3 from '../images/logo/01_Home_01-3.png'
 import Head from './Head'
 import '../style/courses.css';
 import EButton from './ExploreButton';
@@ -127,7 +130,7 @@ export default function Courses() {
                   <IoMdArrowDropright size={40} color='#00d4ff' />
                 </div>
                 <div>
-                  <span> Hands-on Learning:   </span> 
+                  <span> Hands-on Learning:   </span>
                   Gain practical experience through real-world projects, case studies, and interactive exercises. Apply your knowledge to solve real challenges and build a strong foundation for your future career.
                 </div>
               </div>
@@ -145,7 +148,7 @@ export default function Courses() {
                   <IoMdArrowDropright size={40} color='#00d4ff' />
                 </div>
                 <div>
-                  <span> Career Assistance: </span> 
+                  <span> Career Assistance: </span>
                   Access our comprehensive career support services, including resume building, interview preparation, and job placement assistance. We are here to help you showcase your skills and land your dream job.
                 </div>
               </div>
@@ -155,7 +158,32 @@ export default function Courses() {
             </a>
           </div>
         </div>
-
+      </section>
+      <hr />
+      {/* learning */}
+      <section id='learning'>
+        <div class="learning-container">
+          <div className='learning-text'>
+            <h1>Training for Every Need: Discover Our Flexible Learning Options</h1>
+          </div>
+          <div className='learning-card-main'>
+            <div class="learning-card">
+            <img src={logo1} alt="Logo 1" />
+              <h2>Online Training: Accessible Learning for New Students and Professionals</h2>
+              <p>Our primary goal is to offer IT training to new students and professionals dispersed across a large geographic area. Through our online training programs, you can access high-quality instruction from the convenience of your location. Benefit from the expertise of our instructors, who are experienced software developers themselves.</p>
+            </div>
+            <div class="learning-card">
+            <img src={logo2} alt="Logo 2" />
+              <h2>Classroom Training: Engaging Learning in a Collaborative Environment</h2>
+              <p>At Destination, we offer classroom training facilitated by IT instructors with training experience. Join our classroom sessions to benefit from face-to-face interactions, hands-on exercises, and real-time feedback. Learn alongside fellow students in a collaborative environment, fostering a comprehensive learning experience.</p>
+            </div>
+            <div class="learning-card">
+              <img src={logo3} alt="Logo 3" />
+              <h2>Corporate Training: Customized Solutions & Tailored Course for Business Success</h2>
+              <p>Destination has developed substantial expertise in building client-specific and specialized training programs. Our corporate training offerings are tailored to address the unique needs of businesses. We work closely with our corporate clients to develop customized training programs that align with their objectives, ensuring maximum impact and skill development.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )
