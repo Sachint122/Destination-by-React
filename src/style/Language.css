@@ -1,0 +1,55 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  
+  .sliderl {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 calc(100% / 4); /* Each slide takes 1/4th of the container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .slide img {
+    width: 250px;
+    height: auto;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    /* color: white; */
+    border: none;
+    /* border-radius: 50%; */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .nav-button.left {
+    left: -1px;
+  }
+  
+  .nav-button.right {
+    right: -1px;
+  }

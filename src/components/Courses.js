@@ -7,8 +7,8 @@ import digital from '../images/other/Digital-Marketing-Course.png'
 import logo1 from '../images/logo/01_Home_01-1.png'
 import logo2 from '../images/logo/01_Home_01-2.png'
 import logo3 from '../images/logo/01_Home_01-3.png'
-import Head from './Head'
 import '../style/courses.css';
+import Head from './Head'
 import EButton from './ExploreButton';
 import Button from './ModernButton'
 import CountUpSection from './CountUpSection';

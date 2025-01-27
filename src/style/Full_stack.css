@@ -1,8 +1,9 @@
-#Full-head{
+#Full-head {
     height: 75vh;
-    
+
 }
-.Full-content{
+
+.Full-content {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -11,36 +12,55 @@
     gap: 20px;
     text-align: center;
 }
-.Full-content h1{
+
+.Full-content h1 {
     font-size: 2rem;
     text-shadow: 0 0 5px #00d4ff, 0 0 10px #00aaff;
 }
-.Full-content p{
+
+.Full-content p {
     margin-bottom: 0px;
 }
-.Full-content h6{
+
+.Full-content h6 {
     font-size: 1.8rem;
 }
-.Full-content a{
-  margin-bottom: 80px;
+
+.Full-content a {
+    margin-bottom: 80px;
 }
+
 /* course details */
 #Course-details {
-    height: 40vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #001f3f, #007BFF); /* Add gradient background */
+    gap: 20px;
+    background: linear-gradient(45deg, #00366b, #000808);
+    background-size: 200% 200%;
+    animation: gradientMove 4s infinite alternate;
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for container */
-    border-radius: 10px; /* Smooth corners */
-    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Shadow for container */
+    border-radius: 10px;
+    /* Smooth corners */
 }
 
+/* @keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+} */
+
 .course-main {
-    height: 80%;
+    height: 180px;
     width: 80%;
     display: flex;
     gap: 20px;
@@ -58,29 +78,238 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background: #ffffffad;
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Add shadow to the card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation effects */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    /* Add shadow to the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth animation effects */
 }
 
 .course-sub:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+    transform: translateY(-10px);
+    /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    /* Stronger shadow on hover */
 }
 
 .course-sub img {
     width: 90%;
-    border-radius: 5px; /* Smooth corners for images */
+    border-radius: 5px;
+    /* Smooth corners for images */
 }
 
-.course-sub h2, h4 {
+.course-sub h2,
+.course-sub h4 {
     text-align: left;
-    color: #001f3f; /* Navy blue for text */
+    color: #001f3f;
 }
 
 /* Keyframe Animations */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.Full-course-text h2 {
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00aaff;
+    margin-bottom: 10px;
+}
+
+.Full-course-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.Full-bottom h4 {
+    line-height: 1.2;
+    font-size: 1.2em;
+}
+
+.Full-bottom {
+    width: 80%;
+}
+
+.Full-bottom span {
+    color: rgb(42, 42, 255);
+}
+
+.language {
+    text-align: center;
+    padding: 0px;
+    /* background-color: red; */
+    margin-top: -60px;
+    /* margin-bottom: 0px; */
+}
+
+.language h2 {
+    font-size: 1.8em;
+}
+
+/* About-Program */
+#About-Program {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #001f3f);
+    gap: 30px;
+}
+
+#About-Program .About-main {
+    width: 70%;
+    padding: 30px;
+    color: rgb(0, 153, 255);
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.About-content {
+    background: linear-gradient(90deg, #001f3f 0%, #001f3f 50%);
+    /* background-color: red; */
+    height: 400px !important;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-content: center;
+    /* overflow: hidden; */
+}
+
+.About-content .About-right h2 {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    color: #06d6ff;
+    width: 100%;
+}
+
+.About-content .About-right h4 {
+    line-height: 1.4em;
+    width: 90%;
+}
+
+.About-left {
+    /* background-color: red; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-right {
+    /* background-color: green; */
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-left img {
+    height: 80%;
+    animation: imageFloat 4s infinite alternate;
+}
+
+/* Programm-overview */
+#Programm-overview {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #001f3f);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Text Section */
+.programm-text {
+    margin-top: 20px;
+    margin-left: 39px;
+    width: 70%;
+    color: rgb(0, 153, 255);
+    font-size: 1.7rem;
+    text-align: left;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+/* Container Styling */
+.program-container {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+    padding: 30px;
+    background-color: #0d2a44;
+    border: 2px solid #0077b6;
+    border-radius: 12px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 1s ease-in-out;
+}
+
+/* Left Section */
+.program-left {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.program-left:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* List in Left Section */
+.program-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.program-list span {
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+/* Right Section */
+.program-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+/* Image Animation in Right Section */
+.program-right img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.8s ease-in-out;
+}
+
+.program-right img:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes for Animations */
+/* @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -89,4 +318,26 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
+
+/* @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+/* @keyframes scaleUp {
+    from {
+        opacity: 0.8;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+} */

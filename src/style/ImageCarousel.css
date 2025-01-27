@@ -21,7 +21,7 @@
     margin-top: 20px;
 }
 
-.banner {
+#ImageCarousel .banner {
     width: 720px;
     height: 455px;
     text-align: center;
