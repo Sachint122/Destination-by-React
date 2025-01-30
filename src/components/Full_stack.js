@@ -1,5 +1,5 @@
-import React from 'react'
-import '../style/Full_stack.css';
+import { React, useState } from 'react'
+import '../style/Full_stack/Full_stack.css';
 import image from '../images/Destination-Technology-Group.png'
 import logo1 from '../images/logo/download.png'
 import logo2 from '../images/logo/Deadline 1.png';
@@ -10,12 +10,46 @@ import logo6 from '../images/icon/Web Development (1).png'
 import logo7 from '../images/icon/Wireframe.png'
 import image2 from '../images/Courses.png';
 import image3 from '../images/Destination-Technologies-Staff.png'
+import image4 from '../images/Destination-Technologies-Unlock.png'
 import EButton from './ExploreButton';
+import Button from './ModernButton';
 import Brand from './Brand';
 import CountUpSection from './CountUpSection';
 import Language from './Language';
 import List from './List';
+import Full_Stack_Card from './Full_Stack_Card';
+import Accordion from './Accordian';
+import ImageCarousel from './ImageCarousel';
 export default function Full_stack() {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggleAccordion = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+    const sections = [
+        { title: "Why We Provide BestIT Services?", content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;" },
+        { title: "Describe Our Company History?", content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;" },
+        { title: "Do You  Provide Any Job", content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;" },
+        { title: "Payment Method?", content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;" },
+    ];
+    const questions=[
+        {
+        title: "What Is The Duration Of The Full Stack Web Development Course?",
+        content: "The duration of the course varies based on the specific program you choose. Generally, our Full Stack Web Development courses range from 3 to 6 months, depending on the depth and breadth of the curriculum."},
+        {
+        title: "Are There Any Prerequisites For Enrolling In The Full Stack Web Development Courses?",
+        content: "No, there are no specific prerequisites for enrolling in our Full Stack Web Development program. However, a basic understanding of programming concepts and familiarity with HTML, CSS, and JavaScript can be beneficial."},
+        {
+        title: "What Types Of Full Stack Web Development Courses Do You Offer?",
+        content: "At Destination Technologies, we offer specialized courses in Java Full Stack, Python Full Stack, and Java + Python Full Stack. Each course is designed to provide comprehensive training in the respective technologies."},
+        {
+        title: "How  Can I Enroll In A Full Stack Web Development Course?",
+        content: "To enroll in our Full Stack Web Development course, simply visit our website and navigate to the course page. Click on the Enroll Now button and follow the instructions to complete the enrollment process."},
+        {
+        title: "How Can I Contact Destination Technologies For More Information?", 
+        content: "You can reach out to us through the following contact details:Location: BTM Layout, Bengaluru, Karnataka, Hyderabad, Telangana, Vijayawada, Andhra Pradesh Phone: 9888748888"},
+    ]
     return (
         <>
             <section id='Full-head'>
@@ -87,15 +121,15 @@ export default function Full_stack() {
                     <h2>Choose Your Path in Full Stack Web Development: Explore Our Specialized Courses</h2>
                     <h4>Tailor Your Learning Journey with Specialized Full Stack Web Development Courses</h4>
                 </div>
+                <Full_Stack_Card />
                 <div className='Full-bottom'>
                     <h4> Choose the specialization that aligns with your goals and interests, and embark on a learning journey tailored to your needs. Explore our specialized Full Stack  Development courses and take the next step towards becoming a proficient
                         <span> Full Stack Developer.</span></h4>
                     <a> <EButton /></a>
                 </div>
-            </section> 
-             <hr />
+            </section>
+            <hr />
             <div className='brand2'>
-
                 <Brand />
                 <CountUpSection text1={1184} text2={10} text3={853} text4={5} />
                 <div className='language'>
@@ -143,8 +177,6 @@ export default function Full_stack() {
                 </div>
             </section>
             <hr />
-
-
             <section id="Programm-overview">
                 <div className='programm-text'>
                     <h2>Program Overview</h2>
@@ -155,7 +187,7 @@ export default function Full_stack() {
                             <List className="program-list" head="Comprehensive Curriculum" text=" Gain a deep understanding of front-end and back-end development, mastering HTML, CSS, JavaScript, React, Node.js, and more." />
                             <List className="program-list" head="Placement Support" text="Benefit from our dedicated placement services, leveraging industry connections and personalized career guidance." />
                             <List className="program-list" head="
-Expert Instructors" text="Learn from experienced professionals who bring real-world insights and guide you throughout your learning journey." />
+                               Expert Instructors" text="Learn from experienced professionals who bring real-world insights and guide you throughout your learning journey." />
                             <List className="program-list" head="Practical Hands-on Learning" text=" Acquire practical experience through hands-on projects, building real-world web applications using cutting-edge technologies." />
                             <List className="program-list" head="Industry-Relevant Skills" text="Develop skills aligned with industry demands, including proficiency in modern front-end and back-end technologies." />
                             <List className="program-list" head="Responsive Web Design" text="Learn to create responsive and mobile-friendly websites, ensuring optimal user experiences across devices." />
@@ -176,7 +208,95 @@ Expert Instructors" text="Learn from experienced professionals who bring real-wo
                     </div>
                 </div>
             </section>
+            <hr />
+            <section id="Syllabus">
+                <div className='Syllabus-main'>
+                    <div className='Syllabus-sub-h'>
+                        <h2>Download Full Stack Web Development Syllabus Unveil Your Learning Journey</h2>
+                        <p>Get a comprehensive overview of our Full Stack Web Development program by downloading the detailed syllabus.</p>
+                    </div>
+                    <div className='Syllabus-sub'>
+                        <a href='#'><Button text="Download The Syllabus" /></a>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <section id="Syllabus-de">
+                <div className='Syllabus-de-main'>
+                    <div>
+                        <h2>Syllabus</h2>
+                        <p>Get a comprehensive overview of our Full Stack Web Development program by downloading the detailed syllabus.</p>
+                    </div>
+                    <div className="Syllabus-de-sub">
+                        {sections.map((section, index) => (
+                            <Accordion
+                                key={index}
+                                title={section.title}
+                                content={section.content}
+                                isOpen={openIndex === index}
+                                onClick={() => toggleAccordion(index)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <section id="ImageCarousel">
+                <hr />
+                <h2>Destination Techs: Empowering Success through Upskilling</h2>
+                <hr />
+                <h1>Student Placements</h1>
+                <ImageCarousel />
+            </section >
+            <hr />
+            <section id="Full-Benefits">
+                <div className="Full-Benefits-left">
+                    <div>
+                        <h1>Unlock the Benefits of Learning with Destination Technologies</h1>
+                    </div>
+                    <div className="Full-Benefits-left-list">
+                        <ul>
+                            <List className="Benefits-list" head="Strong Hand-Holding" 
+                            text=" Experience dedicated support and guidance throughout your learning journey. Our team is committed to providing you with the assistance you need to succeed in the program." />
 
+                            <List className="Benefits-list" head="Learning Support" 
+                            text="Access comprehensive learning resources, including recorded lectures, live sessions, quizzes, assignments, and interactive learning materials. Stay engaged and make the most of your learning experience." />
+
+                            <List className="Benefits-list" head="Career Assistance" 
+                            text="Benefit from our career assistance services, which include resume building, interview preparation, and job placement support. We strive to equip you with the skills and resources needed to excel in your career as a Full Stack Web Developer." />
+
+                            <List className="Benefits-list" head="Job Opportunities"
+                             text="Destination Technologies opens doors to a wide range of job opportunities in the field of Full Stack Web Development. Our program equips you with the skills and knowledge sought after by employers, empowering you to secure rewarding positions in the industry." />
+
+                            <List className="Benefits-list" head="Networking"
+                             text="Connect with a diverse community of learners, instructors, industry professionals, and alumni. Take advantage of networking opportunities, collaborate on projects, and build valuable connections that can accelerate your career growth in the field of Full Stack Web Development." />
+                        </ul>
+                    </div>
+                </div>
+                <div className="Full-Benefits-right">
+                    <img src={image4} alt="Image 1" />
+                    <a> <EButton /></a>
+                </div>
+            </section>
+            <hr />
+            <section id="Question">
+                <div className='Question-main'>
+                    <div>
+                        <h2>Do you have any questions about our Full Stack Web Development program?</h2>
+                    </div>
+                    <div className="Question-sub">
+                    {questions.map((section, index) => (
+                            <Accordion
+                                key={index}
+                                title={section.title}
+                                content={section.content}
+                                isOpen={openIndex === index}
+                                onClick={() => toggleAccordion(index)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

@@ -10,8 +10,6 @@ body {
 .brand2 {
     padding-top: 50px;
     background: linear-gradient(to bottom, #000000, #001f3f);
-    /* width: 100wh;
-    height: 700px; */
 }
 
 .hero {
@@ -79,15 +77,15 @@ body {
 
 @keyframes slider {
     0% {
-        background-image: url("../images/hero (1).svg");
+        background-image: url("./hero\ \(1\).svg");
     }
 
     50% {
-        background-image: url("../images/hero (2).svg");
+        background-image: url("./hero\ \(2\).svg");
     }
 
     100% {
-        background-image: url("../images/hero (3).svg");
+        background-image: url("./hero\ \(3\).svg");
     }
 }
 

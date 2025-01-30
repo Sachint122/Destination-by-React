@@ -1,5 +1,9 @@
 /* query section */
 /* Overall section styling */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 .querry-section {
   display: flex;
   justify-content: space-between;

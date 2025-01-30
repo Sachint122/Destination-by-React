@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/card.css';
+import '../style/Home/card.css';
 import card1 from '../images/card/card (1).svg';
 import card2 from '../images/card/card (2).svg';
 import card3 from '../images/card/card (3).svg';

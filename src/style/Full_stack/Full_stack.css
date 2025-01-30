@@ -32,7 +32,9 @@
 
 /* course details */
 #Course-details {
-    height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* height: 270vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,16 +50,6 @@
     border-radius: 10px;
     /* Smooth corners */
 }
-
-/* @keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-} */
 
 .course-main {
     height: 180px;
@@ -106,7 +98,7 @@
 }
 
 /* Keyframe Animations */
-/* @keyframes fadeIn {
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -116,7 +108,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
 
 .Full-course-text h2 {
     font-size: 1.5rem;
@@ -162,6 +154,7 @@
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient(135deg, #000000, #001f3f);
+    animation: gradientMove 4s infinite alternate;
     gap: 30px;
 }
 
@@ -309,7 +302,7 @@
 }
 
 /* Keyframes for Animations */
-/* @keyframes fadeIn {
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -318,9 +311,9 @@
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
 
-/* @keyframes slideInLeft {
+@keyframes slideInLeft {
     from {
         opacity: 0;
         transform: translateX(-30px);
@@ -329,9 +322,9 @@
         opacity: 1;
         transform: translateX(0);
     }
-} */
+}
 
-/* @keyframes scaleUp {
+@keyframes scaleUp {
     from {
         opacity: 0.8;
         transform: scale(0.95);
@@ -340,4 +333,224 @@
         opacity: 1;
         transform: scale(1);
     }
-} */
+}
+/* Syllabus */
+#Syllabus{
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #001f3f);
+    animation: fadeIn 1.5s ease-in-out;
+}
+.Syllabus-main{
+    /* background-color: red; */
+    /* margin-top: 20px; */
+    /* margin-left: 39px; */
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+.Syllabus-sub-h{
+    /* background-color: green; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+    text-align: left;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+.Syllabus-sub-h h2{
+    color: #00d4ff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.Syllabus-sub p{
+    color: #00d4ff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* Syllabus-de */
+
+#Syllabus-de{
+    height: 510px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(45deg, rgba(0, 0, 128, 0.525), #135c5c6b, rgba(0, 0, 128, 0.418));
+    background-size: 300% 300%;
+    animation: gradientMove 4s infinite alternate;
+    /* animation: fadeIn 1.5s ease-in-out; */
+}
+
+.Syllabus-de-main{
+    /* background-color: red; */
+    /* margin-top: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+.Syllabus-de-main h2{
+    /* background-color: green; */
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: left;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+.Syllabus-de-main p{
+    /* background-color: green; */
+    font-size: 1.5em;
+    /* color: #00d4ff; */
+    text-align: left;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+.Syllabus-de-sub{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+/* full benifit */
+/* Apply gradient background with navy blue and electric blue */
+#Full-Benefits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Left section styling */
+.Full-Benefits-left {
+    max-width: 60%;
+}
+
+.Full-Benefits-left h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.Full-Benefits-left-list {
+    margin-top: 20px;
+}
+
+.Benefits-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    -webkit-backdrop-filter:blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.Benefits-list:hover {
+    transform: scale(1.05);
+}
+
+
+.program-list span {
+    color: #00d4ff;
+    font-weight: bold;
+}
+/* Right section styling */
+.Full-Benefits-right {
+    max-width: 35%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Full-Benefits-right img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.Full-Benefits-right a:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); */
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatImage {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* question */
+
+#Question {
+    background: linear-gradient(to right, #000080, #0a6569);
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.Question-main {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2); /* Slight transparency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Question-main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Question-sub {
+    font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: slideInLeft 1.2s ease-in-out;
+    margin-top: 20px;
+}
