@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../style/Full_stack/card.css';
 
-const FCard = ({ image, title, description,list }) => {
+const DCard = ({ image, title, description,list }) => {
     return (
         <motion.div
             className="custom-card"
@@ -11,7 +11,7 @@ const FCard = ({ image, title, description,list }) => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0,0,0,0.2)" }}
         >
-            <img src={image} alt={title} className="custom-card-image" />
+            <img src={image} alt={title} className="Digital-card-image" />
             <h3 className="custom-card-title">{title}</h3>
             {description && <p className="custom-card-description">{description}</p>}
             {list && <ul>
@@ -23,4 +23,4 @@ const FCard = ({ image, title, description,list }) => {
     );
 };
 
-export default FCard;
+export default DCard;
