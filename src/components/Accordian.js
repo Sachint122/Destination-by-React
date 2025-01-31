@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import "../style/Accordion.css"; // Importing custom CSS
-
 const Accordion = ({ title, content, isOpen, onClick }) => {
     return (
       <div className="custom-collapse">

@@ -213,7 +213,7 @@ export default function Full_stack() {
                 <div className='Syllabus-main'>
                     <div className='Syllabus-sub-h'>
                         <h2>Download Full Stack Web Development Syllabus Unveil Your Learning Journey</h2>
-                        <p>Get a comprehensive overview of our Full Stack Web Development program by downloading the detailed syllabus.</p>
+                        <p style={{fontSize:'1.5em'}}>Get a comprehensive overview of our Full Stack Web Development program by downloading the detailed syllabus.</p>
                     </div>
                     <div className='Syllabus-sub'>
                         <a href='#'><Button text="Download The Syllabus" /></a>

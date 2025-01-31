@@ -4,8 +4,10 @@ import card1 from '../images/dCard/Coding 5.png'
 import card2 from '../images/dCard/Search Engine.png'
 import card3 from '../images/dCard/Google Ad.png'
 import card4 from '../images/dCard/Social Media Carousel.png'
-import card5 from '../images/card/Unified-2.png'
-import card6 from '../images/card/Unified-3.png'
+import card5 from '../images/dCard/Email Campaign.png'
+import card6 from '../images/dCard/Content Creation.png'
+import card7 from '../images/dCard/Advertising 3.png'
+import card8 from '../images/dCard/Artificial Intelligence 3.png'
 import DCard from './DCard'
 function Digital_Card() {
 
@@ -40,20 +42,32 @@ function Digital_Card() {
     {
       image:
         card5,
-      title: "Unified Course 2",
-      list: ["Java","HTML","CSS","Javascript","Boostrap","Manual Testing","SQL"],
+      title: "Email Marketing",
+      description:"Utilize email campaigns to nurture leads, build customer relationships, and drive conversions through effective email marketing strategies.",
     },
     {
       image:
         card6,
-      title: "Integrated Course",
-      list: ["Java","HTML","CSS","Javascript","Boostrap","Manual Testing","SQL Automation Testing (Selenium)"],
+      title: "Content Marketing",
+      description:"Create valuable and engaging content that resonates with your target audience, leveraging storytelling, distribution strategies, and content promotion.",
+    },
+    {
+      image:
+        card7,
+      title: "Mobile Marketing",
+      description:"Discover the opportunities and challenges of mobile marketing, including mobile app marketing, mobile advertising, and responsive design.",
+    },
+    {
+      image:
+        card8,
+      title: "Marketing Automation",
+      description:"Automate marketing processes and workflows using tools like CRM, email marketing automation, and customer segmentation.",
     },
   ];
   return (
     <div className="custom-container">
       <div className="Digital-custom-grid">
-        {cards1.slice(0, 6).map((card, index) => (
+        {cards1.slice(0, 8).map((card, index) => (
           <DCard
             key={index}
             image={card.image}

@@ -41,7 +41,7 @@
     justify-content: center;
     text-align: center;
     gap: 20px;
-    background: linear-gradient(45deg, #00366b, #000808);
+    background: linear-gradient(135deg, #000428, #072846);
     background-size: 200% 200%;
     animation: gradientMove 4s infinite alternate;
     color: #ffffff;
