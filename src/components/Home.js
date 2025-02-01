@@ -10,8 +10,9 @@ import CountUpSection from './hooks/CountUpSection';
 import Brand from './hooks/Brand';
 import EButton from './hooks/ExploreButton';
 import Button from './hooks/ModernButton';
-
+import { useScrollAnimation } from './hooks/Animation';
 export default function Home() {
+    useScrollAnimation();
     return (
         <>
             <section>

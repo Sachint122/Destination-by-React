@@ -21,7 +21,8 @@ export default function Courses() {
       <Head
         headers="Destination Technlogies Courses"
         text1="Home"
-        text2="Our Courses"
+        text2="List Of Courses"
+        text3='Description Of Course'
         image={imagehead}
       />
       <hr />

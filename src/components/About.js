@@ -9,7 +9,9 @@ import icon3 from '../images/icon/training-1.png'
 import icon5 from '../images/icon/target-4.png'
 import icon4 from '../images/icon/opportunity.png'
 import image2 from '../images/Destination-Technologies-Staff.png'
+import { useScrollAnimation } from './hooks/Animation';
 export default function About() {
+    useScrollAnimation();
     return (
         <>
             <Head

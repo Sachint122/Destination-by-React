@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../style/nav.css'
 import { useEffect } from 'react';
 import destinationLogo from '../images/logo/destination-log.png';
@@ -28,25 +29,26 @@ export default function NavBar() {
                 <img src={destinationLogo} alt="Logo"/>
             </div>
             <ul className="nav-links">
-                <li className="nav-item"><a href="/">Home</a></li>
-                <li className="nav-item"><a href="/">About</a></li>
+                <li className="nav-item"><Link to="/">Home</Link></li>
+                <li className="nav-item"><Link to="/about">About</Link></li>
                 <li className="dropdown">
-                    <a >Our Courses</a>
+                    <Link >List Of Courses</Link>
                     <div className="dropdown-content">
-                        <a href="/">Two Seater</a>
-                        <a href="/">Four Seater</a>
+                        <Link to="/courses">Description Of Course</Link>
+                        <Link to="/full-stack">Full Stack Development Course</Link>
+                        <Link to="/digital">Digital Marketing Course</Link>
                     </div>
                 </li>
                 <li className="dropdown">
-                    <a >Service</a>
+                    <Link >Service</Link>
                     <div className="dropdown-content">
-                        <a href="/">Two Seater</a>
-                        <a href="/">Four Seater</a>
-                        <a href="/">Seven Seater</a>
+                        <Link to="/">Two Seater</Link>
+                        <Link to="/">Four Seater</Link>
+                        <Link to="/">Seven Seater</Link>
                     </div>
                 </li>
-                <li className="nav-item"><a href="/">Placement</a></li>
-                <li className="nav-item"><a href="/">Contact Us</a></li>
+                <li className="nav-item"><Link to="/">Placement</Link></li>
+                <li className="nav-item"><Link to="/">Contact Us</Link></li>
             </ul>
             <Button text="Login LMS"/>
         </nav>

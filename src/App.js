@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -11,16 +12,20 @@ import './style/Home/address.css';
 import './style/Home/why.css';
 import './style/Footer/footer.css'
 import { useScrollAnimation } from './components/hooks/Animation';
+import ScrollToTop from './components/hooks/ScrollToTop'
 export default function App() {
   useScrollAnimation();
   return (
     <>
       <NavBar />
-      {/* <Home/> */}
-      {/* <About/> */}
-      {/* <Courses /> */}
-      {/* <Full_stack/> */}
-      <Digital/>
+      <ScrollToTop/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/full-stack" element={<Full_stack />} />
+        <Route path="/digital" element={<Digital />} />
+      </Routes>
       <Footer />
     </>
   );
