@@ -28,7 +28,7 @@
   opacity: 0;
 }
 
-#querry .left-content.ani-left {
+.left-content.ani-left {
   animation: fadeInLeft 2s ease-in-out forwards;
 
 }
@@ -67,7 +67,7 @@
   opacity: 0;
 }
 
-#querry .right-content.ani-right {
+.right-content.ani-right {
   animation: fadeInRight 2s ease-in-out forwards;
   
 }

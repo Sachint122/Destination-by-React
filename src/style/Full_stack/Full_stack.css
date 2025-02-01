@@ -73,16 +73,12 @@
     background: #ffffffad;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    /* Add shadow to the card */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth animation effects */
 }
 
 .course-sub:hover {
     transform: translateY(-10px);
-    /* Lift effect on hover */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-    /* Stronger shadow on hover */
 }
 
 .course-sub img {
@@ -95,19 +91,6 @@
 .course-sub h4 {
     text-align: left;
     color: #001f3f;
-}
-
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .Full-course-text h2 {
@@ -147,6 +130,55 @@
 }
 
 /* About-Program */
+
+@keyframes imageFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 5px #06d6ff, 0 0 10px #06d6ff;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #06d6ff, 0 0 20px #06d6ff;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #06d6ff, 0 0 10px #06d6ff;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 #About-Program {
     padding-bottom: 30px;
     display: flex;
@@ -154,11 +186,12 @@
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient(135deg, #000000, #001f3f);
-    animation: gradientMove 4s infinite alternate;
+    background-size: 200% 200%;
+    animation: gradientMove 4s infinite alternate ease-in-out;
     gap: 30px;
 }
 
-#About-Program .About-main {
+.About-main {
     width: 70%;
     padding: 30px;
     color: rgb(0, 153, 255);
@@ -166,15 +199,21 @@
     text-align: left;
 }
 
+.About-main.abou-m {
+    animation: fadeInScale 1s ease-in-out;
+}
+
 .About-content {
     background: linear-gradient(90deg, #001f3f 0%, #001f3f 50%);
-    /* background-color: red; */
     height: 400px !important;
     width: 70%;
     display: grid;
     grid-template-columns: 30% 70%;
     place-content: center;
-    /* overflow: hidden; */
+}
+
+.About-content.abo-c {
+    animation: fadeInScale 1.2s ease-in-out;
 }
 
 .About-content .About-right h2 {
@@ -182,15 +221,19 @@
     margin-left: 40px;
     color: #06d6ff;
     width: 100%;
+    animation: glowText 1.5s infinite alternate ease-in-out;
 }
 
-.About-content .About-right h4 {
+.About-right h4 {
     line-height: 1.4em;
     width: 90%;
 }
 
+.About-right h4.abo-r {
+    animation: slideUp 1s ease-in-out;
+}
+
 .About-left {
-    /* background-color: red; */
     width: 100%;
     height: 400px;
     display: flex;
@@ -199,7 +242,6 @@
 }
 
 .About-right {
-    /* background-color: green; */
     width: 100%;
     height: 400px;
     flex-direction: column;
@@ -210,7 +252,7 @@
 
 .About-left img {
     height: 80%;
-    animation: imageFloat 4s infinite alternate;
+    animation: imageFloat 3s infinite alternate ease-in-out;
 }
 
 /* Programm-overview */
@@ -307,6 +349,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -318,6 +361,7 @@
         opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -329,13 +373,15 @@
         opacity: 0.8;
         transform: scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
     }
 }
+
 /* Syllabus */
-#Syllabus{
+#Syllabus-f {
     height: 35vh;
     width: 100%;
     display: flex;
@@ -345,45 +391,39 @@
     background: linear-gradient(135deg, #000000, #001f3f);
     animation: fadeIn 1.5s ease-in-out;
 }
-.Syllabus-main{
-    /* background-color: red; */
-    /* margin-top: 20px; */
-    /* margin-left: 39px; */
+
+.Syllabus-main {
     height: 80%;
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:40px;
+    gap: 40px;
     animation: slideInLeft 1.2s ease-in-out;
 }
 
-.Syllabus-sub-h{
-    /* background-color: green; */
+.Syllabus-sub-h {
+    /* background-color: red; */
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     height: 80%;
     width: 70%;
     text-align: left;
     animation: slideInLeft 1.2s ease-in-out;
 }
-.Syllabus-sub-h h2{
-    color: #00d4ff;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.Syllabus-sub p{
-    color: #00d4ff;
-    font-size: 2rem;
-    font-weight: bold;
-}
-/* Syllabus-de */
 
-#Syllabus-de{
+.Syllabus-sub-h h2 {
+    color: #00d4ff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#Syllabus-de {
     height: 510px;
     width: 100%;
     display: flex;
@@ -396,7 +436,7 @@
     /* animation: fadeIn 1.5s ease-in-out; */
 }
 
-.Syllabus-de-main{
+.Syllabus-de-main {
     /* background-color: red; */
     /* margin-top: 20px; */
     margin-left: auto;
@@ -408,31 +448,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap:40px;
+    gap: 40px;
     animation: slideInLeft 1.2s ease-in-out;
 }
 
-.Syllabus-de-main h2{
+.Syllabus-de-main h2 {
     /* background-color: green; */
     margin-bottom: 20px;
     font-size: 2em;
     text-align: left;
     animation: slideInLeft 1.2s ease-in-out;
 }
-.Syllabus-de-main p{
+
+.Syllabus-de-main p {
     /* background-color: green; */
     font-size: 1.5em;
     /* color: #00d4ff; */
     text-align: left;
     animation: slideInLeft 1.2s ease-in-out;
 }
-.Syllabus-de-sub{
+
+.Syllabus-de-sub {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     animation: slideInLeft 1.2s ease-in-out;
 }
+
 /* full benifit */
 /* Apply gradient background with navy blue and electric blue */
 #Full-Benefits {
@@ -475,7 +518,7 @@
     margin: 10px 0;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    -webkit-backdrop-filter:blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
 
@@ -488,6 +531,7 @@
     color: #00d4ff;
     font-weight: bold;
 }
+
 /* Right section styling */
 .Full-Benefits-right {
     max-width: 35%;
@@ -512,15 +556,31 @@
 
 /* Keyframe animations */
 @keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes floatImage {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
+
 /* question */
 
 #Question {
@@ -535,7 +595,8 @@
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2); /* Slight transparency */
+    background: rgba(0, 0, 0, 0.2);
+    /* Slight transparency */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 

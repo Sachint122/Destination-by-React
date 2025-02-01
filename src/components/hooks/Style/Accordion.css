@@ -1,8 +1,6 @@
 /* Collapse content */
-/* Accordion box */
 .custom-collapse {
     width: 100%;
-    /* border: 1px solid #ccc; */
     border-radius: 8px;
     margin-bottom: 10px;
     overflow: hidden;

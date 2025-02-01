@@ -19,7 +19,9 @@ import logo10 from '../images/other/04_Services-3.png';
 import Digital_Card from './hooks/Digital_Card';
 import ImageCarousel from './hooks/ImageCarousel';
 import Digital_S from './hooks/Digital_S';
+import { useScrollAnimation } from './hooks/Animation';
 export default function Digital() {
+    useScrollAnimation();
     const data = [
         {
             title: "What is the mode of training for the digital marketing course at Destination Techs?",
@@ -822,7 +824,7 @@ export default function Digital() {
                 </div>
             </section>
             <hr />
-            <section id="Syllabus">
+            <section id="Syllabus-f">
                 <div className='Syllabus-main'>
                     <div className='Syllabus-sub-h'>
                         <h2>Download Digital Marketing Syllabus: Unveil Your Learning Journey</h2>
@@ -839,12 +841,13 @@ export default function Digital() {
                 <img src={image4} />
             </section>
             <hr />
-            <section id="Syllabus" style={{ height: 'auto' }}>
+            <section id="Digital-Syllabus" style={{ height: 'auto' }}>
                 <h2>Digital Marketing Syllabus</h2>
                 <p>This digital marketing syllabus covers essential concepts, tools, and strategies for marketing businesses effectively. The syllabus is organized into 16 modules, each focusing on a specific aspect of digital marketing. Each module includes a brief introduction, an overview of the topic, and a series of exercises to help you practice and solidify your knowledge.</p>
                 <Digital_S accordionData={accordionData} />
                 <hr />
             </section>
+            <hr />
             <section id="Digital-Benifits">
                 <h2>Unlock the Benefits of Learning with Destination Technologies</h2>
                 <div className='Digital-Benifits-main'>
@@ -875,10 +878,10 @@ export default function Digital() {
             </section>
             <hr />
             <section id="Digital-Question">
-                <img src={logo10} />
-                <div>
-                    <h2>Frequently Asked Questions</h2>
-                    <div>
+                <img src={logo10}  className="di-image" data-animate="di-im"/>
+                <div >
+                    <h2 className="di-heading" data-animate="di-h" >Frequently Asked Questions</h2>
+                    <div data-animate="di-div" className="Di-Question">
                         <Digital_S accordionData={data} />
                     </div>
                 </div>

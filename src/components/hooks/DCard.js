@@ -8,8 +8,8 @@ const DCard = ({ image, title, description,list }) => {
             className="custom-card"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(0,0,0,0.2)" }}
+            transition={{ duration: 0, ease: "easeOut" }}
+            whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px  rgba(3, 45, 251, 0.781)" }}
         >
             <img src={image} alt={title} className="Digital-card-image" />
             <h3 className="custom-card-title">{title}</h3>

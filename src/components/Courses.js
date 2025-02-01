@@ -15,7 +15,9 @@ import CountUpSection from './hooks/CountUpSection';
 import Brand from './hooks/Brand';
 import ImageCarousel from './hooks/ImageCarousel';
 import { IoMdArrowDropright } from "react-icons/io";
+import { useScrollAnimation } from './hooks/Animation';
 export default function Courses() {
+  useScrollAnimation();
   return (
     <>
       <Head
@@ -33,7 +35,7 @@ export default function Courses() {
           <hr />
         </div>
         <div class="course-content">
-          <div class="course-text">
+          <div class="course-text" data-animate="cou-text">
             <h6>Empowering You for Success</h6>
             <p>
               At Destination Technologies, we are committed to providing unparalleled software training and professional development opportunities. Through our vision and mission, we strive to empower individuals and organizations, bridging the gap between talent and opportunity in the dynamic IT industry. Choose us as your trusted partner on your journey to success.
@@ -44,21 +46,21 @@ export default function Courses() {
               </a>
             </div>
           </div>
-          <div class="course-image">
+          <div class="course-image" data-animate="cou-image">
             <img src={image1} alt="Placeholder Image" />
           </div>
         </div>
       </section>
       <hr />
       <section id='offers'>
-        <div className='offers-text'>
+        <div className='offers-text' data-animate="of-te">
           <hr />
           <h2>Our Course Offerings</h2>
           <hr />
           <h3>Shape Your Future: Propel Your Career with our Job-Focused Courses</h3>
         </div>
-        <div class="course-offerings">
-          <div class="offering">
+        <div class="course-offerings" data-animate="cour-off">
+          <div class="offering" data-animate="offering">
             <img src={full_Stack} alt='image' />
             <h4>Full Stack Web Development (Java & Python): Empower Your Journey to a Lucrative Tech Career</h4>
             <p>Embark on a rewarding career in the ever-evolving field of technology with our Full Stack Web Development courses in Java and Python. Gain the essential skills to build dynamic and responsive web applications, utilizing both front-end and back-end technologies. Our industry-seasoned instructors will guide you through hands-on projects, equipping you with the practical expertise and problem-solving abilities that employers seek. Prepare yourself for a thriving career as a sought-after Full Stack Web Developer, where limitless opportunities await.</p>
@@ -68,7 +70,7 @@ export default function Courses() {
               </a>
             </div>
           </div>
-          <div class="offering">
+          <div class="offering" data-animate="offering">
             <img src={digital} alt='image' />
             <h4>Digital Marketing: Unleash Your Potential in the Digital Job Market</h4>
             <p>Enter the thriving realm of digital marketing and open doors to exciting career opportunities with our specialized Digital Marketing course. Explore the diverse landscape of online marketing strategies, including SEO, social media marketing, content creation, and more. Acquire the knowledge and practical skills to devise effective marketing campaigns, drive brand awareness, and achieve measurable results in the digital sphere. Equip yourself with the expertise sought by employers across various industries and carve your path to success in the dynamic world of digital marketing.</p>
@@ -101,11 +103,10 @@ export default function Courses() {
         </div>
         <div class="career-growth">
           <div class="career-growth-left">
-            <img src={image1} alt="Image 1" />
-            <img src={image2} alt="Image 2" />
+            <img src={image1} alt="Image 1"  data-animate="gro-im"/>
+            <img src={image2} alt="Image 2" data-animate="gro-im"/>
           </div>
-
-          <div class="career-growth-right">
+          <div class="career-growth-right" data-animate="gro-ri">
             <h2>Accelerate Your Career Growth: Choose Us for Your Path to Success...</h2>
             <p>At Destination Technologies, we are dedicated to fueling your career growth and success. With our comprehensive upskilling programs, we empower you with the knowledge, skills, and industry-relevant expertise needed to thrive in the competitive job market. Here's why you should choose us as your trusted partner for career upskilling:</p>
 
@@ -164,21 +165,21 @@ export default function Courses() {
       {/* learning */}
       <section id='learning'>
         <div class="learning-container">
-          <div className='learning-text'>
+          <div className='learning-text' data-animate="lea-te">
             <h1>Training for Every Need: Discover Our Flexible Learning Options</h1>
           </div>
           <div className='learning-card-main'>
-            <div class="learning-card">
+            <div class="learning-card" data-animate="lea-ca">
             <img src={logo1} alt="Logo 1" />
               <h2>Online Training: Accessible Learning for New Students and Professionals</h2>
               <p>Our primary goal is to offer IT training to new students and professionals dispersed across a large geographic area. Through our online training programs, you can access high-quality instruction from the convenience of your location. Benefit from the expertise of our instructors, who are experienced software developers themselves.</p>
             </div>
-            <div class="learning-card">
+            <div class="learning-card" data-animate="lea-ca">
             <img src={logo2} alt="Logo 2" />
               <h2>Classroom Training: Engaging Learning in a Collaborative Environment</h2>
               <p>At Destination, we offer classroom training facilitated by IT instructors with training experience. Join our classroom sessions to benefit from face-to-face interactions, hands-on exercises, and real-time feedback. Learn alongside fellow students in a collaborative environment, fostering a comprehensive learning experience.</p>
             </div>
-            <div class="learning-card">
+            <div class="learning-card" data-animate="lea-ca">
               <img src={logo3} alt="Logo 3" />
               <h2>Corporate Training: Customized Solutions & Tailored Course for Business Success</h2>
               <p>Destination has developed substantial expertise in building client-specific and specialized training programs. Our corporate training offerings are tailored to address the unique needs of businesses. We work closely with our corporate clients to develop customized training programs that align with their objectives, ensuring maximum impact and skill development.</p>

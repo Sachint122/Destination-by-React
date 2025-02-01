@@ -33,22 +33,27 @@ export default function Full_stack() {
         { title: "Do You  Provide Any Job", content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;" },
         { title: "Payment Method?", content: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;" },
     ];
-    const questions=[
+    const questions = [
         {
-        title: "What Is The Duration Of The Full Stack Web Development Course?",
-        content: "The duration of the course varies based on the specific program you choose. Generally, our Full Stack Web Development courses range from 3 to 6 months, depending on the depth and breadth of the curriculum."},
+            title: "What Is The Duration Of The Full Stack Web Development Course?",
+            content: "The duration of the course varies based on the specific program you choose. Generally, our Full Stack Web Development courses range from 3 to 6 months, depending on the depth and breadth of the curriculum."
+        },
         {
-        title: "Are There Any Prerequisites For Enrolling In The Full Stack Web Development Courses?",
-        content: "No, there are no specific prerequisites for enrolling in our Full Stack Web Development program. However, a basic understanding of programming concepts and familiarity with HTML, CSS, and JavaScript can be beneficial."},
+            title: "Are There Any Prerequisites For Enrolling In The Full Stack Web Development Courses?",
+            content: "No, there are no specific prerequisites for enrolling in our Full Stack Web Development program. However, a basic understanding of programming concepts and familiarity with HTML, CSS, and JavaScript can be beneficial."
+        },
         {
-        title: "What Types Of Full Stack Web Development Courses Do You Offer?",
-        content: "At Destination Technologies, we offer specialized courses in Java Full Stack, Python Full Stack, and Java + Python Full Stack. Each course is designed to provide comprehensive training in the respective technologies."},
+            title: "What Types Of Full Stack Web Development Courses Do You Offer?",
+            content: "At Destination Technologies, we offer specialized courses in Java Full Stack, Python Full Stack, and Java + Python Full Stack. Each course is designed to provide comprehensive training in the respective technologies."
+        },
         {
-        title: "How  Can I Enroll In A Full Stack Web Development Course?",
-        content: "To enroll in our Full Stack Web Development course, simply visit our website and navigate to the course page. Click on the Enroll Now button and follow the instructions to complete the enrollment process."},
+            title: "How  Can I Enroll In A Full Stack Web Development Course?",
+            content: "To enroll in our Full Stack Web Development course, simply visit our website and navigate to the course page. Click on the Enroll Now button and follow the instructions to complete the enrollment process."
+        },
         {
-        title: "How Can I Contact Destination Technologies For More Information?", 
-        content: "You can reach out to us through the following contact details:Location: BTM Layout, Bengaluru, Karnataka, Hyderabad, Telangana, Vijayawada, Andhra Pradesh Phone: 9888748888"},
+            title: "How Can I Contact Destination Technologies For More Information?",
+            content: "You can reach out to us through the following contact details:Location: BTM Layout, Bengaluru, Karnataka, Hyderabad, Telangana, Vijayawada, Andhra Pradesh Phone: 9888748888"
+        },
     ]
     return (
         <>
@@ -139,37 +144,37 @@ export default function Full_stack() {
             </div>
             <hr />
             <section id='About-Program'>
-                <div className='About-main'>
+                <div className='About-main' data-animate="abou-m">
                     <h2>About Our Full Stack Web Development Program</h2>
                 </div>
-                <h2>About Our Full Stack Web Development Program</h2>
-                <div className='About-content'>
+                <h2>Front-end Development: Crafting Engaging User Interfaces</h2>
+                <div className='About-content' data-animate="abo-c">
                     <div className='About-left'>
                         <img src={logo5} alt="Image" />
                     </div>
-                    <div className='About-right'>
+                    <div className='About-right' data-animate="abo-r">
                         <h2>Shape User Experiences with Modern Front-end Technologies</h2>
                         <h4>Dive into the world of front-end development and learn to create captivating user interfaces. Acquire proficiency in HTML, CSS, and JavaScript, along with popular frameworks such as React and Angular. Develop the skills to design and implement visually stunning and user-friendly websites that leave a lasting impression.</h4>
                     </div>
                 </div>
-                <h2>About Our Full Stack Web Development Program</h2>
-                <div className='About-content'>
+                <h2>Back-end Development: Powering Web Applications with Efficiency</h2>
+                <div className='About-content' data-animate="abo-c">
                     <div className='About-left'>
                         <img src={logo6} alt="Image" />
                     </div>
-                    <div className='About-right'>
-                        <h2>Shape User Experiences with Modern Front-end Technologies</h2>
-                        <h4>Dive into the world of front-end development and learn to create captivating user interfaces. Acquire proficiency in HTML, CSS, and JavaScript, along with popular frameworks such as React and Angular. Develop the skills to design and implement visually stunning and user-friendly websites that leave a lasting impression.</h4>
+                    <div className='About-right' data-animate="abo-r">
+                        <h2>Build Scalable and Secure Back-end Systems</h2>
+                        <h4>Gain expertise in back-end development and learn to build robust server-side applications. Explore server-side programming languages like Node.js and frameworks like Express. Discover database management and integration, RESTful API development, and security best practices. Acquire the skills to create efficient and scalable back-end systems that support dynamic web applications.</h4>
                     </div>
                 </div>
-                <h2>About Our Full Stack Web Development Program</h2>
-                <div className='About-content'>
+                <h2>Full Stack Integration: Seamlessly Connect the Pieces</h2>
+                <div className='About-content' data-animate="abo-c">
                     <div className='About-left'>
                         <img src={logo7} alt="Image" />
                     </div>
-                    <div className='About-right'>
-                        <h2>Shape User Experiences with Modern Front-end Technologies</h2>
-                        <h4>Dive into the world of front-end development and learn to create captivating user interfaces. Acquire proficiency in HTML, CSS, and JavaScript, along with popular frameworks such as React and Angular. Develop the skills to design and implement visually stunning and user-friendly websites that leave a lasting impression.</h4>
+                    <div className='About-right' data-animate="abo-r">
+                        <h2>Master Full Stack Integration for Seamless Web Development</h2>
+                        <h4>Learn to bridge the gap between front-end and back-end development with comprehensive full stack integration skills. Understand the concepts of client-server communication, data flow, and API integration. Get hands-on experience in integrating various technologies to create end-to-end web solutions. Develop the ability to work across the entire web development stack with confidence.</h4>
                     </div>
                 </div>
                 <div>
@@ -209,11 +214,11 @@ export default function Full_stack() {
                 </div>
             </section>
             <hr />
-            <section id="Syllabus">
+            <section id="Syllabus-f">
                 <div className='Syllabus-main'>
                     <div className='Syllabus-sub-h'>
                         <h2>Download Full Stack Web Development Syllabus Unveil Your Learning Journey</h2>
-                        <p style={{fontSize:'1.5em'}}>Get a comprehensive overview of our Full Stack Web Development program by downloading the detailed syllabus.</p>
+                        <p style={{ fontSize: '1.5em',textAlign:'left'}}>Get a comprehensive overview of our Full Stack Web Development program by downloading the detailed syllabus.</p>
                     </div>
                     <div className='Syllabus-sub'>
                         <a href='#'><Button text="Download The Syllabus" /></a>
@@ -256,20 +261,20 @@ export default function Full_stack() {
                     </div>
                     <div className="Full-Benefits-left-list">
                         <ul>
-                            <List className="Benefits-list" head="Strong Hand-Holding" 
-                            text=" Experience dedicated support and guidance throughout your learning journey. Our team is committed to providing you with the assistance you need to succeed in the program." />
+                            <List className="Benefits-list" head="Strong Hand-Holding"
+                                text=" Experience dedicated support and guidance throughout your learning journey. Our team is committed to providing you with the assistance you need to succeed in the program." />
 
-                            <List className="Benefits-list" head="Learning Support" 
-                            text="Access comprehensive learning resources, including recorded lectures, live sessions, quizzes, assignments, and interactive learning materials. Stay engaged and make the most of your learning experience." />
+                            <List className="Benefits-list" head="Learning Support"
+                                text="Access comprehensive learning resources, including recorded lectures, live sessions, quizzes, assignments, and interactive learning materials. Stay engaged and make the most of your learning experience." />
 
-                            <List className="Benefits-list" head="Career Assistance" 
-                            text="Benefit from our career assistance services, which include resume building, interview preparation, and job placement support. We strive to equip you with the skills and resources needed to excel in your career as a Full Stack Web Developer." />
+                            <List className="Benefits-list" head="Career Assistance"
+                                text="Benefit from our career assistance services, which include resume building, interview preparation, and job placement support. We strive to equip you with the skills and resources needed to excel in your career as a Full Stack Web Developer." />
 
                             <List className="Benefits-list" head="Job Opportunities"
-                             text="Destination Technologies opens doors to a wide range of job opportunities in the field of Full Stack Web Development. Our program equips you with the skills and knowledge sought after by employers, empowering you to secure rewarding positions in the industry." />
+                                text="Destination Technologies opens doors to a wide range of job opportunities in the field of Full Stack Web Development. Our program equips you with the skills and knowledge sought after by employers, empowering you to secure rewarding positions in the industry." />
 
                             <List className="Benefits-list" head="Networking"
-                             text="Connect with a diverse community of learners, instructors, industry professionals, and alumni. Take advantage of networking opportunities, collaborate on projects, and build valuable connections that can accelerate your career growth in the field of Full Stack Web Development." />
+                                text="Connect with a diverse community of learners, instructors, industry professionals, and alumni. Take advantage of networking opportunities, collaborate on projects, and build valuable connections that can accelerate your career growth in the field of Full Stack Web Development." />
                         </ul>
                     </div>
                 </div>
@@ -285,7 +290,7 @@ export default function Full_stack() {
                         <h2>Do you have any questions about our Full Stack Web Development program?</h2>
                     </div>
                     <div className="Question-sub">
-                    {questions.map((section, index) => (
+                        {questions.map((section, index) => (
                             <Accordion
                                 key={index}
                                 title={section.title}

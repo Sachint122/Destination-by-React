@@ -47,6 +47,7 @@
     margin-left: 100px;
     padding-bottom: 20px;
 }
+
 /* digital about  */
 #Digital_About {
     background: linear-gradient(135deg, #001f3f, #0a2e51);
@@ -64,7 +65,6 @@
 }
 
 .Digital_About_img {
-    /* background-color: red; */
     flex: 1;
     display: flex;
     gap: 40px;
@@ -77,7 +77,7 @@
     width: 450px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 116, 228, 0.5);
+    box-shadow: 0px 10px 15px rgba(1, 42, 251, 0.88);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -108,20 +108,40 @@
     animation: fadeInUp 1.2s ease-in-out forwards;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideDown {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Responsive Design */
@@ -140,6 +160,7 @@
         text-align: center;
     }
 }
+
 #tools {
     /* background-color: white; */
     /* background: linear-gradient(45deg, rgb(49, 49, 248), royalblue); */
@@ -178,18 +199,37 @@
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideDown {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes zoomIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Responsive Design */
@@ -198,6 +238,34 @@
         width: 90%;
     }
 }
+
+/* Digital-Syllabus */
+#Digital-Syllabus {
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#Digital-Syllabus h2 {
+    font-size: 2rem;
+    color: #2fb8ff;
+    /* Electric blue */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#Digital-Syllabus p {
+    text-align: left;
+    width: 80%;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
 /* Digital-Benifits */
 
 #Digital-Benifits {
@@ -213,9 +281,11 @@
     text-align: center;
     padding: 50px 20px;
 }
+
 #Digital-Benifits h2 {
     font-size: 2rem;
-    color: #2fb8ff; /* Electric blue */
+    color: #2fb8ff;
+    /* Electric blue */
     margin-bottom: 30px;
 }
 
@@ -234,10 +304,11 @@
     border: 2px solid #2fb8ff;
     padding: 20px;
     border-radius: 12px;
-    width: calc(33.33% - 20px); /* 3 columns */
+    width: calc(33.33% - 20px);
+    /* 3 columns */
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     text-align: left;
     transition: transform 0.3s ease-in-out;
 }
@@ -260,9 +331,10 @@
     border: 2px solid #2fb8ff;
     padding: 20px;
     border-radius: 12px;
-    width: calc(33.33% - 20px); /* 2 columns */
+    width: calc(33.33% - 20px);
+    /* 2 columns */
     display: flex;
-    gap:10px;
+    gap: 10px;
     align-items: center;
     text-align: left;
     transition: transform 0.3s ease-in-out;
@@ -273,17 +345,21 @@
 }
 
 /* Image on the right */
-.first-row img, .secound-row img {
+.first-row img,
+.secound-row img {
     width: 80px;
     height: 80px;
-    margin-left: -10px; /* Push image to right */
+    margin-left: -10px;
+    /* Push image to right */
     border-radius: 50%;
 }
 
 /* Content aligned to the left */
-.first-row p, .secound-row p {
+.first-row p,
+.secound-row p {
     font-size: 1.4em;
-    flex: 1; /* Takes remaining space */
+    flex: 1;
+    /* Takes remaining space */
 }
 
 /* Responsive Design */
@@ -295,7 +371,8 @@
 
     .first-row {
         width: 100%;
-        flex-direction: column-reverse; /* Stack image below text */
+        flex-direction: column-reverse;
+        /* Stack image below text */
         text-align: center;
     }
 
@@ -306,69 +383,89 @@
 
     .secound-row {
         width: 100%;
-        flex-direction: column-reverse; /* Stack image below text */
+        flex-direction: column-reverse;
+        /* Stack image below text */
         text-align: center;
     }
 
-    .first-row img, .secound-row img {
+    .first-row img,
+    .secound-row img {
         margin-left: 0;
         margin-bottom: 10px;
     }
 }
+
 /* Digital-Question */
-#Digital-Question{
-    /* background-color: #2fb8ff; */
+#Digital-Question {
     color: white;
     padding: 100px;
     animation: fadeIn 1.5s ease-in-out;
 }
+
 #Digital-Question {
     display: grid;
     grid-template-columns: 40% 60%;
-    background: #0a0f2c; /* Dark navy blue */
-    /* padding: 50px 20px; */
+    background: #0a0f2c;
     color: white;
-    gap: 40px; /* Space between image and content */
+    gap: 40px;
 }
 
 /* Heading */
-#Digital-Question h2 {
-    /* background-color: red; */
+.di-heading{
+    text-align: left;
     font-size: 2rem;
-    color: #ffffff; /* Electric blue */
+    color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(-20px);
+    /* opacity: 0; */
+}
+
+.di-heading.di-h {
     animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 /* Left Image */
-#Digital-Question img {
+.di-image {
     margin-top: 100px;
-    width: 350px; /* Adjust as needed */
+    width: 350px;
     height: auto;
     opacity: 0;
+}
+
+.di-image.di-im {
     animation: slideInLeft 0.8s ease-in-out forwards;
 }
 
 /* Right Content */
-#Digital-Question div {
+.Di-Question{
     width: 100%;
-    flex: 1; /* Takes remaining space */
+    flex: 1;
     opacity: 0;
+}
+
+#Digital-Question div.di-div {
     animation: slideInRight 0.8s ease-in-out forwards;
 }
 
 /* Cool Animations */
 @keyframes fadeIn {
+    from {
+        /* opacity: 0; */
+        transform: translateY(-20px);
+    }
+
     to {
-        opacity: 1;
+        /* opacity: 1; */
         transform: translateY(0);
     }
 }
 
 @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -376,6 +473,10 @@
 }
 
 @keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
     to {
         opacity: 1;
         transform: translateX(0);

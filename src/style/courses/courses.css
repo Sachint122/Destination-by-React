@@ -3,7 +3,6 @@
   padding-top: 20px;
   padding-left: 100px;
   padding-right: 100px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,8 +48,11 @@
 .course-text {
   height: 100%;
   padding: 20px;
-  animation: slideInLeft 1s ease-in-out;
   /* Slide-in animation for text */
+}
+
+.course-text.cou-text{
+  animation: slideInLeft 2s ease-in-out;
 }
 
 .couses-a {
@@ -82,10 +84,11 @@
   justify-content: center;
   align-items: center;
   /* overflow: hidden; */
-  animation: slideInRight 1s ease-in-out;
   /* Slide-in animation for image */
 }
-
+.course-image.cou-image{
+  animation: slideInRight 2s ease-in-out;
+}
 .course-image img {
   width: 90%;
   height: 100%;
@@ -130,7 +133,7 @@
 }
 
 #offers {
-  height: 180vh;
+  height: 150vh;
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -149,9 +152,10 @@
   padding: 20px;
   margin-left: 80px;
   text-align: center;
+}
+.offers-text.of-te{
   animation: fadeIn 2s ease-out;
 }
-
 .offers-text h2 {
   font-size: 1.9rem;
   padding: 8px;
@@ -163,28 +167,35 @@
 }
 
 .course-offerings {
-  height: 80%;
+  height: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 100px;
-  padding: 20px;
+  /* gap: 100px; */
+  column-gap: 100px;
+  padding-top: 20px;
+}
+.course-offerings.cour-off{
   animation: fadeInUp 2s ease-out;
 }
-
 .offering {
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   gap: 20px;
+  margin-bottom: -20px;
   overflow: hidden;
-  animation: slideInRight 1s ease-in-out;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #000428, #023969);
+  /* background-size: 300% 300%; */
+  animation: rippleWave 5s infinite;
+  box-shadow: 0 10px 20px rgba(0, 17, 255, 0.861);
   /* Shadow for offering card */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.offering.offering{
+  animation: slideInRight 1s ease-in-out;
+}
 .offering:hover {
   transform: translateY(-10px);
   /* Hover effect */
@@ -288,6 +299,41 @@
 }
 
 /* Container for the career growth section */
+@keyframes rippleWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff;
+  }
+}
+
 .career-growth {
   display: flex;
   justify-content: space-between;
@@ -299,7 +345,7 @@
   color: #fff;
   background: linear-gradient(135deg, #000428, #023969);
   background-size: 300% 300%;
-  animation: rippleWave 5s infinite;
+  animation: rippleWave 5s infinite ease-in-out;
 }
 
 /* Left side (two images) */
@@ -316,7 +362,9 @@
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+.career-growth-left img.gro-im{
+  animation: fadeInUp 1s ease-in-out;
+}
 /* Right side (heading, paragraph, list, button) */
 .career-growth-right {
   display: flex;
@@ -324,15 +372,17 @@
   gap: 20px;
   width: 60%;
 }
-
+.career-growth-right.gro-ri{
+  animation: fadeInUp 1.2s ease-in-out;
+}
 .career-growth-right h2 {
   font-size: 2rem;
   color: #00d4ff;
+  animation: glow 2.5s infinite alternate ease-in-out;
 }
 
 .career-growth-right p {
   font-size: 1.5rem;
-  /* line-height: 1; */
 }
 
 .career-growth-right ul {
@@ -346,6 +396,20 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  opacity: 0;
+}
+
+.career-growth-right ul li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.career-growth-right ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.career-growth-right ul li:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.career-growth-right ul li:nth-child(4) {
+  animation-delay: 1.2s;
 }
 
 .list {
@@ -358,25 +422,13 @@
 .list span {
   color: #00d4ff;
   font-weight: bold;
+  animation: glow 1.5s infinite alternate ease-in-out;
 }
 
 /* learning */
-
-/* #learning {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #001f3f, #007BFF);
-  color: #ffffff;
-  overflow: hidden;
-} */
 .learning-container {
   width: 100%;
-  height: 110vh;
+  height: 85vh;
   padding: 20px;
   display: grid;
   grid-template-rows: 20% 80%;
@@ -391,9 +443,10 @@
   margin-right: auto;
   width: 70%;
   padding: 20px;
+}
+.learning-text.lea-te{
   animation: slideInRight 1s ease-in-out;
 }
-
 .learning-text h1 {
   margin-bottom: 20px;
   font-size: 28px;
@@ -405,14 +458,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap:40px;
+  gap: 40px;
   padding: 0;
 }
 
 /* Card Styling */
 .learning-card {
   width: 30%;
-  height: 110%;
+  /* height: 0%; */
   border: 2px solid black;
   background: linear-gradient(135deg, #001f3f, #040b13);
   border-radius: 10px;
@@ -424,18 +477,21 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: translateX(50px);
   /* opacity: 0;  */
+}
+.learning-card.lea-ca{
   animation: slideUp 1s ease-in-out forwards;
 }
-
 /* Delay Animation for Each Card */
 .learning-card:nth-child(1) {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
+
 .learning-card:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.6s;
 }
+
 .learning-card:nth-child(3) {
-  animation-delay: 0.7s;
+  animation-delay: 0.8s;
 }
 
 .learning-card img {
