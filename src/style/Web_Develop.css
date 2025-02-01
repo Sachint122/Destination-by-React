@@ -1,0 +1,251 @@
+    /* Full Width Section */
+    .web-container {
+        height: 80vh;
+        width: 100%;
+        padding: 40px 20px;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    /* Header */
+    .web-header {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        font-weight: bold;
+        color: #7df9ff;
+        /* Electric Blue */
+        text-shadow: 0px 0px 10px rgba(125, 249, 255, 0.8);
+    }
+
+    /* Grid Layout */
+    .web-grid-container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        place-content: center;
+        gap: 2rem;
+        border-bottom: 1px solid #6b7280;
+    }
+
+    /* Card Styling */
+    .web-card {
+        height: 50%;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(125, 249, 255, 0.3);
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.6s forwards;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .web-card:nth-child(even) {
+        animation-delay: 0.3s;
+    }
+
+    .web-card:nth-child(odd) {
+        animation-delay: 0.5s;
+    }
+
+    /* Card Hover Animation */
+    .web-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 25px rgba(125, 249, 255, 0.8);
+    }
+
+    /* Image inside the Card */
+    .web-card img {
+        height: 40%;
+        object-fit: contain;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .web-card img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Card Titles */
+    .web-card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #7df9ff;
+        /* Electric Blue */
+        margin-top: 1rem;
+        text-shadow: 0px 0px 5px rgba(125, 249, 255, 0.7);
+    }
+
+    /* Card Description */
+    .web-card-description {
+        color: #d1d5db;
+        margin-top: 0.5rem;
+    }
+
+    /* Fade-in Up Animation */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* why choose us */
+   /* Main Section */
+.web-why-choose-us {
+    width: 100%;
+    background: linear-gradient(to bottom, #001f3f, #000c1a);
+    /* Dark Navy Gradient */
+    padding: 40px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Container */
+.web-max-width-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+}
+
+/* Left Image Section */
+.web-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web-image-section img {
+    width: 110%;
+    max-width: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    animation: floatImage 3s ease-in-out infinite alternate;
+}
+
+.web-image-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(125, 249, 255, 0.9);
+}
+
+/* Floating effect for the image */
+@keyframes floatImage {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.web-enquiry-btn-container {
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+/* Right Content Section */
+.web-content-section {
+    width: 100%;
+    text-align: center;
+    color: #f3f4f6;
+    margin-left: 0rem;
+    animation: slideInRight 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+/* Title and Subtitle Animations */
+.web-content-section h2 {
+    font-size: 1.25rem;
+    color: #7df9ff;
+    text-shadow: 0px 0px 5px rgba(125, 249, 255, 0.7);
+    animation: fadeInText 1s ease-out 0.5s forwards, glowText 2s infinite alternate;
+    opacity: 0;
+}
+
+/* Glow effect on text */
+@keyframes glowText {
+    0% {
+        text-shadow: 0px 0px 10px rgba(125, 249, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgba(125, 249, 255, 1);
+    }
+}
+
+.web-content-section h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d9ff;
+    text-shadow: 0px 0px 10px rgba(36, 248, 255, 0.8);
+    opacity: 0;
+    animation: typingEffect 3s steps(20) 0.7s forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+
+/* Typing effect animation */
+@keyframes typingEffect {
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.web-content-section p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    opacity: 0;
+    animation: fadeInText 1s ease-out 0.9s forwards, slideInLeft 1s ease-out 1s forwards;
+}
+
+/* Features List */
+.web-features-list {
+    text-align: left;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in Animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

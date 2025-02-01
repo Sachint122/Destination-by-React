@@ -1,0 +1,142 @@
+/* Container Styling */
+.l-container {
+    background: linear-gradient(to bottom, #001f3f, #000c1a); /* Navy Blue Theme */
+    width: 100%;
+    padding: 40px 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Fade-in Up Animation */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Max Width Wrapper */
+  .max-width-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Left Content (Text) */
+  .text-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s ease-out 0.3s forwards;
+  }
+  
+  /* Slide-in Left Animation */
+  @keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #7df9ff; /* Electric Blue */
+    text-shadow: 0px 0px 10px rgba(125, 249, 255, 0.8);
+  }
+  
+  /* Description Text */
+  .description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ffffff; /* Light gray */
+  }
+  
+  /* Button Styling */
+  .text-section a {
+    display: inline-block;
+  }
+  
+  .text-section a button {
+    background: #7df9ff;
+    color: #001f3f;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(125, 249, 255, 0.6);
+  }
+  
+  /* Button Hover Animation */
+  .text-section a button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(125, 249, 255, 1);
+  }
+  
+  /* Right Image */
+  .image-section {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s ease-out 0.3s forwards;
+  }
+  
+  /* Slide-in Right Animation */
+  @keyframes slideInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Image Hover Effect */
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(125, 249, 255, 0.8);
+  }
+  
+  /* Responsive Design (Medium and Up) */
+  @media (min-width: 768px) {
+    .max-width-wrapper {
+      flex-direction: row;
+      gap: 40px;
+    }
+  
+    .text-section {
+      text-align: left;
+      width: 50%;
+    }
+  
+    .image-section {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image {
+      max-width: 500px;
+    }
+  }
+  

@@ -13,6 +13,7 @@ import './style/Home/why.css';
 import './style/Footer/footer.css'
 import { useScrollAnimation } from './components/hooks/Animation';
 import ScrollToTop from './components/hooks/ScrollToTop'
+import Web_Development from "./components/Web_Development";
 export default function App() {
   useScrollAnimation();
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/full-stack" element={<Full_stack />} />
         <Route path="/digital" element={<Digital />} />
+        <Route path="/Web-Development" element={<Web_Development />} />
       </Routes>
       <Footer />
     </>
