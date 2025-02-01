@@ -1,7 +1,7 @@
 import { React } from 'react'
 import '../style/Digital/Digital.css'
-import EButton from './ExploreButton';
-import Button from './ModernButton';
+import EButton from './hooks/ExploreButton';
+import Button from './hooks/ModernButton';
 import image from '../images/other/Digital-Marketing-Course.png'
 import image2 from '../images/Our-Courses.png'
 import image3 from '../images/Full-stack.png'
@@ -16,8 +16,8 @@ import logo7 from '../images/logo/download (2).png';
 import logo8 from '../images/logo/download (3).png';
 import logo9 from '../images/logo/download (4).png';
 import logo10 from '../images/other/04_Services-3.png';
-import Digital_Card from './Digital_Card';
-import ImageCarousel from './ImageCarousel';
+import Digital_Card from './hooks/Digital_Card';
+import ImageCarousel from './hooks/ImageCarousel';
 import Digital_S from './hooks/Digital_S';
 export default function Digital() {
     const data = [

@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from './Head.js'
+import Head from './hooks/Head'
 import imagehead from '../images/Destination-Technology-Group.png'
 import image from '../images/WhatsApp-Image-2023-07-10-at-8.54.00-PM-4-1024x768.jpeg'
 import { IoIosCheckmarkCircle } from "react-icons/io";

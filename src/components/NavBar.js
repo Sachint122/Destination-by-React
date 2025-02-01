@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/nav.css'
 import { useEffect } from 'react';
 import destinationLogo from '../images/logo/destination-log.png';
-import Button from './ModernButton';
+import Button from './hooks/ModernButton';
 export default function NavBar() {
     useEffect(() => {
         const handleClickOutside = (event) => {

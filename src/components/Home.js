@@ -4,12 +4,12 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 import { GiLifeSupport } from "react-icons/gi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import address from '../images/DESTINATION-1024x1001.png';
-import Card from './Card';
-import ImageCarousel from './ImageCarousel';
-import CountUpSection from './CountUpSection';
-import Brand from './Brand';
-import EButton from './ExploreButton';
-import Button from './ModernButton';
+import Card from './hooks/Card';
+import ImageCarousel from './hooks/ImageCarousel';
+import CountUpSection from './hooks/CountUpSection';
+import Brand from './hooks/Brand';
+import EButton from './hooks/ExploreButton';
+import Button from './hooks/ModernButton';
 
 export default function Home() {
     return (

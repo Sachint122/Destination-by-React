@@ -1,25 +1,25 @@
 import { React, useState } from 'react'
 import '../style/Full_stack/Full_stack.css';
-import image from '../images/Destination-Technology-Group.png'
-import logo1 from '../images/logo/download.png'
-import logo2 from '../images/logo/Deadline 1.png';
-import logo3 from '../images/logo/Certificate 2.png';
-import logo4 from '../images/logo/IT Support.png';
-import logo5 from '../images/icon/Web Development.png'
-import logo6 from '../images/icon/Web Development (1).png'
-import logo7 from '../images/icon/Wireframe.png'
-import image2 from '../images/Courses.png';
-import image3 from '../images/Destination-Technologies-Staff.png'
-import image4 from '../images/Destination-Technologies-Unlock.png'
-import EButton from './ExploreButton';
-import Button from './ModernButton';
-import Brand from './Brand';
-import CountUpSection from './CountUpSection';
-import Language from './Language';
-import List from './List';
-import Full_Stack_Card from './Full_Stack_Card';
-import Accordion from './Accordian';
-import ImageCarousel from './ImageCarousel';
+import image from './hooks/images/Destination-Technology-Group.png'
+import logo1 from './hooks/images/logo/download.png'
+import logo2 from './hooks/images/logo/Deadline 1.png';
+import logo3 from './hooks/images/logo/Certificate 2.png';
+import logo4 from './hooks/images/logo/IT Support.png';
+import logo5 from './hooks/images/icon/Web Development.png'
+import logo6 from './hooks/images/icon/Web Development (1).png'
+import logo7 from './hooks/images/icon/Wireframe.png'
+import image2 from './hooks/images/Courses.png';
+import image3 from './hooks/images/Destination-Technologies-Staff.png'
+import image4 from './hooks/images/Destination-Technologies-Unlock.png'
+import EButton from './hooks/ExploreButton';
+import Button from './hooks/ModernButton';
+import Brand from './hooks/Brand';
+import CountUpSection from './hooks/CountUpSection';
+import Language from './hooks/Language';
+import List from './hooks/List';
+import Full_Stack_Card from './hooks/Full_Stack_Card';
+import Accordion from './hooks/Accordian';
+import ImageCarousel from './hooks/ImageCarousel';
 export default function Full_stack() {
     const [openIndex, setOpenIndex] = useState(null);
 

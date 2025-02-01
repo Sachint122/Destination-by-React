@@ -8,12 +8,12 @@ import logo1 from '../images/logo/01_Home_01-1.png'
 import logo2 from '../images/logo/01_Home_01-2.png'
 import logo3 from '../images/logo/01_Home_01-3.png'
 import '../style/courses/courses.css';
-import Head from './Head'
-import EButton from './ExploreButton';
-import Button from './ModernButton'
-import CountUpSection from './CountUpSection';
-import Brand from './Brand';
-import ImageCarousel from './ImageCarousel';
+import Head from './hooks/Head'
+import EButton from './hooks/ExploreButton';
+import Button from './hooks/ModernButton'
+import CountUpSection from './hooks/CountUpSection';
+import Brand from './hooks/Brand';
+import ImageCarousel from './hooks/ImageCarousel';
 import { IoMdArrowDropright } from "react-icons/io";
 export default function Courses() {
   return (

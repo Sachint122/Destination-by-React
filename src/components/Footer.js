@@ -1,7 +1,7 @@
 import React from 'react'
 import { useModal } from './hooks/FormOpenClose';
-import Form from './Form';
-import EButton from './ExploreButton';
+import Form from './hooks/Form';
+import EButton from './hooks/ExploreButton';
 import destinationLogo from '../images/logo/destination-log.png';
 import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { FaFacebook ,FaCircleArrowRight } from "react-icons/fa6";
