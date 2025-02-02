@@ -82,7 +82,7 @@ export default function Web_Development() {
             />
             <hr />
             {/*  */}
-            <div className="web-container">
+            <div className="web-container" style={{height:'90vh'}}>
                 <div>
                     <h1 className="web-header">
                         Key Features of Our Website Designing Services
@@ -132,10 +132,6 @@ export default function Web_Development() {
                         {/* Features List */}
                         <div className="web-features-list">
                             {features.map((feature, index) => (
-                                // <div  className="web-feature-item">
-                                //     <h1>{feature.heading} -:</h1>
-                                //     <p>{feature.content}</p>
-                                // </div>
                                 <div key={index} className='program-list'>
                                     <div>
                                         <IoMdArrowDropright size={40} color='#00d4ff' />

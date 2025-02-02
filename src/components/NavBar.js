@@ -42,7 +42,7 @@ export default function NavBar() {
                 <li className="dropdown">
                     <Link >Service</Link>
                     <div className="dropdown-content">
-                        <Link to="/">Two Seater</Link>
+                        <Link to="/Training_Education">Training & Education</Link>
                         <Link to="/Web-Development">Web Development</Link>
                         <Link to="/">Seven Seater</Link>
                     </div>

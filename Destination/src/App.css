@@ -1,0 +1,31 @@
+/* InstituteBackground.css */
+
+/* Apply the animated gradient background */
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.institute-bg {
+    background: linear-gradient(45deg, #0d1114, #0a012c, #101031, #6e3535); /* Navy to electric and white */
+    background-size: 300% 300%; /* Larger gradient for smooth animation */
+    animation: gradientShift 8s ease infinite; /* Smooth shifting animation */
+    min-height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden; /* Prevent overflow from elements */
+  }
+  
+  /* Gradient animation */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

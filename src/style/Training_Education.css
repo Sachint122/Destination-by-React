@@ -1,0 +1,224 @@
+/* keyb highkight  */
+.tr-key-head {
+  color: #00a6ff;
+  font-size: 1.4rem;
+}
+.trainig-image-section{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.trainig-image-section img{
+  width: 50%;
+  max-width: 320px;
+  border-radius: 8px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  animation: floatImage 3s ease-in-out infinite alternate;
+}
+.trainig-image-section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(125, 249, 255, 0.9);
+}
+.tr-first-row {
+  border: 2px solid #2fb8ff;
+  padding: 20px;
+  border-radius: 12px;
+  width: calc(33.33% - 20px);
+  /* 3 columns */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+.tr-first-row img{
+  width: 80px;
+  height: 80px;
+  margin-left: -10px;
+  /* Push image to right */
+  border-radius: 50%;
+}
+/* General Styles */
+.training-offerings,
+.key-features {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0a1931;
+  /* Navy Blue */
+  color: #ffffff;
+  /* White Text */
+}
+
+/* Heading Styles */
+.training-offerings h1,
+.key-features h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00a6ff;
+  /* Electric Blue */
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Underline Effect */
+.training-offerings h1::after,
+.key-features h1::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 4px;
+  background-color: #00a6ff;
+  /* Electric Blue */
+  margin: 10px auto;
+  animation: expand 1s ease-in-out;
+}
+
+/* Intro & Closing Paragraph */
+.intro-paragraph,
+.closing-paragraph {
+  color: #d1d5db;
+  /* Light gray */
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Cards Grid */
+.cards-section,
+.cards2-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-top: 3rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Card Styling */
+.card {
+  background: #142850;
+  /* Dark Navy */
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 15px rgba(0, 166, 255, 0.3);
+}
+
+/* Enroll Button */
+.enroll-btn {
+  margin-top: 2.5rem;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #00a6ff, #00509d);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: pulse 1.5s infinite;
+}
+
+.enroll-btn:hover {
+  background: linear-gradient(90deg, #00509d, #00a6ff);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+
+  .cards-section,
+  .cards2-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .training-offerings h1,
+  .key-features h1 {
+    font-size: 2.75rem;
+  }
+
+  .intro-paragraph,
+  .closing-paragraph {
+    font-size: 1.3rem;
+  }
+
+  .enroll-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards2-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 6rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 166, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(0, 166, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 10px rgba(0, 166, 255, 0.3);
+  }
+}
