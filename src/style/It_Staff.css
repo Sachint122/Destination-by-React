@@ -1,0 +1,104 @@
+ /* {Our IT Staffing Offerings} */
+ /* Full Width Container */
+ .it-staffing {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #2d2d2d; /* Gray background */
+  }
+
+  /* Heading */
+  .it-staffing h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ec4899; /* Pink color */
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  /* Cards Section */
+  .cards-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0 1rem;
+    margin-top: 4rem;
+    border-bottom: 1px solid #6b7280; /* Border color */
+  }
+
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .cards-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .cards-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+/* {/* Destination Staffing Solutions */
+  /* Full Width Container */
+  .destination-staffing {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Heading */
+  .destination-staffing h1 {
+    font-size: 1.875rem; /* 3xl on small screens */
+    font-weight: bold;
+    color: #d1d5db; /* gray-300 */
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .destination-staffing h1 .flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .destination-staffing h1 .flex .w-24 {
+    width: 6rem; /* 24 */
+    height: 0.25rem;
+    background-color: #fbbf24; /* yellow-500 */
+    margin: 0.75rem auto;
+    text-align: center;
+  }
+
+  /* Intro Paragraph */
+  .destination-staffing p {
+    color: #9ca3af; /* gray-400 */
+    font-size: 1.125rem; /* text-lg */
+    margin-bottom: 2rem;
+  }
+
+  /* Cards Section */
+  .destination-staffing .card-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem; /* 5 */
+    padding: 0 0.25rem;
+    border-bottom: 1px solid #6b7280; /* gray-500 */
+    margin-top: 4rem;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .destination-staffing .card-section {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .destination-staffing .card-section {
+      grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .destination-staffing .card-section {
+      grid-template-columns: repeat(4, 1fr); /* lg:grid-cols-4 */
+    }
+  }

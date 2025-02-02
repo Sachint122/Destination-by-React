@@ -15,6 +15,7 @@ import { useScrollAnimation } from './components/hooks/Animation';
 import ScrollToTop from './components/hooks/ScrollToTop'
 import Web_Development from "./components/Web_Development";
 import Training_Education from "./components/Training_Education";
+import It_Staff from "./components/It_Staff";
 export default function App() {
   useScrollAnimation();
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/digital" element={<Digital />} />
         <Route path="/Web-Development" element={<Web_Development />} />
         <Route path="/Training_Education" element={<Training_Education />} />
+        <Route path="/It_Staff" element={<It_Staff />} />
       </Routes>
       <Footer />
     </>

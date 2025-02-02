@@ -44,7 +44,7 @@ export default function NavBar() {
                     <div className="dropdown-content">
                         <Link to="/Training_Education">Training & Education</Link>
                         <Link to="/Web-Development">Web Development</Link>
-                        <Link to="/">Seven Seater</Link>
+                        <Link to="/It_Staff">IT & Staff</Link>
                     </div>
                 </li>
                 <li className="nav-item"><Link to="/">Placement</Link></li>
