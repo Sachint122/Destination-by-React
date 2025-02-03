@@ -15,7 +15,6 @@ import staf2 from "../images/staff/staf2.jpg";
 import staf8 from "../images/staff/staf8.jpg";
 import staf9 from "../images/staff/staf9.jpg";
 import staf6 from "../images/staff/staf6.jpg";
-import unfiled from '../images/Unified.png'
 import Container from './hooks/Container';
 import { IoMdArrowDropright } from "react-icons/io";
 import Button from './hooks/ModernButton';
@@ -144,29 +143,29 @@ export default function It_Staff() {
     ];
     const features = [
         {
-            heading: "Extensive Network",
+            heading: "Industry-Relevant Training",
             content:
-                "Access to a vast pool of talented professionals with diverse specialties and skill sets.",
+                "We provide hands-on training with the latest technologies to make you job-ready.",
         },
         {
-            heading: "Personalized Approach:",
+            heading: "Hands-On Projects",
             content:
-                "We understand your unique requirements and provide customized solutions tailored to your business needs.",
+                "Learn by doing! Work on real-world projects that simulate industry scenarios. Gain practical experience and build a strong portfolio to showcase your skills.",
         },
         {
-            heading: "Rigorous Screening",
+            heading: "Expert Mentorship",
             content:
-                "Our thorough screening process ensures that you are presented with top-quality candidates who meet your criteria.",
+                "Get guidance from experienced professionals who have worked in the industry. Learn best practices, problem-solving techniques,and insider knowledge from tech experts.",
         },
         {
-            heading: "Proven Expertise",
+            heading: "Certification Programs",
             content:
-                "With years of experience in the industry, we have the expertise to identify and recruit the right talent for your organization",
+                "Earn recognized certifications that validate your skills and improve job prospects. Certifications in Java, SQLFull-Stack Development, and more help you stand out.",
         },
         {
-            heading: "Seamless Process:",
+            heading: "Internship & Placement Assistance",
             content:
-                "Our streamlined processes and dedicated team make the hiring experience efficient and hassle-free.",
+                "Get support in securing internships, job referrals, and resume-building tips. We help you connect with recruiters and land job opportunities in top tech firms.",
         },
     ];
     const cardData2 = [
@@ -293,16 +292,23 @@ export default function It_Staff() {
             <hr />
             {/* <WhyChooseUs
                 image="https://destinationtechs.com/wp-content/uploads/2023/07/Microsites-bro-1024x1024.png"
-                title=""
-                subtitle=""
-                description=""
+                title="Why choose us for IT Staffing?"
+                subtitle="IT Staffing..."
+                description="At Destination Technologies, we are committed to helping aspiring
+              developers kickstart their careers in the tech industry. Our
+              hands-on training, real-world projects, and expert mentorship
+              ensure that you gain the skills needed to excel in web
+              development, software engineering, and emerging technologies.
+              Whether you're a beginner or looking to enhance your expertise, we
+              provide the perfect platform to learn, grow, and succeed. Join us
+              and take the next step toward a bright future in development!"
                 features={features}
             /> */}
-            <div className="web-why-choose-us">
+              <div className="web-why-choose-us">
                 <div className="web-max-width-wrapper">
                     {/* Left Image Section */}
                     <div className="trainig-image-section">
-                        <img src={unfiled} alt="Image 1" data-animate="gro-im" />
+                        <img src="https://destinationtechs.com/wp-content/uploads/2023/07/Microsites-bro-1024x1024.png" alt="Image 1" data-animate="gro-im" />
                     </div>
                     {/* <div class="career-growth-left">
 
@@ -310,9 +316,9 @@ export default function It_Staff() {
 
                     {/* Right Content Section */}
                     <div className="web-content-section">
-                        <h2>IT Staffing...</h2>
-                        <h1>Why choose us for IT Staffing?</h1>
-                        <p>With Destination Technologies as your IT staffing partner, unlock the power of exceptional talent and drive your organization's success to new heights</p>
+                        <h2>Training & Education...</h2>
+                        <h1>Why Choose Us?</h1>
+                        <p>At Destination Technologies, we provide hands-on, industry-focused training to help you build real-world skills. Our expert-led courses, practical projects, and personalized mentorship ensure you stay ahead in the tech industry. With cutting-edge curriculum and career guidance, we prepare you for high-growth job opportunities. Join us to transform your learning into a successful career!</p>
 
                         {/* Features List */}
                         <div className="web-features-list">
@@ -327,7 +333,7 @@ export default function It_Staff() {
                                     </div>
                                 </div>
                             ))}
-                            <a> <Button text="Enroll Now" /></a>
+                            <a> <Button text="Enroll Now"/></a>
                         </div>
                     </div>
                 </div>
