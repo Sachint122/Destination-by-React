@@ -47,7 +47,7 @@ export default function NavBar() {
                         <Link to="/It_Staff">IT & Staff</Link>
                     </div>
                 </li>
-                <li className="nav-item"><Link to="/">Placement</Link></li>
+                <li className="nav-item"><Link to="/Placement">Placement</Link></li>
                 <li className="nav-item"><Link to="/">Contact Us</Link></li>
             </ul>
             <Button text="Login LMS"/>

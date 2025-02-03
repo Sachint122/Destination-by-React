@@ -291,13 +291,6 @@ export default function It_Staff() {
                 </div>
             </div>
             <hr />
-            {/* <WhyChooseUs
-                image="https://destinationtechs.com/wp-content/uploads/2023/07/Microsites-bro-1024x1024.png"
-                title=""
-                subtitle=""
-                description=""
-                features={features}
-            /> */}
             <div className="web-why-choose-us">
                 <div className="web-max-width-wrapper">
                     {/* Left Image Section */}
