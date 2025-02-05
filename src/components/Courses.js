@@ -26,6 +26,7 @@ export default function Courses() {
         text2="List Of Courses"
         text3='Description Of Course'
         image={imagehead}
+        pos="center"
       />
       <hr />
       <section id="course">

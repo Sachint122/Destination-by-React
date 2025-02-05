@@ -81,6 +81,7 @@ export default function Training_Education() {
                 text2="Services"
                 text3="Training & Education"
                 image={imagehead}
+                pos="center"
             />
             <hr />
             <div>

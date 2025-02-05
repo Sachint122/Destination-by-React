@@ -17,6 +17,7 @@ import Web_Development from "./components/Web_Development";
 import Training_Education from "./components/Training_Education";
 import It_Staff from "./components/It_Staff";
 import Placement from "./components/Placement";
+import Contact from "./components/Contact";
 export default function App() {
   useScrollAnimation();
   return (
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/Training_Education" element={<Training_Education />} />
         <Route path="/It_Staff" element={<It_Staff />} />
         <Route path="/Placement" element={<Placement />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import './Style/head.css';
-export default function Head({ image, headers, text1 = "", text2 = "", text3 = "" }) {
+import { BsPostage } from 'react-icons/bs';
+export default function Head({ image, headers, text1 = "", text2 = "", text3 = "" ,pos="top -100px"}) {
     return (
         <>
             <div className="head-main"  style={{ position: 'relative', overflow: 'hidden' }}>
@@ -10,7 +11,7 @@ export default function Head({ image, headers, text1 = "", text2 = "", text3 = "
                     style={{
                         backgroundImage: `url(${image})`,
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center',
+                        backgroundPosition: `center ${pos}`,
                         filter: 'brightness(50%)', // Adjusts visibility
                         position: 'absolute',
                         top: 0,

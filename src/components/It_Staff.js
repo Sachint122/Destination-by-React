@@ -207,6 +207,7 @@ export default function It_Staff() {
                 text2="Services"
                 text3="IT & Staff"
                 image={imagehead}
+                pos="center"
             />
             <hr />
             <Leftimg
