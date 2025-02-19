@@ -4,19 +4,20 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to top, #7df9ff, #001f3f, #000000);
+  background-image: url("../../../images/backgraound/101_54768-455.jpg");
+  /* background-color: #818181b1; */
 }
  #card h1 {
   font-size: 2.4rem;
   margin-bottom: 10px;
-  color: #00d4ff;
+  color: #E41F3A;
   margin-top: 20px;
 } 
 
 hr {
   border: none;
   height: 4px;
-  background: linear-gradient(to right, #7df9ff, #001f3f 30%, #7df9ff);
+  background: linear-gradient(to right, #ff8502, #02003f 30%, #ff8502);
 }
 
 #card hr{
@@ -38,25 +39,35 @@ hr {
   margin: 10px;
   text-align: center;
   transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.3s;
-  background: linear-gradient(135deg, #7df9ff, #001f3f);
+  background: linear-gradient(135deg, #ffcb7d, #001f3f);
 }
-
-.card img {
+.homecard {
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.3s;
+  background-color: #818181;
+}
+.homecard img {
   width: 100%;
   height: auto;
   transition: transform 0.5s ease;
 }
 
-.card h2 {
+.homecard h2 {
   font-size: 1.8rem;
   margin: 15px 0;
-  color: white;
+  /* color: white; */
   transition: color 0.4s;
 }
 
-.card p {
-  font-size: 1rem;
-  color: #e0e0e0;
+.homecard p {
+  font-size: 1.2rem;
+  color: #ffffff;
   padding: 0 15px;
 }
 
@@ -70,21 +81,16 @@ hr {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
-/*
-.card button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-} */
 
-.card:hover {
+.homecard:hover {
   /* transform: translateY(-10px) scale(1.03) rotate(1deg); */
-  box-shadow: 0 10px 20px rgba(0, 4, 250, 0.25);
+  box-shadow: 0 10px 20px 0px rgb(250, 204, 0);
 }
 
-.card:hover h2 {
-  color: #7df9ff;
+.homecard:hover h2 {
+  color: #ffdc7d;
 }
 
-.card:hover img {
+.homecard:hover img {
   transform: scale(1.1);
 }

@@ -1,17 +1,10 @@
-/* query section */
-/* Overall section styling */
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 .querry-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50vh;
   padding: 20px;
-  /* background: linear-gradient(to bottom, #001f3f, #000000); */
-  background: linear-gradient(90deg, #001f3f, #000000, #001f3f);
+  background: linear-gradient(90deg, #3f2e00, #000000, #3f2e00);
   background-size: 300% 300%;
   animation: waveFlow 10s infinite;
 }
@@ -20,7 +13,7 @@
 .left-content {
   width: 45%;
   padding: 20px;
-  background: linear-gradient(135deg, #627175, #192b41);
+  background: linear-gradient(135deg, #756e62, #191a41);
   border-radius: 1em;
   color: #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
@@ -45,10 +38,9 @@
   }
 }
 
-.left-content h2 {
+/* .left-content h2 {
   font-size: 3rem;
-  color: #00d4ff;
-}
+} */
 
 .left-content p {
   font-size: 1.2rem;
@@ -57,9 +49,10 @@
 
 /* Right content styling */
 .right-content {
+  text-align: center;
   width: 45%;
   padding: 20px;
-  background: linear-gradient(135deg, #192b41, #627175);
+  background: linear-gradient(135deg, #756e62, #191a41);
   border-radius: 1em;
   color: #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
@@ -84,42 +77,26 @@
   }
 }
 
-.right-content h2 {
-  font-size: 3rem;
-  color: #00d4ff;
+.right-content h1 {
+  font-size: 2.5rem;
+  /* color: #00d4ff; */
 }
 
 .right-content p {
+  text-align: center;
   font-size: 1.2rem;
   margin-top: 10px;
-}
-
-/* Right anchor button styling */
-.right-anchor {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: #fff;
-  background: #188cf9;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.right-anchor:hover {
-  background-color: #00d4ff;
 }
 
 footer {
   width: 100%;
   height: 45vh;
   position: absolute;
-  color: #fff;
+  color: #ffffff;
   padding: 16px 0 30px;
   font-size: 20px;
   line-height: 20px;
-  background: linear-gradient(90deg, #001f3f, #000000, #001f3f);
+  background: linear-gradient(90deg, #3f2e00, #000000, #3f2e00);
   background-size: 300% 300%;
   animation: waveFlow 10s infinite;
 
@@ -174,7 +151,7 @@ footer {
 }
 
 .col h3 {
-  color: #00d4ff;
+  color: #ffc400;
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
@@ -183,7 +160,7 @@ footer {
 
 .col h4 {
   padding: 5px;
-  color: #00d4ff;
+  color: #ffc400;
 }
 
 .email-id {
@@ -241,10 +218,10 @@ footer {
   transition: 0.4s ease-in-out;
 }
 
-.footer-form .fa-solid {
+/* .footer-form .fa-solid {
   color: rgb(255, 140, 0);
   font-size: 16px;
-}
+} */
 
 .socail {
   display: flex;
@@ -258,7 +235,7 @@ footer {
   width: 60px;
   padding: 0px;
   height: 60px;
-  border: 3px solid #4e00f6;
+  border: 3px solid #0015f6;
   border-radius: 50%;
   margin-left: 10px;
   cursor: pointer;
@@ -290,7 +267,7 @@ footer {
   overflow: hidden;
   width: 15px;
   height: 100%;
-  background: #fff;
+  background: #ffcc00;
   border-radius: 3px;
   position: absolute;
   left: 0;

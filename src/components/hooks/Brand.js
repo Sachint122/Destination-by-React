@@ -83,7 +83,7 @@ const Brand = () => {
 
   return (
     <div className="carousel-container">
-      <h1> Our Students Placed in</h1>
+      <h1 className='text-orange'> Our Students Placed in</h1>
       <div className="carousel">
         {brands.concat(brands).map((brand, index) => (
           <div className="brand" key={index}>

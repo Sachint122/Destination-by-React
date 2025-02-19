@@ -1,6 +1,6 @@
 #why-chooses-us {
     height: 100vh;
-    background: linear-gradient(to bottom, #001f3f, #000000);
+    background: linear-gradient(to bottom, #04003f, #000000);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,12 @@
     padding-top: 20px;
     gap: 0px;
 }
-
+#why-chooses-us{
+    color: #ffd900;   
+}
+#why-chooses-us h2{
+    color: #ffd900;   
+}
 #why-choose-us.a-m {
     animation: fadeIn 2s ease-in-out;
 
@@ -62,8 +67,8 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 1em;
-    background: linear-gradient(135deg, #627175, #192b41);
-    border-bottom: 10px solid #188cf9;
+    background: linear-gradient(135deg, #757362, #191b41);
+    border-bottom: 10px solid #1c18f9;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     transform: scale(0.95);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -76,18 +81,18 @@
 
 .sub-why h1 {
     font-size: 2.2rem;
-    color: #00d4ff;
+    /* color: #00d4ff; */
     margin-bottom: 10px;
-    animation: textGlow 2s infinite alternate;
+    animation: textGlow 3s infinite alternate;
 }
 
 @keyframes textGlow {
     from {
-        text-shadow: 0px 0px 10px #00d4ff, 0px 0px 20px #00d4ff;
+        text-shadow: 0px 0px 10px #ffa600, 0px 0px 20px #ffe100;
     }
 
     to {
-        text-shadow: 0px 0px 20px #00d4ff, 0px 0px 30px #00d4ff;
+        text-shadow: 0px 0px 20px #ffa600, 0px 0px 30px #ffa600;
     }
 }
 
@@ -103,7 +108,8 @@
 .why-content-head {
     text-align: center;
     font-size: 2.5rem;
-    color: #00d4ff;
+    /* color: #00d4ff; */
+    color: #ffd900; 
     margin-top: 10px;
 }
 

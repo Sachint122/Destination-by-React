@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({ text }, { name }) => {
+const Button = ({ text }) => {
   return (
     <StyledWrapper>
       <button className="animated-button cardb" >
@@ -19,18 +19,19 @@ const Button = ({ text }, { name }) => {
 }
 
 const StyledWrapper = styled.div`
-  .cardb{
-   margin: 15px 0;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  }
-  .animated-button {
+ .cardb {
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #fbd22f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.animated-button {
     margin-right: 30px;
     height: 40px;
     position: relative;
@@ -44,81 +45,80 @@ const StyledWrapper = styled.div`
     background-color: inherit;
     border-radius: 100px;
     font-weight: 600;
-    color: #00d4ff;
-    box-shadow: 0 0 0 2px #00d4ff;
+    color: #fbd22f;
+    box-shadow: 0 0 0 2px #fbd22f;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  }
+}
 
-  .animated-button svg {
+.animated-button svg {
     position: absolute;
     width: 24px;
-    fill: #00d4ff;
+    fill: #fbd22f;
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  }
+}
 
-  .animated-button .arr-1 {
+.animated-button .arr-1 {
     right: 0px;
-  }
+}
 
-  .animated-button .arr-2 {
+.animated-button .arr-2 {
     left: -25%;
-  }
+}
 
-  .animated-button .circle {
+.animated-button .circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: #7DF9FF;
+    background-color: #fbd22f;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  }
+}
 
-  .animated-button .text {
+.animated-button .text {
     position: relative;
     z-index: 1;
     transform: translateX(-12px);
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  }
+}
 
-  .animated-button:hover {
+.animated-button:hover {
     padding: 10px 26px;
     box-shadow: 0 0 0 12px transparent;
     color: #212121;
     border-radius: 12px;
-  }
+}
 
-  .animated-button:hover .arr-1 {
+.animated-button:hover .arr-1 {
     right: -25%;
-  }
+}
 
-  .animated-button:hover .arr-2 {
+.animated-button:hover .arr-2 {
     left: 16px;
-  }
+}
 
-  .animated-button:hover .text {
+.animated-button:hover .text {
     transform: translateX(12px);
-  }
+}
 
-  .animated-button:hover svg {
+.animated-button:hover svg {
     fill: #212121;
-  }
+}
 
-  .animated-button:active {
+.animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px #00d4ff;
-  }
+    box-shadow: 0 0 0 4px #fbd22f;
+}
 
-  .animated-button:hover .circle {
+.animated-button:hover .circle {
     width: 100%;
     height: 220px;
     opacity: 1;
-  }`;
-
+}`
 export default Button;

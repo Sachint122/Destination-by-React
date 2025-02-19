@@ -7,7 +7,7 @@ import Button from './ModernButton';
 export default function Card() {
   return (
     <div className="card-section">
-      <div className="card">
+      <div className="homecard">
         <img src={card1} alt="Card 1" />
         <h2>Training & Education: Empowering You for the Future</h2>
         <p>Full Stack Web Development: Master the art of dynamic web app creation. Gain proficiency in front-end and back-end technologies to become a sought-after full stack developer.</p>
@@ -17,7 +17,7 @@ export default function Card() {
         </div>
       </div>
 
-      <div className="card">
+      <div className="homecard">
         <img src={card2} alt="Card 2" />
         <h2>Web Development: Crafting Engaging and User-Centric Websites
         </h2>
@@ -27,7 +27,7 @@ export default function Card() {
         </div>
       </div>
 
-      <div className="card">
+      <div className="homecard">
         <img src={card3} alt="Card 3" />
         <h2>IT Staffing: Unlocking Top Talent for Your Organization</h2>
         <p>Finding the right talent is crucial for the success of any organization. With our IT staffing services, we help you identify and recruit skilled professionals who align with your specific requirements. Our extensive network and rigorous screening process ensure you have access to the best-fit candidates.</p>

@@ -20,7 +20,6 @@
      gap: 10px;
      opacity: 0;
      transform: translateY(50px);
-     /* animation: slideUpFadeIn 1.5s ease-in-out forwards; */
  }
 
  .address-content.address-animation {
@@ -43,7 +42,6 @@
  .address-content h6 {
      font-size: 2.5rem;
      margin-bottom: 20px;
-     color: #00d4ff;
  }
 
  .address-content h6.address-heading {

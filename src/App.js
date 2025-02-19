@@ -11,6 +11,7 @@ import './style/Home/home.css';
 import './style/Home/address.css';
 import './style/Home/why.css';
 import './style/Footer/footer.css'
+import './index.css';
 import { useScrollAnimation } from './components/hooks/Animation';
 import ScrollToTop from './components/hooks/ScrollToTop'
 import Web_Development from "./components/Web_Development";
@@ -18,10 +19,12 @@ import Training_Education from "./components/Training_Education";
 import It_Staff from "./components/It_Staff";
 import Placement from "./components/Placement";
 import Contact from "./components/Contact";
+import  SplashCursor from './components/hooks/Cursor'
 export default function App() {
   useScrollAnimation();
   return (
     <>
+      <SplashCursor/>
       <NavBar />
       <ScrollToTop/>
       <Routes>

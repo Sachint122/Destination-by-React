@@ -9,17 +9,21 @@ body {
 
 .brand2 {
     padding-top: 50px;
-    background: linear-gradient(to bottom, #000000, #001f3f);
+    animation: glowPulse 4s infinite;
+    /* background: linear-gradient(to bottom, #000000, #01003f); */
 }
-
+@keyframes glowPulse {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.5); }
+}
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
     height: 100vh;
-    color: #ffffff;
-    background: linear-gradient(to bottom, #000000, #001f3f);
+    /* color: #ffffff; */
+    /* background: linear-gradient(to bottom, #FC783A, #4c5c6c, #000000); */
 }
 
 .hero-curve {
@@ -28,7 +32,6 @@ body {
     left: 0;
     width: 90%;
     height: 100px;
-    /* Height of the curve */
 }
 
 .hero-content {
@@ -36,34 +39,15 @@ body {
 }
 
 .hero-content h6 {
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 2.7rem;
     margin-bottom: 20px;
-    color: #00d4ff;
-    /* text-shadow: 0 0 5px #00d4ff, 0 0 10px #00aaff; */
 }
 
 .hero-content p {
     font-size: 1.9rem;
     margin-bottom: 30px;
 }
-
-.hero-content button {
-    padding: 15px 30px;
-    font-size: 1rem;
-    background: #1f6feb;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 15px #1f6feb;
-    transition: all 0.3s ease-in-out;
-}
-
-.hero-content button:hover {
-    background: #0d95f2;
-    box-shadow: 0 0 20px #0d95f2;
-}
-
 .hero-image .image-slider {
     margin-top: 100px;
     margin-right: 50px;

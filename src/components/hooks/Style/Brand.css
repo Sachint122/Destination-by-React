@@ -16,7 +16,6 @@
     padding: 10px;
     
   }
-  
   .carousel {
     display: inline-flex;
     animation: scroll 150s linear infinite;

@@ -21,7 +21,7 @@ export default function Footer() {
                     <p>We provide top-notch services tailored to your needs. Explore the benefits and features we offer to make your experience extraordinary.</p>
                 </div>
                 <div className="right-content" data-animate="ani-right">
-                    <h2>Join Us Today</h2>
+                    <h1>Join Us Today</h1>
                     <p>Ready to get started? Reach out and be a part of our growing community. We’re here to support you every step of the way.</p>
                     <EButton openModel={openModal}>Open from</EButton>
                 </div>
@@ -36,7 +36,7 @@ export default function Footer() {
                     </div>
                     <div className="col">
                         <h3>office  <div className="underline"> <span></span></div>
-                            <FaMagnifyingGlassLocation color='#00d4ff' />
+                            <FaMagnifyingGlassLocation color='#ffc400f' />
                         </h3>
                         <p>
                             #951, 16th Main, BTM 2nd Stage,</p>
@@ -72,15 +72,15 @@ export default function Footer() {
                         <h3>News letter <div className="underline"> <span></span></div>
                         </h3>
                         <form className='footer-form'>
-                            <ImMail4 size={42} color='#00d4ff' />
+                            <ImMail4 size={42} color='#ffc400' />
                             <input type="email" placeholder="Enter your Email" required />
-                            <button type="submit"><FaCircleArrowRight  size={35} color='#00d4ff'  /></button>
+                            <button type="submit"><FaCircleArrowRight  size={35} color='#ffc400'  /></button>
                         </form>
                         <div className="socail">
-                            <a href="#"><FaFacebook size={42} color='#00d4ff' /></a>
-                            <a href="#"><TiSocialYoutubeCircular size={60} color='#00d4ff' /></a>
-                            <a href="#"> < TiSocialInstagramCircular size={60} color='#00d4ff' /></a>
-                            <a href="#">< TiSocialLinkedinCircular size={60} color='#00d4ff' /></a>
+                            <a href="#"><FaFacebook size={42} color='#ffc400' /></a>
+                            <a href="#"><TiSocialYoutubeCircular size={60} color='#ffc400' /></a>
+                            <a href="#"> < TiSocialInstagramCircular size={60} color='#ffc400' /></a>
+                            <a href="#">< TiSocialLinkedinCircular size={60} color='#ffc400' /></a>
                         </div>
                     </div>
                 </div>

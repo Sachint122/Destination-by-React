@@ -10,6 +10,7 @@
             color: white;
             text-align: center;
             padding: 20px;
+            background-color: #000; /* Added dark background for better contrast */
         }
         .container {
             display: grid;
@@ -30,10 +31,11 @@
 
         /* 1. Diagonal Gradient Animation */
         .box1 {
-            background: linear-gradient(45deg, #001f3f, #7df9ff);
+            background: linear-gradient(45deg, #001f3f, #ff7300);
             background-size: 200% 200%;
             animation: gradientMove 6s infinite alternate;
         }
+
         @keyframes gradientMove {
             0% { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
@@ -41,20 +43,22 @@
 
         /* 2. Pulse Glow Animation */
         .box2 {
-            background: radial-gradient(circle, #7df9ff 20%, #001f3f 80%);
+            background: radial-gradient(circle, #ff7300 20%, #001f3f 80%);
             animation: glowPulse 4s infinite;
         }
+
         @keyframes glowPulse {
-            0%, 100% { filter: brightness(1); }
-            50% { filter: brightness(1.5); }
+            0%, 100% { filter: brightness(0.5); }
+            50% { filter: brightness(1); }
         }
 
         /* 3. Wave Gradient Flow */
         .box3 {
-            background: linear-gradient(90deg, #001f3f, #7df9ff, #001f3f);
+            background: linear-gradient(90deg, #001f3f, #ff7300, #001f3f);
             background-size: 300% 300%;
             animation: waveFlow 10s infinite;
         }
+
         @keyframes waveFlow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -63,10 +67,11 @@
 
         /* 4. Rotating Gradient */
         .box4 {
-            background: linear-gradient(0deg, #001f3f, #7df9ff);
+            background: linear-gradient(0deg, #001f3f, #ff7300);
             background-size: 200% 200%;
             animation: rotateGradient 8s infinite linear;
         }
+
         @keyframes rotateGradient {
             0% { background-position: 0% 0%; }
             100% { background-position: 100% 100%; }
@@ -74,9 +79,10 @@
 
         /* 5. Flickering Neon Effect */
         .box5 {
-            background: linear-gradient(to right, #001f3f 40%, #7df9ff 60%);
+            background: linear-gradient(to right, #001f3f 40%, #ff7300 60%);
             animation: flicker 2s infinite;
         }
+
         @keyframes flicker {
             0%, 100% { filter: brightness(1); }
             50% { filter: brightness(1.8); }
@@ -84,10 +90,11 @@
 
         /* 6. Diagonal Slide */
         .box6 {
-            background: linear-gradient(135deg, #001f3f, #7df9ff);
+            background: linear-gradient(135deg, #001f3f, #ff7300);
             background-size: 150% 150%;
             animation: slideDiagonal 5s infinite alternate;
         }
+
         @keyframes slideDiagonal {
             0% { background-position: top left; }
             100% { background-position: bottom right; }
@@ -95,10 +102,11 @@
 
         /* 7. Horizontal Stripe Shift */
         .box7 {
-            background: repeating-linear-gradient(90deg, #001f3f 0%, #001f3f 50%, #7df9ff 50%, #7df9ff 100%);
+            background: repeating-linear-gradient(90deg, #001f3f 0%, #001f3f 50%, #ff7300 50%, #ff7300 100%);
             background-size: 200% 200%;
             animation: stripeShift 6s infinite;
         }
+
         @keyframes stripeShift {
             0% { background-position: 0% 0%; }
             100% { background-position: 100% 0%; }
@@ -106,10 +114,11 @@
 
         /* 8. Ripple Wave Animation */
         .box8 {
-            background: radial-gradient(circle, #7df9ff, #001f3f);
+            background: radial-gradient(circle, #ff7300, #001f3f);
             background-size: 300% 300%;
             animation: rippleWave 8s infinite;
         }
+
         @keyframes rippleWave {
             0% { background-position: 50% 0%; }
             50% { background-position: 50% 100%; }
@@ -118,9 +127,10 @@
 
         /* 9. Color Breathing Effect */
         .box9 {
-            background: linear-gradient(120deg, #001f3f, #7df9ff);
+            background: linear-gradient(120deg, #001f3f, #ff7300);
             animation: breathingColor 6s infinite alternate;
         }
+
         @keyframes breathingColor {
             0% { filter: brightness(0.8); }
             100% { filter: brightness(1.5); }
@@ -128,10 +138,11 @@
 
         /* 10. Double Scroll Gradient */
         .box10 {
-            background: linear-gradient(70deg, #001f3f, #7df9ff, #001f3f);
+            background: linear-gradient(70deg, #001f3f, #ff7300, #001f3f);
             background-size: 300% 300%;
             animation: doubleScroll 12s infinite;
         }
+
         @keyframes doubleScroll {
             0% { background-position: 0% 0%; }
             50% { background-position: 100% 100%; }

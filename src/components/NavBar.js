@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../style/nav.css'
 import { useEffect } from 'react';
-import destinationLogo from '../images/logo/destination-log.png';
+import destinationLogo from '../images/logo/destination-log-new.jpg';
 import Button from './hooks/ModernButton';
 export default function NavBar() {
     useEffect(() => {
@@ -50,7 +50,7 @@ export default function NavBar() {
                 <li className="nav-item"><Link to="/Placement">Placement</Link></li>
                 <li className="nav-item"><Link to="/Contact">Contact Us</Link></li>
             </ul>
-            <Button text="Login LMS"/>
+            <a href='https://lms.destinationtechs.com/'><Button text="Login LMS"/></a>
         </nav>
     )
 }

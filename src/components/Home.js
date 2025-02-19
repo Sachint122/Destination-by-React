@@ -16,11 +16,11 @@ export default function Home() {
     return (
         <>
             <section>
-                <div className='hero'>
+                <div className='hero background-7 text-gray'>
                     <div className="hero-content">
                         <h6>Welcome to Destination Technologies</h6>
                         <p>One stop Solution for Consulting, Recruitment & Training</p>
-                        <p style={{ fontSize: '1rem' }}>
+                        <p style={{ fontSize: '1.2rem' }}>
                             With Destination Technologies as your trusted partner, you can unlock endless possibilities in your professional journey. Our aim is to empower individuals and organizations alike by bridging the gap between talent and opportunity. Experience our unparalleled services and witness the transformation firsthand.
                         </p>
                         <div style={{ display: 'flex' }}>
@@ -39,15 +39,15 @@ export default function Home() {
             <hr />
             <div className='brand2'>
                 <Brand />
-                <CountUpSection text1={500} text2={27}  text3={1200} text4={4}/>
+                <CountUpSection text1={3500} text2={27}  text3={1285} text4={4}/>
             </div>
             <hr />
             {/* address */}
             <section
-                className="address-top" >
+                className="address-top">
                 <div className="address-content" data-animate="address-animation">
                     <i> Our Localfoot prints------</i>
-                    <h6 data-animate="address-heading">
+                    <h6 data-animate="address-heading" style={{color:'#F26B23'}}>
                         Local Footprints that Transcend Boundaries: Nationwide Training & Recruiting Solutions</h6>
                     <p data-animate="address-p">At Destination Technologies, we believe in delivering exceptional services that transcend geographical boundaries. With our PAN India service delivery infrastructure, we have the capability to implement customized solutions across the length and breadth of the nation
                     </p>
@@ -66,7 +66,7 @@ export default function Home() {
             {/* Services */}
             <section id='card'>
                 <hr />
-                <h2>Our Services</h2>
+                <h2 style={{color:'#E41F3A'}}>Our Services </h2>
                 <hr />
                 <h1>Comprehensive Services to Fuel Your Success</h1>
                 <Card />
