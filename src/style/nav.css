@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg,#69809b,#191375);
+    background: linear-gradient(90deg,#0C0B57,#191375);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 

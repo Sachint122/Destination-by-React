@@ -11,60 +11,204 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,h6,h2,h3{
+h1,
+h6,
+h2,
+h3 {
   color: #1E2478;
   font-family: 'Times New Roman', Times, serif;
-  
+
 }
-p { font-family: 'Space Grotesk', sans-serif; }
+
+p {
+  font-family: 'Space Grotesk', sans-serif;
+}
 
 
 /* 🔹 Standard Linear Gradients */
-.background-1 { background: linear-gradient(to right, #1E2478, #F26B23); }
-.background-2 { background: linear-gradient(135deg, #1E2478, #E63946); }
-.background-3 { background: radial-gradient(circle, #1E2478, #F26B23); }
-.background-4 { background: conic-gradient(from 180deg, #1E2478, #F26B23, #E63946); }
-.background-5 { background: repeating-linear-gradient(45deg, #1E2478, #1E2478 10px, #F26B23 10px, #F26B23 20px); }
+.background-1 {
+  background: linear-gradient(to right, #1E2478, #F26B23);
+}
+
+.background-2 {
+  background: linear-gradient(135deg, #1E2478, #E63946);
+}
+
+.background-3 {
+  background: radial-gradient(circle, #1E2478, #F26B23);
+}
+
+.background-4 {
+  background: conic-gradient(from 180deg, #1E2478, #F26B23, #E63946);
+}
+
+.background-5 {
+  background: repeating-linear-gradient(45deg, #1E2478, #1E2478 10px, #F26B23 10px, #F26B23 20px);
+}
+
 /* .background-6 { background: linear-gradient(rgba(30, 36, 120, 0.8), rgba(242, 107, 35, 0.8)), url('your-image.jpg'); background-size: cover; } */
-.background-7 { background: linear-gradient(135deg, #F26B23 55%,#1E2478 40%); clip-path: ellipse(80% 50% at 50% 50%); }
-.background-8 { background: linear-gradient(to bottom, #1E2478, #F26B23); filter: blur(8px); }
-.background-9 { background: linear-gradient(45deg, #1E2478 25%, transparent 25%, transparent 50%, #F26B23 50%, #F26B23 75%, transparent 75%, transparent); background-size: 20px 20px; }
-.background-10 { background: linear-gradient(to left, #1E2478 50%, #F26B23 50%); }
+.background-7 {
+  background: linear-gradient(150deg, #2f307c 45% ,#dc6439 55%);
+  /* clip-path: ellipse(80% 50% at 50% 50%); */
+}
+
+.background-8 {
+  background: linear-gradient(to bottom, #1E2478, #F26B23);
+  filter: blur(8px);
+}
+
+.background-9 {
+  background: linear-gradient(45deg, #1E2478 25%, transparent 25%, transparent 50%, #F26B23 50%, #F26B23 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+}
+
+.background-10 {
+  background: linear-gradient(to left, #1E2478 50%, #F26B23 50%);
+}
 
 /* 🔹 Old 30 Gradients */
-.background-11 { background: linear-gradient(135deg, #1E2478, #F26B23); }
-.background-12 { background: linear-gradient(135deg, #1E2478, #E63946); }
-.background-13 { background: linear-gradient(135deg, #1E2478, #000000); }
-.background-14 { background: linear-gradient(135deg, #F26B23, #E63946); }
-.background-15 { background: linear-gradient(135deg, #F26B23, #FFD700); }
-.background-16 { background: linear-gradient(135deg, #1E2478, #2E4053); }
-.background-17 { background: linear-gradient(135deg, #E63946, #FFD700); }
-.background-18 { background: linear-gradient(135deg, #1E2478, #00A8CC); }
-.background-19 { background: linear-gradient(135deg, #1E2478, #8A2BE2); }
-.background-20 { background: linear-gradient(135deg, #1E2478, #FFFFFF); }
-.background-21 { background: linear-gradient(135deg, #F26B23, #8B0000); }
-.background-22 { background: linear-gradient(135deg, #F26B23, #000000); }
-.background-23 { background: linear-gradient(135deg, #1E2478, #4B0082); }
-.background-24 { background: linear-gradient(135deg, #1E2478, #32CD32); }
-.background-25 { background: linear-gradient(135deg, #1E2478, #4169E1); }
-.background-26 { background: linear-gradient(135deg, #E63946, #000000); }
-.background-27 { background: linear-gradient(135deg, #1E2478, #DC143C); }
-.background-28 { background: linear-gradient(135deg, #1E2478, #B22222); }
-.background-29 { background: linear-gradient(135deg, #F26B23, #00CED1); }
-.background-30 { background: linear-gradient(135deg, #F26B23, #7FFF00); }
-.background-31 { background: linear-gradient(135deg, #F26B23, #00FFFF); }
-.background-32 { background: linear-gradient(135deg, #1E2478, #3CB371); }
-.background-33 { background: linear-gradient(135deg, #1E2478, #D2691E); }
-.background-34 { background: linear-gradient(135deg, #1E2478, #8B4513); }
-.background-35 { background: linear-gradient(135deg, #F26B23, #6A5ACD); }
-.background-36 { background: linear-gradient(135deg, #F26B23, #BA55D3); }
-.background-37 { background: linear-gradient(135deg, #1E2478, #7B68EE); }
-.background-38 { background: linear-gradient(135deg, #E63946, #FFDAB9); }
-.background-39 { background: linear-gradient(135deg, #F26B23, #DDA0DD); }
-.background-40 { background: linear-gradient(135deg, #1E2478, #9932CC); }
+.background-11 {
+  background: linear-gradient(135deg, #1E2478, #F26B23);
+}
 
-.text-light { color: #FFFFFF; } /* For Dark Backgrounds */
-.text-dark { color: #000000; }  /* For Light Backgrounds */
-.text-gray { color: #F0F0F0; }  /* For Medium Contrast */
-.text-blue { color: #1E2478; }  /* For Medium Contrast */
-.text-orange { color: #F26B23; }  /* For Medium Contrast */
+.background-12 {
+  background: linear-gradient(135deg, #1E2478, #E63946);
+}
+
+.background-13 {
+  background: linear-gradient(135deg, #1E2478, #000000);
+}
+
+.background-14 {
+  background: linear-gradient(135deg, #F26B23, #E63946);
+}
+
+.background-15 {
+  background: linear-gradient(135deg, #F26B23, #FFD700);
+}
+
+.background-16 {
+  background: linear-gradient(135deg, #1E2478, #2E4053);
+}
+
+.background-17 {
+  background: linear-gradient(135deg, #E63946, #FFD700);
+}
+
+.background-18 {
+  background: linear-gradient(135deg, #1E2478, #00A8CC);
+}
+
+.background-19 {
+  background: linear-gradient(135deg, #1E2478, #8A2BE2);
+}
+
+.background-20 {
+  background: linear-gradient(135deg, #1E2478, #FFFFFF);
+}
+
+.background-21 {
+  background: linear-gradient(135deg, #F26B23, #8B0000);
+}
+
+.background-22 {
+  background: linear-gradient(135deg, #F26B23, #000000);
+}
+
+.background-23 {
+  background: linear-gradient(135deg, #1E2478, #4B0082);
+}
+
+.background-24 {
+  background: linear-gradient(135deg, #1E2478, #32CD32);
+}
+
+.background-25 {
+  background: linear-gradient(135deg, #1E2478, #4169E1);
+}
+
+.background-26 {
+  background: linear-gradient(135deg, #E63946, #000000);
+}
+
+.background-27 {
+  background: linear-gradient(135deg, #1E2478, #DC143C);
+}
+
+.background-28 {
+  background: linear-gradient(135deg, #1E2478, #B22222);
+}
+
+.background-29 {
+  background: linear-gradient(135deg, #F26B23, #00CED1);
+}
+
+.background-30 {
+  background: linear-gradient(135deg, #F26B23, #7FFF00);
+}
+
+.background-31 {
+  background: linear-gradient(135deg, #F26B23, #00FFFF);
+}
+
+.background-32 {
+  background: linear-gradient(135deg, #1E2478, #3CB371);
+}
+
+.background-33 {
+  background: linear-gradient(135deg, #1E2478, #D2691E);
+}
+
+.background-34 {
+  background: linear-gradient(135deg, #1E2478, #8B4513);
+}
+
+.background-35 {
+  background: linear-gradient(135deg, #F26B23, #6A5ACD);
+}
+
+.background-36 {
+  background: linear-gradient(135deg, #F26B23, #BA55D3);
+}
+
+.background-37 {
+  background: linear-gradient(135deg, #1E2478, #7B68EE);
+}
+
+.background-38 {
+  background: linear-gradient(135deg, #E63946, #FFDAB9);
+}
+
+.background-39 {
+  background: linear-gradient(135deg, #F26B23, #DDA0DD);
+}
+
+.background-40 {
+  background: linear-gradient(135deg, #1E2478, #9932CC);
+}
+
+.text-light {
+  color: #FFFFFF;
+}
+
+/* For Dark Backgrounds */
+.text-dark {
+  color: #000000;
+}
+
+/* For Light Backgrounds */
+.text-gray {
+  color: #F0F0F0;
+}
+
+/* For Medium Contrast */
+.text-blue {
+  color: #1E2478;
+}
+
+/* For Medium Contrast */
+.text-orange {
+  color: #F26B23;
+}
+
+/* For Medium Contrast */
