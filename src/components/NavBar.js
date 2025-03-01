@@ -50,7 +50,7 @@ export default function NavBar() {
                 <li className="nav-item"><Link to="/Placement">Placement</Link></li>
                 <li className="nav-item"><Link to="/Contact">Contact Us</Link></li>
             </ul>
-            <a href='https://lms.destinationtechs.com/'><Button text="Login LMS"/></a>
+            <a href='https://lms.destinationtechs.com/'><Button text="Login LMS" color="#E41F3A"/></a>
         </nav>
     )
 }

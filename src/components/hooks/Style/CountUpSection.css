@@ -16,10 +16,10 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 10px;
-  gap: 15px;
+  gap: 25px;
   border-radius: 1em;
   background: linear-gradient(135deg, #757362, #191b41);
-  border-bottom: 10px solid #1f18f9;
+  border-bottom: 10px solid #FD7939;
 }
 
 .container img {
@@ -30,13 +30,14 @@
 }
 
 .count {
+  font-weight: bold;
   font-size: 1.5em;
-  color: #cdb9b9;
+  color: #FD7939;
   text-align: center;
 }
 
 .wrapper .text {
-  margin-top: 20px;
+  margin-top: -10px;
   color: #d2c5c5;
   font-size: 0.9em;
   pad: 0.7em 0;

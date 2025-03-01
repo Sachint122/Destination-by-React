@@ -14,7 +14,7 @@ body {
 }
 @keyframes glowPulse {
     0%, 100% { filter: brightness(1); }
-    50% { filter: brightness(1.5); }
+    50% { filter: brightness(1.4); }
 }
 .hero {
     display: flex;
