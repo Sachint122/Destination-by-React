@@ -17,9 +17,9 @@
   flex-direction: column;
   padding-bottom: 10px;
   gap: 25px;
-  border-radius: 1em;
-  background: linear-gradient(135deg, #757362, #191b41);
-  border-bottom: 10px solid #FD7939;
+  border-radius: 2em;
+  background: linear-gradient(to bottom, #36348f, #000000);
+  border-bottom: 10px solid #381C1B;
 }
 
 .container img {

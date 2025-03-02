@@ -13,7 +13,7 @@ export default function Card() {
         <p>Full Stack Web Development: Master the art of dynamic web app creation. Gain proficiency in front-end and back-end technologies to become a sought-after full stack developer.</p>
         {/* <button>Learn More</button> */}
         <div className='cardb'>
-          <Button text="Learn More" />
+          <Button text="Learn More" color='#1E2478'/>
         </div>
       </div>
 
@@ -23,7 +23,7 @@ export default function Card() {
         </h2>
         <p>UI/UX Websites: Our expert team of designers and developers creates visually stunning and user-friendly websites that leave a lasting impression. We prioritize user experience and ensure seamless navigation, captivating visuals, and intuitive interfaces.</p>
         <div className='cardb'>
-          <Button text="Learn More" />
+          <Button text="Learn More" color='#1E2478'/>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ export default function Card() {
         <h2>IT Staffing: Unlocking Top Talent for Your Organization</h2>
         <p>Finding the right talent is crucial for the success of any organization. With our IT staffing services, we help you identify and recruit skilled professionals who align with your specific requirements. Our extensive network and rigorous screening process ensure you have access to the best-fit candidates.</p>
         <div className='cardb'>
-          <Button text="Learn More" />
+          <Button text="Learn More" color='#1E2478' />
         </div>
       </div>
     </div>

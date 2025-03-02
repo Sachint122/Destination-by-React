@@ -24,9 +24,9 @@ export default function Home() {
                             With Destination Technologies as your trusted partner, you can unlock endless possibilities in your professional journey. Our aim is to empower individuals and organizations alike by bridging the gap between talent and opportunity. Experience our unparalleled services and witness the transformation firsthand.
                         </p>
                         <div style={{ display: 'flex', width:'400px' }}>
-                            <Button text="Our Courses" color="white" height="50px" />
+                            <Button text="Our Courses" color="white" height="50px" text_color="white" />
                             {/* shift to course */}
-                            <Button text="Know More" color="white" height="50px"/>
+                            <Button text="Know More" color="white" height="50px" text_color="white"/>
                             {/* shift ton about us */}
                         </div>
                     </div>

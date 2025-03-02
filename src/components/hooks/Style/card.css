@@ -85,11 +85,11 @@ hr {
 
 .homecard:hover {
   /* transform: translateY(-10px) scale(1.03) rotate(1deg); */
-  box-shadow: 0 10px 20px 0px rgb(250, 204, 0);
+  box-shadow: 0 10px 20px 0px #F26B23;
 }
 
 .homecard:hover h2 {
-  color: #ffdc7d;
+  color: #F26B23;
 }
 
 .homecard:hover img {

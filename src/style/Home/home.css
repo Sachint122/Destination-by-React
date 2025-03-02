@@ -10,7 +10,7 @@ body {
 .brand2 {
     padding-top: 50px;
     animation: glowPulse 4s infinite;
-    /* background: linear-gradient(to bottom, #000000, #01003f); */
+    background: linear-gradient(to bottom, #36348f, #000000);
 }
 @keyframes glowPulse {
     0%, 100% { filter: brightness(1); }
