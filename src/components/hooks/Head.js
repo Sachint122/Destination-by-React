@@ -7,7 +7,7 @@ export default function Head({ image, headers, text1 = "", text2 = "", text3 = "
         <>
             <div className="head-main"  style={{ position: 'relative', overflow: 'hidden' }}>
                 <div
-                    className="background-overlay"
+                    // className="background-overlay"
                     style={{
                         backgroundImage: `url(${image})`,
                         backgroundSize: 'cover',
