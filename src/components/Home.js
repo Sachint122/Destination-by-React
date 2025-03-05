@@ -11,38 +11,8 @@ import Brand from './hooks/Brand';
 import EButton from './hooks/ExploreButton';
 import Button from './hooks/ModernButton';
 import { useScrollAnimation } from './hooks/Animation';
-import bg1 from '../images/background (1).png';
-import bg2 from '../images/background (2).png';
-import bg3 from '../images/background (3).png';
-import bg4 from '../images/background (4).png';
 export default function Home() {
     useScrollAnimation();
-    const featureData = [
-        {
-            title: "Industry Expertise",
-            description:
-                "Benefit from our deep industry knowledge and expertise, ensuring you receive the most relevant and up-to-date training.",
-            image: require("../images/background (1).png"),
-        },
-        {
-            title: "Practical Approach",
-            description:
-                "Experience a hands-on, practical learning environment that focuses on real-world applications.",
-            image: bg2,
-        },
-        {
-            title: "Diverse Training",
-            description:
-                "Gain comprehensive training through our carefully designed programs, covering a wide range of in-demand technologies.",
-            image: bg3,
-        },
-        {
-            title: "Career Support",
-            description:
-                "Receive dedicated career support, including job placement assistance and guidance, helping you maximize your potential.",
-            image: bg4,
-        },
-    ];
     return (
         <>
             <section>
