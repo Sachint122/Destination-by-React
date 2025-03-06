@@ -54,7 +54,8 @@
 } */
 
 .left-content p {
-  font-size: 1.2rem;
+  opacity: 0.7;
+  font-size: 1rem;
   margin-top: 10px;
 }
 
@@ -98,8 +99,9 @@
 }
 
 .right-content p {
+  opacity: 0.7;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 10px;
 }
 .Bar-line{
@@ -188,9 +190,9 @@ footer {
 }
 
 .col ul li {
-  width: 65px;
-  text-align: left;
-  margin-left: 2px;
+  width: 80px;
+  /* text-align: left; */
+  display: inline-block;
   list-style: none;
   margin-bottom: 12px;
 }
@@ -198,7 +200,14 @@ footer {
 .col ul li a {
   color: whitesmoke
 }
-
+.link{
+  text-align: left;
+  display: inline-block;
+  padding: 0px 0px;
+}
+.link:hover{
+  color: #F26936;
+}
 .s-link {
   text-decoration: none;
   color: #ff0707;

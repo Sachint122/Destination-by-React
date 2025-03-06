@@ -1,62 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FaAngleDoubleRight } from "react-icons/fa";
-const EButton = ({openModel}) => {
+import '../hooks/Style/ButtonHover2.css';
+
+const EButton = ({ openModel, color }) => {
     return (
-        <StyledWrapper>
-            <button id="openFormButton" className="button" onClick={openModel}>
-                <svg className="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" /></svg>
-                Explore
-                <FaAngleDoubleRight />
-            </button>
-        </StyledWrapper>
+        <button id="openFormButton"
+            style={{ "--bg-color": color }}
+            className="custom-hover-button"
+            onClick={openModel}>
+            <span className="custom-hover-text">Visit</span>
+            <span className="custom-hover-icon">
+                <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon">
+                    <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        clipRule="evenodd"></path>
+                </svg>
+            </span>
+        </button>
     );
-}
-
-const StyledWrapper = styled.div`
-  .button {
-    // margin-top:10px;
-    width: 110px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    background-color: #007bff;
-    border-radius: 30px;
-    color: white;
-    font-weight: 600;
-    border: none;
-    // position: relative;
-    cursor: pointer;
-    transition-duration: .2s;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
-    padding-left: 8px;
-    transition-duration: .5s;
-  }
-
-  .svgIcon {
-    height: 25px;
-    transition-duration: 1.5s;
-  }
-
-  .bell path {
-    fill: rgb(19, 19, 19);
-  }
-
-  .button:hover {
-    background-color: #0056b3;
-    transition-duration: .5s;
-  }
-
-  .button:active {
-    transform: scale(0.97);
-    transition-duration: .2s;
-  }
-
-  .button:hover .svgIcon {
-    transform: rotate(250deg);
-    transition-duration: 1.5s;
-  }`;
+};
 
 export default EButton;

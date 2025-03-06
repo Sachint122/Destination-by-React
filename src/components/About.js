@@ -31,9 +31,9 @@ export default function About() {
                     <hr style={{ marginTop: '-10px' }} />
                     <p data-animate='ani-p'>Welcome to Destination Technologies, your premier destination for cutting-edge software training and professional development. Our mission is to equip individuals with the latest technologies and skills demanded by the employment market. With a focus on staying current and offering top-notch training, we provide a platform for new students and professionals to thrive in the IT industry.</p>
                     <ul style={{ listStyle: 'none', paddingLeft: '0px' }}>
-                        <li data-animate='ani-li'><IoIosCheckmarkCircle size={24} color='#00d4ff' /> Website Development</li>
-                        <li data-animate='ani-li'><IoIosCheckmarkCircle size={24} color='#00d4ff' /> Training and Education</li>
-                        <li data-animate='ani-li'><IoIosCheckmarkCircle size={24} color='#00d4ff' /> IT Staffing</li>
+                        <li data-animate='ani-li'><IoIosCheckmarkCircle size={24} color='#f36229' /> Website Development</li>
+                        <li data-animate='ani-li'><IoIosCheckmarkCircle size={24} color='#f36229' /> Training and Education</li>
+                        <li data-animate='ani-li'><IoIosCheckmarkCircle size={24} color='#f36229' /> IT Staffing</li>
                     </ul>
                 </div>
             </div>
@@ -116,12 +116,12 @@ export default function About() {
                     <h2>Leadership Team</h2>
                 </div>
                 <div class="unique-container">
-                    <div class="left-content">
+                    <div class="left-content-a">
                         <h2>Mr. Subramanya Raj</h2>
                         <p>Designation</p>
                         <img src="" alt="Placeholder Image" />
                     </div>
-                    <div class="right-content">
+                    <div class="right-content-a">
                         <h2>Mr. Subramanya Raj: Experienced Leader and Academic Voice</h2>
                         <p>
                             Mr. Subramanya Raj brings over 5+ years of industry experience, leading engineering teams for Mresult Services Pvt Ltd. With an additional 9+ years of teaching experience, he has become a prominent academic voice in the field of software engineering..
@@ -142,12 +142,12 @@ export default function About() {
                     </div>
                 </div>
                 <div class="unique-container">
-                    <div class="left-content">
+                    <div class="left-content-a">
                         <h2>Mr. Sreedhar Kommuru</h2>
                         <p>Designation</p>
                         <img src="" alt="Placeholder Image" />
                     </div>
-                    <div class="right-content">
+                    <div class="right-content-a">
                         <h2>Mr. Sreedhar Kommuru: Leading Educationist and Dedicated Mentor</h2>
                         <p>
                             Mr. Sreedhar Kommuru is a renowned educationist in the competitive world, with a professional journey that began as a Lecturer of Economics in Gannavaram in 1991. After a brief stint at A.N.R. College, Gudivada, he chose to follow his true passion for teaching and pursued a career as an LIC Development Officer. However, driven by his deep commitment to his profession, he resigned and established Sreedhar's CCE.
@@ -162,12 +162,12 @@ export default function About() {
                     </div>
                 </div>
                 <div class="unique-container">
-                    <div class="left-content">
+                    <div class="left-content-a">
                         <h2>Mr. Sudheer Chakravarthy</h2>
                         <p>Designation</p>
                         <img src="" alt="Placeholder Image" />
                     </div>
-                    <div class="right-content">
+                    <div class="right-content-a">
                         <h2>Mr. Sudheer Chakravarthy Chaganti: Passionate Educator and Tech Expert</h2>
                         <p>
                             Mr. Sudheer Chakravarthy Chaganti, an alumnus of the National Institute of Technology Warangal, discovered his passion for teaching in 2005 while working as a part-time faculty. After completing his post-graduation in 2008, he joined IVY Comptech Pvt Ltd as a Software Engineer but continued to pursue his teaching endeavors.

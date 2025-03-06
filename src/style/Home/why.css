@@ -81,12 +81,13 @@
 
 
 
-.feature-card-container{
+.feature-card-container {
     display: flex;
     flex-direction: row;
     column-gap: 200px;
     margin-top: 40px;
 }
+
 /* Container to position elements correctly */
 .feature-container {
     margin: 0px 70px;
@@ -97,7 +98,8 @@
 /* Outer rotated div for border effect */
 .outer-div {
     position: absolute;
-    width: 310px; /* Slightly larger than the card */
+    width: 310px;
+    /* Slightly larger than the card */
     height: 210px;
     border: 1px solid rgba(255, 100, 100, 0.6);
     z-index: 0;
@@ -108,7 +110,8 @@
 .feature-card {
     position: relative;
     width: 300px;
-    height: 200px; /* Ensure it covers the background */
+    height: 200px;
+    /* Ensure it covers the background */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -119,26 +122,36 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.3s;
 }
-.url1{
+.feature-card:hover{
+    box-shadow: 0 10px 20px 0px #F26B23;
+}
+.url1 {
     background-image: url("../../images/background\ \(1\).png");
 }
-.url2{
+
+.url2 {
     background-image: url("../../images/background\ \(2\).png");
 }
-.url3{
+
+.url3 {
     background-image: url("../../images/background\ \(3\).png");
 }
-.url4{
+
+.url4 {
     background-image: url("../../images/background\ \(4\).png");
 }
-.Oangle{
+
+.Oangle {
     transform: rotate(5deg);
 }
-.OOangle{
+
+.OOangle {
     transform: rotate(-5deg);
 }
-.background-image-card{
+
+.background-image-card {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,27 +185,33 @@
 .Ttext-overlay::before {
     content: "";
     position: absolute;
-    width: 120%; /* Adjust size */
+    width: 120%;
+    /* Adjust size */
     height: 120%;
     top: 20%;
     left: 10%;
     transform: translate(-50%, -50%);
     background: radial-gradient(circle, #181a1e 0%, rgba(0, 0, 0, 0) 80%);
     border-radius: 50%;
-    z-index: -1; /* Ensure it stays behind the text */
-    filter: blur(10px); /* Adjust blur effect */
+    z-index: -1;
+    /* Ensure it stays behind the text */
+    filter: blur(10px);
+    /* Adjust blur effect */
 }
 
 .Btext-overlay::before {
     content: "";
     position: absolute;
-    width: 120%; /* Adjust size */
+    width: 120%;
+    /* Adjust size */
     height: 120%;
     top: 80%;
     left: 90%;
     transform: translate(-50%, -50%);
     background: radial-gradient(circle, #181a1e 0%, rgba(0, 0, 0, 0) 80%);
     border-radius: 50%;
-    z-index: -1; /* Ensure it stays behind the text */
-    filter: blur(10px); /* Adjust blur effect */
+    z-index: -1;
+    /* Ensure it stays behind the text */
+    filter: blur(10px);
+    /* Adjust blur effect */
 }

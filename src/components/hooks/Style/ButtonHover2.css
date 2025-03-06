@@ -1,0 +1,51 @@
+.custom-hover-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+    /* border: 2px solid #656fe2; */
+    font-weight: 500;
+    font-size: 14px;
+    color: #e5e7eb;
+    background: linear-gradient(to right, #0a124f, var(--bg-color));
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .custom-hover-button:hover {
+    width: 128px;
+    border-radius: 24px;
+  }
+  
+  .custom-hover-text {
+    position: absolute;
+    opacity: 0;
+    white-space: nowrap;
+    transform: translateX(10px);
+    transition: all 0.2s ease;
+  }
+  
+  .custom-hover-button:hover .custom-hover-text {
+    opacity: 1;
+    transform: translateX(-12px);
+  }
+  
+  .custom-hover-icon {
+    position: absolute;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: #e5e7eb;
+  }
+  

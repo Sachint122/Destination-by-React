@@ -1,13 +1,13 @@
 import React from 'react'
 import { useModal } from './hooks/FormOpenClose';
 import Form from './hooks/Form';
-import EButton from './hooks/ExploreButton';
 import destinationLogo from '../images/logo/destination-log.png';
 import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { FaFacebook, FaCircleArrowRight } from "react-icons/fa6";
 import { TiSocialYoutubeCircular, TiSocialLinkedinCircular, TiSocialInstagramCircular } from "react-icons/ti";
 import { ImMail4 } from "react-icons/im";
 import { useScrollAnimation } from './hooks/Animation';
+import EButton from './hooks/ExploreButton';
 export default function Footer() {
     useScrollAnimation();
     const { isModalOpen, openModal } = useModal();
@@ -25,11 +25,11 @@ export default function Footer() {
                         <h3>Join Us Today</h3>
                         <p>Ready to get started? Reach out and be a part of our growing community. We’re here to support you every step of the way.</p>
                         <div className='right-button'>
-                            <EButton openModel={openModal}>Open from</EButton>
+                            <EButton openModel={openModal} color="#f36229" />
                         </div>
                     </div>
                 </div>
-                <hr  className='Bar-line'/>
+                <hr className='Bar-line' />
             </section>
             {/* <hr /> */}
             <Form open={isModalOpen} />
@@ -59,16 +59,16 @@ export default function Footer() {
                         <div>
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#" className='link'>Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">service</a>
+                                    <a href="#" className='link'>Service</a>
                                 </li>
                                 <li>
-                                    <a href="#">featue</a>
+                                    <a href="#" className='link' >Featue</a>
                                 </li>
                                 <li>
-                                    <a href="#">contact</a>
+                                    <a href="#" className='link' >Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -82,7 +82,7 @@ export default function Footer() {
                             <button type="submit"><FaCircleArrowRight size={35} color='#F26936' /></button>
                         </form>
                         <div className="socail">
-                            <a href="#"><FaFacebook size={42} color='#F26936' /></a>
+                            <a href="#" style={{ justifyContent: 'center' }}><FaFacebook size={42} color='#F26936' /></a>
                             <a href="#"><TiSocialYoutubeCircular size={60} color='#F26936' /></a>
                             <a href="#"> < TiSocialInstagramCircular size={60} color='#F26936' /></a>
                             <a href="#">< TiSocialLinkedinCircular size={60} color='#F26936' /></a>

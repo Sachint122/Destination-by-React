@@ -24,7 +24,7 @@
 
 
 .head-main-h {
-    color: rgb(0, 166, 255);
+    color: white;
     font-size: 3.5em;
     margin-bottom: 20px;
     animation: slideIn 1.5s ease-out;
@@ -45,6 +45,7 @@
     font-size: 1.5em;
     margin-bottom: 50px;
     animation: fadeInUp 2s ease-in;
+    opacity: 0.7;
 }
 
 @keyframes fadeInUp {
@@ -86,7 +87,7 @@
 }
 
 .content-section h2 {
-    color: #00d4ff;
+    color: #f36229;
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
@@ -190,8 +191,8 @@
     gap: 10px;
 }
 .card1-main img{
-    width: 20%;
-    height: 20%;
+    width: 40%;
+    height: 40%;
     object-fit: cover;
 }
 .card1-main.a-main {
@@ -213,7 +214,7 @@
 .card1-sub {
     padding: 20px;
     width: 85vmin;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -222,7 +223,7 @@
     gap: 10px;
     border-radius: 1em;
     background: linear-gradient(135deg, #627175, #192b41);
-    border-bottom: 10px solid #188cf9;
+    border-bottom: 10px solid #f3622956;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     transform: scale(0.95);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -234,19 +235,20 @@
 }
 
 .card1-sub h1 {
-    font-size: 2.2rem;
-    color: #00d4ff;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f36229;
     margin-bottom: 10px;
-    animation: textGlow 2s infinite alternate;
+    /* animation: textGlow 2s infinite alternate; */
 }
 
 @keyframes textGlow {
     from {
-        text-shadow: 0px 0px 10px #00d4ff, 0px 0px 20px #00d4ff;
+        text-shadow: 0px 0px 10px #f36229, 0px 0px 20px #f36229;
     }
 
     to {
-        text-shadow: 0px 0px 20px #00d4ff, 0px 0px 30px #00d4ff;
+        text-shadow: 0px 0px 20px #f36229, 0px 0px 30px #f36229;
     }
 }
 
@@ -260,7 +262,7 @@
 }
 
 #card1 p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
     color: #d1d1d1;
 }
@@ -342,7 +344,7 @@
     flex-direction: row;
     gap: 30px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background: linear-gradient(to bottom, #001f3f, #000000);
     background-size: 200% 200%;
     animation: gradientMove 6s infinite forwards, pulse 3s infinite;
@@ -373,7 +375,7 @@
 }
 
 .vission-heading {
-    color: #00d4ff;
+    color: #f36229;
     margin-top: 10px;
     font-size: 2rem;
     text-align: left;
@@ -382,15 +384,16 @@
 }
 
 @keyframes textGlow {
-    0% { text-shadow: 2px 2px 4px rgba(0, 212, 255, 0.4); }
-    100% { text-shadow: 4px 4px 8px rgba(0, 212, 255, 0.8); }
+    0% { text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.415); }
+    100% { text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.395); }
 }
 
 .vission-p {
-    font-size: 1.3rem;
+    color: #d1d1d1;
+    font-size: 1rem;
     margin-top: 20px;
     text-align: left;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -418,9 +421,11 @@
     margin-top: 10px;
     font-size: 2rem;
     text-align: center;
-    color: #188cf9;
+    color: #f36229;
 }
 .team h2{
+    color: white;
+    opacity: 0.7;
     margin-top: 2px;
     font-size: 2rem;
     text-align: center;   
@@ -444,7 +449,7 @@
 }
 
 /* Left Side Content */
-.left-content {
+.left-content-a {
     width: 48%;
     padding: 60px;
     display: flex;
@@ -452,7 +457,7 @@
     justify-content: flex-start;
     border-radius: 10px;
     background: linear-gradient(to right, rgba(0, 31, 63, 0.9), rgba(0, 0, 0, 0.7));
-    color: #00d4ff;
+    color: #f36229;
     box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.5);
     animation: fadeInLeft 2s ease-in-out forwards;
 }
@@ -462,9 +467,10 @@
     100% { transform: translateX(0); opacity: 1; }
 }
 
-.left-content h2 {
+.left-content-a h2 {
     text-align: center;
     font-size: 2.8rem !important;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 212, 255, 0.7);
     animation: glowText 1.5s infinite alternate;
 }
@@ -474,14 +480,16 @@
     100% { text-shadow: 3px 3px 8px rgba(0, 212, 255, 0.9); }
 }
 
-.left-content p {
+.left-content-a p {
+    color: white;
+    opacity: 0.5;
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.left-content img {
+.left-content-a img {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
@@ -500,15 +508,15 @@
 }
 
 /* Right Side Content */
-.right-content {
+.right-content-a {
     width: 48%;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
     grid:20px;
-    background: linear-gradient(to left, rgba(0, 31, 63, 0.9), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(90deg, #4a4a4a, #0b0939);
     color: #ffffff;
     animation: fadeInRight 2s ease-in-out forwards;
 }
@@ -518,14 +526,16 @@
     100% { transform: translateX(0); opacity: 1; }
 }
 
-.right-content h2 {
-    text-decoration: underline;
-    font-size: 1.5rem !important; /* Use rem for better scalability */
-    color: #7df9ff;
+.right-content-a h2 {
+    /* text-decoration: underline; */
+    font-size: 1.3rem !important; /* Use rem for better scalability */
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 
-.right-content p {
-    font-size: 1.3rem;
-    line-height: 1.6;
+.right-content-a p {
+    color: #d1d1d1;
+    font-size: 1rem;
+    /* line-height: 1.6; */
 }
