@@ -92,7 +92,7 @@
 }
 
 #Digital_About h2 {
-    color: #00caf2;
+    color: #F26B23;
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -101,11 +101,12 @@
 }
 
 .Digital_About-p p {
-    font-size: 1.4rem;
+    opacity: 0.6;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 15px 0;
-    opacity: 0.9;
-    animation: fadeInUp 1.2s ease-in-out forwards;
+    /* opacity: 0.9; */
+    animation: fadeInUpp 1.2s ease-in-out forwards;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -132,7 +133,7 @@
     }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInUpp {
     from {
         transform: translateY(20px);
         opacity: 0;
@@ -140,7 +141,7 @@
 
     to {
         transform: translateY(0);
-        opacity: 1;
+        opacity: 0.6;
     }
 }
 
@@ -252,13 +253,14 @@
 
 #Digital-Syllabus h2 {
     font-size: 2rem;
-    color: #2fb8ff;
+    color: #F26B23;
     /* Electric blue */
     margin-bottom: 30px;
     font-weight: bold;
 }
 
 #Digital-Syllabus p {
+    opacity: 0.7;
     text-align: left;
     width: 80%;
     font-size: 1.4rem;
@@ -284,7 +286,7 @@
 
 #Digital-Benifits h2 {
     font-size: 2rem;
-    color: #2fb8ff;
+    color: #F26B23;
     /* Electric blue */
     margin-bottom: 30px;
 }
@@ -298,7 +300,16 @@
     max-width: 80%;
     margin: 0 auto;
 }
-
+.text h3{
+   color: white;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+.text p{
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
 /* First row: 3 columns with image on right */
 .first-row {
     border: 2px solid #2fb8ff;

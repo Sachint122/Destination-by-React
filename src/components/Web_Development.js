@@ -82,7 +82,7 @@ export default function Web_Development() {
             />
             <hr />
             {/*  */}
-            <div className="web-container" style={{height:'90vh'}}>
+            <div className="web-container" style={{ height: '90vh' }}>
                 <div>
                     <h1 className="web-header">
                         Key Features of Our Website Designing Services
@@ -120,7 +120,7 @@ export default function Web_Development() {
                     <div className="web-content-section">
                         <h2>Website Development...</h2>
                         <h1>Why Choose Destination?</h1>
-                        <p>At Destination Technologies, we are committed to helping aspiring
+                        <p className='content'>At Destination Technologies, we are committed to helping aspiring
                             developers kickstart their careers in the tech industry. Our
                             hands-on training, real-world projects, and expert mentorship
                             ensure that you gain the skills needed to excel in web
@@ -138,7 +138,9 @@ export default function Web_Development() {
                                     </div>
                                     <div>
                                         <span>{feature.heading}: </span>
-                                        {feature.content}
+                                        <p style={{opacity:'0.7'}}>
+                                            {feature.content}
+                                        </p>
                                     </div>
                                 </div>
                             ))}

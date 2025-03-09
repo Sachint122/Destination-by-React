@@ -1,0 +1,26 @@
+/* News Ticker Container */
+.news-ticker {
+    width: 100%;
+    color: #FF6600;
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Scrolling Text */
+  .news-content {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  /* News Item */
+  .news-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  

@@ -246,9 +246,6 @@ export default function It_Staff() {
                 {/* Heading */}
                 <h1>
                     Destination Staffing Solutions
-                    <div className="flex justify-center">
-                        <div className="w-24 h-1 bg-yellow-500 my-3 text-center"></div>
-                    </div>
                 </h1>
 
                 {/* Intro Paragraph */}
@@ -306,7 +303,7 @@ export default function It_Staff() {
                     <div className="web-content-section">
                         <h2>IT Staffing...</h2>
                         <h1>Why choose us for IT Staffing?</h1>
-                        <p>With Destination Technologies as your IT staffing partner, unlock the power of exceptional talent and drive your organization's success to new heights</p>
+                        <p className='content'>With Destination Technologies as your IT staffing partner, unlock the power of exceptional talent and drive your organization's success to new heights</p>
 
                         {/* Features List */}
                         <div className="web-features-list">
@@ -317,7 +314,9 @@ export default function It_Staff() {
                                     </div>
                                     <div>
                                         <span>{feature.heading}: </span>
-                                        {feature.content}
+                                        <p style={{opacity:'0.6'}}>
+                                            {feature.content}
+                                        </p>
                                     </div>
                                 </div>
                             ))}

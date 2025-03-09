@@ -748,7 +748,7 @@ export default function Digital() {
                         <h6>Marketing Courses</h6>
                         <h1>Empower Your Career in Digital Marketing: Unlock Your Potential</h1>
                         <p>At Destination Technologies, our Digital Marketing program is designed to equip you with the skills and knowledge to excel in the field of digital marketing. With a comprehensive curriculum and hands-on training, we prepare you for a successful career by providing career-focused education and placement support. Join us on this transformative learning journey and unleash your potential in the dynamic world of digital marketing.</p>
-                        <a> <EButton  color='#F26B23'/></a>
+                        <a> <EButton color='#F26B23' /></a>
                     </div>
                 </div>
             </section>
@@ -853,32 +853,47 @@ export default function Digital() {
                 <div className='Digital-Benifits-main'>
                     <div className="first-row">
                         <img src={logo5} />
-                        <p><b>Strong Hand-Holding:</b> Experience dedicated support and guidance throughout your learning journey. Our team is committed to providing you with the assistance you need to succeed in the program.</p>
+                        <div className='text'>
+                            <h3>Strong Hand-Holding:</h3>
+                            <p> Experience dedicated support and guidance throughout your learning journey. Our team is committed to providing you with the assistance you need to succeed in the program.</p>
+                        </div>
                     </div>
                     <div className="first-row">
                         <img src={logo6} />
-                        <p><b>Learning Support:</b> Access comprehensive learning resources, including recorded lectures, live sessions, quizzes, assignments, and interactive learning materials. Stay engaged and make the most of your learning experience.</p>
+                        <div className='text'>
+                            <h3>Learning Support:</h3>
+                            <p> Access comprehensive learning resources, including recorded lectures, live sessions, quizzes, assignments, and interactive learning materials. Stay engaged and make the most of your learning experience.</p>
+                        </div>
                     </div>
                     <div className="first-row">
                         <img src={logo7} />
-                        <p><b>Career Assistance:</b> Benefit from our career assistance services, which include resume building, interview preparation, and job placement support. We strive to equip you with the skills and resources needed to excel in your career as a Full Stack Web Developer.</p>
+                        <div className='text'>
+                            <h3>Career Assistance:</h3>
+                            <p> Benefit from our career assistance services, which include resume building, interview preparation, and job placement support. We strive to equip you with the skills and resources needed to excel in your career as a Full Stack Web Developer.</p>
+                        </div>
                     </div>
                 </div>
                 <div className='Digital-Benifits-sub'>
                     <div className="secound-row">
                         <img src={logo8} />
-                        <p><b>Job Opportunities: </b> Destination Technologies opens doors to a wide range of job opportunities in the field of Full Stack Web Development. Our program equips you with the skills and knowledge sought after by employers, empowering you to secure rewarding positions in the industry.</p>
+                        <div className='text'>
+                            <h3>Job Opportunities: </h3>
+                            <p> Destination Technologies opens doors to a wide range of job opportunities in the field of Full Stack Web Development. Our program equips you with the skills and knowledge sought after by employers, empowering you to secure rewarding positions in the industry.</p>
+                        </div>
                     </div>
                     <div className="secound-row">
                         <img src={logo9} />
-                        <p><b>Networking:</b> Connect with a diverse community of learners, instructors, industry professionals, and alumni. Take advantage of networking opportunities, collaborate on projects, and build valuable connections that can accelerate your career growth in the field of Full Stack Web Development.</p>
+                        <div className='text'>
+                            <h3>Networking:</h3>
+                            <p> Connect with a diverse community of learners, instructors, industry professionals, and alumni. Take advantage of networking opportunities, collaborate on projects, and build valuable connections that can accelerate your career growth in the field of Full Stack Web Development.</p>
+                        </div>
                     </div>
                 </div>
                 <a style={{ marginTop: '40px' }}> <Button text="Enroll For Digital Marketing Course" /></a>
             </section>
             <hr />
             <section id="Digital-Question">
-                <img src={logo10}  className="di-image" data-animate="di-im"/>
+                <img src={logo10} className="di-image" data-animate="di-im" />
                 <div >
                     <h2 className="di-heading" data-animate="di-h" >Frequently Asked Questions</h2>
                     <div data-animate="di-div" className="Di-Question">

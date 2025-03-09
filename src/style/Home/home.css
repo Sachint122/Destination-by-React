@@ -18,10 +18,9 @@ body {
 }
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 50px;
-    height: 100vh;
+    height: 80vh;
     /* color: #ffffff; */
     /* background: linear-gradient(to bottom, #FC783A, #4c5c6c, #000000); */
 }
@@ -51,7 +50,7 @@ body {
     margin-bottom: 30px;
 }
 .hero-image .image-slider {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-right: 50px;
     width: 600px;
     height: 400px;

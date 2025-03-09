@@ -150,7 +150,7 @@ export default function Training_Education() {
                     <div className="web-content-section">
                         <h2>Training & Education...</h2>
                         <h1>Why Choose Us?</h1>
-                        <p>At Destination Technologies, we provide hands-on, industry-focused training to help you build real-world skills. Our expert-led courses, practical projects, and personalized mentorship ensure you stay ahead in the tech industry. With cutting-edge curriculum and career guidance, we prepare you for high-growth job opportunities. Join us to transform your learning into a successful career!</p>
+                        <p className='content'>At Destination Technologies, we provide hands-on, industry-focused training to help you build real-world skills. Our expert-led courses, practical projects, and personalized mentorship ensure you stay ahead in the tech industry. With cutting-edge curriculum and career guidance, we prepare you for high-growth job opportunities. Join us to transform your learning into a successful career!</p>
 
                         {/* Features List */}
                         <div className="web-features-list">
@@ -161,11 +161,13 @@ export default function Training_Education() {
                                     </div>
                                     <div>
                                         <span>{feature.heading}: </span>
-                                        {feature.content}
+                                        <p style={{opacity:'0.6'}}>
+                                            {feature.content}
+                                        </p>
                                     </div>
                                 </div>
                             ))}
-                            <a> <Button text="Enroll Now"/></a>
+                            <a> <Button text="Enroll Now" /></a>
                         </div>
                     </div>
                 </div>

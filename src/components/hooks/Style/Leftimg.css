@@ -51,14 +51,14 @@
   .text-section h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #7df9ff; /* Electric Blue */
-    text-shadow: 0px 0px 10px rgba(125, 249, 255, 0.8);
+    color: #F26B23; /* Electric Blue */
   }
   
   /* Description Text */
   .description {
     margin-top: 1rem;
     font-size: 1rem;
+    opacity: 0.7;
     color: #ffffff; /* Light gray */
   }
   

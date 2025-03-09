@@ -11,11 +11,13 @@ import Brand from './hooks/Brand';
 import EButton from './hooks/ExploreButton';
 import Button from './hooks/ModernButton';
 import { useScrollAnimation } from './hooks/Animation';
+import NewsTicker from "./hooks/NewsTicker";
 export default function Home() {
     useScrollAnimation();
     return (
         <>
-            <section>
+            <section className=' background-40' style={{paddingTop:'100px'}}>
+                <NewsTicker />
                 <div className='hero background-7 text-gray'>
                     <div className="hero-content">
                         <h6>Welcome to Destination Technologies</h6>
@@ -125,8 +127,8 @@ export default function Home() {
                         <div className="feature-card" style={{ justifyContent: 'flex-end', alignItems: 'flex-end' }}>
                             <div className="background-image-card url3 " ></div>
                             <div className="Btext-overlay">
-                                <h2 className="feature-card-title"  style={{ textAlign: 'right' }}> Industry Expertise</h2>
-                                <p className="feature-card-description"  style={{ textAlign: 'right' }}>
+                                <h2 className="feature-card-title" style={{ textAlign: 'right' }}> Industry Expertise</h2>
+                                <p className="feature-card-description" style={{ textAlign: 'right' }}>
                                     Benefit from our deep industry knowledge and expertise, ensuring you receive the most relevant and up-to-date training.
                                 </p>
                             </div>
@@ -137,8 +139,8 @@ export default function Home() {
                         <div className="feature-card" style={{ justifyContent: 'flex-end', alignItems: 'flex-end' }}>
                             <div className="background-image-card url4 " ></div>
                             <div className="Btext-overlay" >
-                                <h2 className="feature-card-title"  style={{ textAlign: 'right' }}> Industry Expertise</h2>
-                                <p className="feature-card-description"  style={{ textAlign: 'right' }}>
+                                <h2 className="feature-card-title" style={{ textAlign: 'right' }}> Industry Expertise</h2>
+                                <p className="feature-card-description" style={{ textAlign: 'right' }}>
                                     Benefit from our deep industry knowledge and expertise, ensuring you receive the most relevant and up-to-date training.
                                 </p>
                             </div>

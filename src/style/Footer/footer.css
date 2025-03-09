@@ -12,6 +12,7 @@
 }
 
 .querry-section {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,10 +49,6 @@
     opacity: 1;
   }
 }
-
-/* .left-content h2 {
-  font-size: 3rem;
-} */
 
 .left-content p {
   opacity: 0.7;
@@ -244,11 +241,6 @@ footer {
   filter: invert(1);
   transition: 0.4s ease-in-out;
 }
-
-/* .footer-form .fa-solid {
-  color: rgb(255, 140, 0);
-  font-size: 16px;
-} */
 
 .socail {
   display: flex;
