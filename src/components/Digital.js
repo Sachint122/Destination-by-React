@@ -748,7 +748,7 @@ export default function Digital() {
                         <h6>Marketing Courses</h6>
                         <h1>Empower Your Career in Digital Marketing: Unlock Your Potential</h1>
                         <p>At Destination Technologies, our Digital Marketing program is designed to equip you with the skills and knowledge to excel in the field of digital marketing. With a comprehensive curriculum and hands-on training, we prepare you for a successful career by providing career-focused education and placement support. Join us on this transformative learning journey and unleash your potential in the dynamic world of digital marketing.</p>
-                        <a> <EButton /></a>
+                        <a> <EButton  color='#F26B23'/></a>
                     </div>
                 </div>
             </section>

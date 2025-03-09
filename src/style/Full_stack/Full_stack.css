@@ -15,7 +15,6 @@
 
 .Full-content h1 {
     font-size: 2rem;
-    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00aaff;
 }
 
 .Full-content p {
@@ -95,7 +94,6 @@
 
 .Full-course-text h2 {
     font-size: 1.5rem;
-    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00aaff;
     margin-bottom: 10px;
 }
 
@@ -114,7 +112,7 @@
 }
 
 .Full-bottom span {
-    color: rgb(42, 42, 255);
+    color: #F26B23;
 }
 
 .language {
@@ -194,7 +192,7 @@
 .About-main {
     width: 70%;
     padding: 30px;
-    color: rgb(0, 153, 255);
+    /* color: rgb(0, 153, 255); */
     font-size: 1.7rem;
     text-align: left;
 }
@@ -219,7 +217,7 @@
 .About-content .About-right h2 {
     margin-bottom: 20px;
     margin-left: 40px;
-    color: #06d6ff;
+    color: white;
     width: 100%;
     animation: glowText 1.5s infinite alternate ease-in-out;
 }
@@ -227,6 +225,7 @@
 .About-right h4 {
     line-height: 1.4em;
     width: 90%;
+    opacity: 0.6;
 }
 
 .About-right h4.abo-r {
@@ -316,7 +315,7 @@
 }
 
 .program-list span {
-    color: #00d4ff;
+    color: #F26B23;
     font-weight: bold;
 }
 
@@ -418,7 +417,7 @@
 }
 
 .Syllabus-sub-h h2 {
-    color: #00d4ff;
+    color: #F26B23;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -527,8 +526,8 @@
 }
 
 
-.program-list span {
-    color: #00d4ff;
+.Benefits-list span {
+    color: #F26B23;
     font-weight: bold;
 }
 

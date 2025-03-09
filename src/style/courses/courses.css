@@ -31,7 +31,7 @@
 }
 
 #course h2 {
-  color: #00d4ff;
+  color: #F26B23;
   padding: 8px;
   margin-left: 80px;
   text-align: center;
@@ -64,14 +64,15 @@
 }
 
 .course-text h6 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 10px;
-  color: #00d4ff;
+  color: white;
 }
 
 .course-text p {
-  font-size: 1.5em;
-  color: #fdfdfd;
+  font-size: 1.3em;
+  color: white;
+  opacity: 0.6;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -94,7 +95,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 8px 8px rgb(0, 186, 253);
+  box-shadow: 0 8px 8px rgb(253, 181, 0);
 }
 
 /* Animations */
@@ -178,6 +179,7 @@
   animation: fadeInUp 2s ease-out;
 }
 .offering {
+  padding: 50px;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -198,20 +200,21 @@
 }
 .offering:hover {
   transform: translateY(-10px);
-  /* Hover effect */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-  /* Darker shadow on hover */
 }
 
 .offering h4 {
-  color: #00d4ff;
-  font-size: 1.8rem;
+  text-align: center;
+    color: white;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
 .offering p {
-  font-size: 1.4rem;
+  text-align: center;
+  font-size: 1em;
   color: #fdfdfd;
+  opacity: 0.6;
 }
 
 .offering img {
@@ -293,7 +296,7 @@
 
 .growth-text h2 {
   font-size: 2rem;
-  color: #00d4ff;
+  color: #F26B23;
   padding: 8px;
   text-align: center;
 }
@@ -342,7 +345,6 @@
   background-color: #1a2a3a;
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  color: #fff;
   background: linear-gradient(135deg, #000428, #023969);
   background-size: 300% 300%;
   animation: rippleWave 5s infinite ease-in-out;
@@ -376,13 +378,14 @@
   animation: fadeInUp 1.2s ease-in-out;
 }
 .career-growth-right h2 {
-  font-size: 2rem;
-  color: #00d4ff;
+  font-size: 1.5rem;
+  color: white;
   animation: glow 2.5s infinite alternate ease-in-out;
 }
 
 .career-growth-right p {
-  font-size: 1.5rem;
+  opacity: 0.8;
+  font-size: 1rem;
 }
 
 .career-growth-right ul {
@@ -420,9 +423,9 @@
 }
 
 .list span {
-  color: #00d4ff;
+  color: #F26B23;
   font-weight: bold;
-  animation: glow 1.5s infinite alternate ease-in-out;
+  /* animation: glow 1.5s infinite alternate ease-in-out; */
 }
 
 /* learning */
@@ -450,7 +453,7 @@
 .learning-text h1 {
   margin-bottom: 20px;
   font-size: 28px;
-  color: #ffffff;
+  color: #F26B23;
 }
 
 .learning-card-main {
@@ -504,13 +507,14 @@
 
 .learning-card h2 {
   margin: 10px 0;
-  color: #00d5ff;
+  color: white;
 }
 
 .learning-card p {
   font-size: 1.2em;
-  color: #dfe6f7;
-  line-height: 1.5;
+  color: white;
+  /* line-height: 1.5; */
+  opacity: 0.6;
 }
 
 /* Keyframe Animations */

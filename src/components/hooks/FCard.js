@@ -12,7 +12,7 @@ const FCard = ({ image, title, description,list }) => {
             whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px  rgba(3, 45, 251, 0.781)" }}
         >
             <img src={image} alt={title} className="custom-card-image" />
-            <h3 className="custom-card-title">{title}</h3>
+            <h3 className="custom-card-title-f">{title}</h3>
             {description && <p className="custom-card-description">{description}</p>}
             {list && <ul>
                 {list.map((item, index) => (

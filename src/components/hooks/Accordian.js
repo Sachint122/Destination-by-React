@@ -4,7 +4,7 @@ import "./Style/Accordion.css"; // Importing custom CSS
 const Accordion = ({ title, content, isOpen, onClick }) => {
     return (
       <div className="custom-collapse">
-        <button onClick={onClick} className="custom-collapse-title">
+        <button onClick={onClick} className="custom-collapse-title-a">
           {title}
           <FaChevronDown className={`arrow-icon ${isOpen ? "rotate" : ""}`} />
         </button>

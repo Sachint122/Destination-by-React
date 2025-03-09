@@ -78,7 +78,7 @@ export default function Full_stack() {
                         <h6>Software Development Courses</h6>
                         <h1>Master the Art of Full Stack Web Development: Empower Your Digital Journey</h1>
                         <p>At Destination Technologies, our Full Stack Web Development program equips you with the skills and knowledge to become a proficient web developer. With a comprehensive curriculum and hands-on training, we prepare you to build dynamic and responsive web applications. Join us on this transformative learning journey and unlock a world of opportunities in the ever-evolving field of web development.</p>
-                        <a> <EButton /></a>
+                        <a> <EButton color='#F26B23'/></a>
                     </div>
                 </div>
             </section>
@@ -130,7 +130,7 @@ export default function Full_stack() {
                 <div className='Full-bottom'>
                     <h4> Choose the specialization that aligns with your goals and interests, and embark on a learning journey tailored to your needs. Explore our specialized Full Stack  Development courses and take the next step towards becoming a proficient
                         <span> Full Stack Developer.</span></h4>
-                    <a> <EButton /></a>
+                    <a> <EButton  color='#F26B23'/></a>
                 </div>
             </section>
             <hr />
@@ -208,7 +208,7 @@ export default function Full_stack() {
                         <img src={image2} alt="Image 1" />
                         <img src={image3} alt="Image 2" />
                         <div>
-                            <a> <EButton /></a>
+                            <a> <EButton color='#F26B23'/></a>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@ export default function Full_stack() {
                 </div>
                 <div className="Full-Benefits-right">
                     <img src={image4} alt="Image 1" />
-                    <a> <EButton /></a>
+                    <a> <EButton color='#F26B23' /></a>
                 </div>
             </section>
             <hr />

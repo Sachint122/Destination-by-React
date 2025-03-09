@@ -7,7 +7,7 @@
 }
 
 /* Title bar */
-.custom-collapse-title {
+.custom-collapse-title-a {
     font-size: 22px;
     font-weight: bold;
     padding: 10px;
@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #007bff00;
-    color: rgb(0, 179, 255);
+    color: #F26B23;
     width: 100%;
     border: none;
     outline: none;

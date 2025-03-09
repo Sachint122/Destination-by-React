@@ -62,7 +62,7 @@ const Language = () => {
   return (
     <div className="slider-container">
       <button className="nav-button left" onClick={moveLeft}>
-      <FaArrowAltCircleLeft size={40} color="00d4ff"/>
+      <FaArrowAltCircleLeft size={40} color="F26B23"/>
       </button>
       <div className="sliderl">
         <div
@@ -80,7 +80,7 @@ const Language = () => {
         </div>
       </div>
       <button className="nav-button right" onClick={moveRight}>
-      <FaArrowAltCircleRight size={40} color="00d4ff"/>
+      <FaArrowAltCircleRight size={40} color="F26B23"/>
       </button>
     </div>
   );
