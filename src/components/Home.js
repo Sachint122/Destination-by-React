@@ -58,7 +58,7 @@ export default function Home() {
                         <li data-animate="address-li"> <FaArrowRightLong />   3 Physical Offices: Building Connections, Creating Impact</li>
                         <li data-animate="address-li"> <FaArrowRightLong />   500+ Company-Owned Manpower: A Strong Team, A Solid Foundation</li>
                     </ul>
-                    <EButton />
+                    <EButton  color="#F26936"/>
                 </div>
                 <div className="address">
                     <img data-animate="address-zoomin" src={address} alt='' />

@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
+import GradientText from "./GradientText";
 import "../hooks/Style/NewsTicker.css";
+
 const NewsTicker = () => {
   const [newsItems, setNewsItems] = useState([]);
   const newsRef = useRef(null);
 
   useEffect(() => {
-    // Fetch text file data
     fetch("/news.txt")
-      .then(response => response.text())
-      .then(text => {
-        const newsArray = text.split("\n").filter(line => line.trim() !== ""); // Split by line & remove empty lines
+      .then((response) => response.text())
+      .then((text) => {
+        const newsArray = text.split("\n").filter((line) => line.trim() !== "");
         setNewsItems(newsArray);
       })
-      .catch(error => console.error("Error loading news:", error));
+      .catch((error) => console.error("Error loading news:", error));
   }, []);
 
   useEffect(() => {
@@ -23,7 +24,6 @@ const NewsTicker = () => {
         { duration: 25000, iterations: Infinity, easing: "linear" }
       );
 
-      // Pause animation on hover
       ticker.addEventListener("mouseenter", () => animation.pause());
       ticker.addEventListener("mouseleave", () => animation.play());
 
@@ -34,11 +34,19 @@ const NewsTicker = () => {
   return (
     <div className="news-ticker">
       <div className="news-content" ref={newsRef}>
-        {newsItems.map((news, index) => (
-          <span key={index} className="news-item">
-            {news} &nbsp; | &nbsp;
-          </span>
-        ))}
+        <div className="news-items-container">
+          {newsItems.map((news, index) => (
+            <GradientText
+              key={index}
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="news-item"
+            >
+              {news} &nbsp; | &nbsp;
+            </GradientText>
+          ))}
+        </div>
       </div>
     </div>
   );
