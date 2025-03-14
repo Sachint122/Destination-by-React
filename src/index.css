@@ -3,17 +3,25 @@
 @tailwind utilities; */
 /* 🔹 Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo&family=DM+Sans&family=IBM+Plex+Sans&family=Space+Grotesk&family=Fira+Sans&family=Manrope&family=Barlow&family=Heebo&family=Kanit&family=Exo+2&display=swap');
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 h1,
 h6,
 h2,
+h4,
+h5,
 h3 {
   color: #F26B23;
   font-family: 'Times New Roman', Times, serif;

@@ -424,7 +424,7 @@
     color: #f36229;
 }
 .team h2{
-    color: white;
+    color: #F26936;
     opacity: 0.7;
     margin-top: 2px;
     font-size: 2rem;
@@ -527,8 +527,7 @@
 }
 
 .right-content-a h2 {
-    /* text-decoration: underline; */
-    font-size: 1.3rem !important; /* Use rem for better scalability */
+    font-size: 1.3rem !important; 
     color: #ffffff;
     margin-bottom: 20px;
 }
