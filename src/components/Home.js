@@ -1,7 +1,3 @@
-// import { LiaIndustrySolid } from "react-icons/lia";
-// import { LiaLaptopCodeSolid } from "react-icons/lia";
-// import { FaFreeCodeCamp } from "react-icons/fa";
-// import { GiLifeSupport } from "react-icons/gi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import address from '../images/DESTINATION-1024x1001.png';
 import Card from './hooks/Card';

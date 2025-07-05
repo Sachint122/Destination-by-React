@@ -19,12 +19,10 @@ import Training_Education from "./components/Training_Education";
 import It_Staff from "./components/It_Staff";
 import Placement from "./components/Placement";
 import Contact from "./components/Contact";
-import  SplashCursor from './components/hooks/Cursor'
 export default function App() {
   useScrollAnimation();
   return (
     <>
-      <SplashCursor/>
       <NavBar />
       <ScrollToTop/>
       <Routes>
